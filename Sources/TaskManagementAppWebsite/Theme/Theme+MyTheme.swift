@@ -27,19 +27,33 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
-                    .h1(.text(index.title), .class("text-2xl font-semibold")),
-                    .p(
-                        .class("description"),
-                        .text(context.site.description)
-                    ),
-                    .h2("Latest content"),
-                    .itemList(
-                        for: context.allItems(
-                            sortedBy: \.date,
-                            order: .descending
+                    .element(named: "section", nodes: [
+                        .component(WelcomeHero()),
+                        .class("pt-16")
+                    ]),
+                    .element(named: "section", nodes: [
+                        .component(Hero(
+                            headingText: "Organize your day",
+                            contentText: "Time Block combines your calendars and tasks into a visual timeline")
                         ),
-                        on: context.site
-                    )
+                        .class("pt-16")
+                    ]),
+                    .element(named: "section", nodes: [
+                        .component(Hero(
+                            headingText: "Organize your day",
+                            contentText: "Time Block combines your calendars and tasks into a visual timeline",
+                            style: .image(imageUrl: "https://placehold.co/480x309"))
+                        ),
+                        .class("pt-16")
+                    ]),
+                    .element(named: "section", nodes: [
+                        .component(Hero(
+                            headingText: "Organize your day",
+                            contentText: "Time Block combines your calendars and tasks into a visual timeline",
+                            style: .image(imageUrl: "https://placehold.co/480x309", reversed: true))
+                        ),
+                        .class("pt-16 pb-16")
+                    ])
                 ),
                 .footer(for: context)
             )
@@ -55,7 +69,10 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                 .header(for: context, selectedSection: section.id),
                 .mainContentWrapper(
                     .h1(.text(section.title)),
-                    .itemList(for: section.items, on: context.site)
+                    .component(SectionItemGrid(
+                        items: section.items,
+                        context: context)
+                    )
                 ),
                 .footer(for: context)
             )
@@ -72,6 +89,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                 .header(for: context, selectedSection: item.sectionID),
                 .mainContentWrapper(
                     .article(
+                        .class("prose"),
                         .h1(.text(item.title)),
                         .articleMetadataLine(for: item, on: context.site),
                         .div(
@@ -196,7 +214,7 @@ private extension Node where Context == HTML.BodyContext {
             .class("item-list"),
             .forEach(items) { item in
                 .li(.article(
-                    .h1(.a(
+                    .h2(.a(
                         .href(item.path),
                         .text(item.title)
                     )),

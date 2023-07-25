@@ -9,7 +9,7 @@ import Plot
 import Publish
 import Foundation
 
-struct NavigationBar<T>: Component where T: Website{
+struct NavigationBar<T>: Component where T: Website {
     
     private let selectedSection: T.SectionID?
     private let context: PublishingContext<T>

@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['Sources/TaskManagementAppWebsite/Theme/*.swift'],
+  content: [
+    'Sources/TaskManagementAppWebsite/Theme/*.swift',
+    'Sources/TaskManagementAppWebsite/Theme/**/*.swift'
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'serif': 'ui-serif, -apple-system-ui-serif, Charter, serif'
+      }
+    },
   },
   variants: {},
   plugins: [
