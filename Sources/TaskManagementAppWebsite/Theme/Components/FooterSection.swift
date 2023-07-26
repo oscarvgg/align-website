@@ -16,9 +16,13 @@ struct FooterSection: Component {
             Footer {
                 Div {
                     Link("Blog", url: "/")
+                        .class("link link-hover")
                     Link("Help", url: "/")
+                        .class("link link-hover")
                     Link("Press Kit", url: "/")
+                        .class("link link-hover")
                     Link("Privacy Policy", url: "/")
+                        .class("link link-hover")
                 }
                 .class("grid grid-flow-col gap-4")
             }
