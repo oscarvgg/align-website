@@ -27,40 +27,47 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
-                    .element(named: "section", nodes: [
+                    .section(
                         .component(WelcomeHero()),
                         .class("pt-16")
-                    ]),
-                    .element(named: "section", nodes: [
+                    ),
+                    .section(
                         .component(Hero(
                             headingText: "Organize your day",
                             contentText: "Time Block combines your calendars and tasks into a visual timeline")
                         ),
                         .class("pt-16")
-                    ]),
-                    .element(named: "section", nodes: [
+                    ),
+                    .section(
                         .component(Hero(
                             headingText: "Organize your day",
                             contentText: "Time Block combines your calendars and tasks into a visual timeline",
                             style: .image(imageUrl: "https://placehold.co/480x309"))
                         ),
                         .class("pt-16")
-                    ]),
-                    .element(named: "section", nodes: [
+                    ),
+                    .section(
                         .component(Hero(
                             headingText: "Organize your day",
                             contentText: "Time Block combines your calendars and tasks into a visual timeline",
                             style: .image(imageUrl: "https://placehold.co/480x309", reversed: true))
                         ),
                         .class("pt-16 pb-16")
-                    ])
+                    ),
+                    .section(
+                        .component(Collapsable(title: "Question 1", content: "Here is your answer")),
+                        .component(Collapsable(title: "Question 2", content: "Here is your answer")),
+                        .component(Collapsable(title: "Question 3", content: "Here is your answer")),
+                        .component(Collapsable(title: "Question 4", content: "Here is your answer")),
+                        .component(Collapsable(title: "Question 5", content: "Here is your answer"))
+                    )
                 ),
                 .footer(for: context)
             )
         )
     }
 
-    func makeSectionHTML(for section: Section<Site>,
+    func makeSectionHTML(for section: Publish.Section<Site>,
                          context: PublishingContext<Site>) throws -> HTML {
         HTML(
             .lang(context.site.language),
@@ -177,7 +184,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
 
 private extension Node where Context == HTML.BodyContext {
     static func mainContentWrapper(_ nodes: Node...) -> Node {
-        .div(.class("main-content"), .group(nodes))
+        .div(.class("container mx-auto"), .group(nodes))
     }
 
     static func mainNavigation<T: Website>(

@@ -6,7 +6,6 @@
 //
 
 import Plot
-import Publish
 import Foundation
 
 struct Hero: Component {
@@ -35,7 +34,7 @@ struct Hero: Component {
     
     private var textContentClass: String {
         if case .text = style {
-            return "max-w-md"
+            return "" // "max-w-md"
         }
         return ""
     }

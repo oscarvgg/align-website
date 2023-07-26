@@ -6,7 +6,6 @@
 //
 
 import Plot
-import Publish
 import Foundation
 
 struct WelcomeHero: Component {
