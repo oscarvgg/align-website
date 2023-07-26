@@ -60,9 +60,9 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                         .component(Collapsable(title: "Question 3", content: "Here is your answer")),
                         .component(Collapsable(title: "Question 4", content: "Here is your answer")),
                         .component(Collapsable(title: "Question 5", content: "Here is your answer"))
-                    )
-                ),
-                .footer(for: context)
+                    ),
+                    .component(FooterSection())
+                )
             )
         )
     }
@@ -73,15 +73,14 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: section, on: context.site),
             .body(
-                .header(for: context, selectedSection: section.id),
+                .component(NavigationBar(selectedSection: section.id, context: context)),
                 .mainContentWrapper(
                     .h1(.text(section.title)),
                     .component(SectionItemGrid(
                         items: section.items,
                         context: context)
                     )
-                ),
-                .footer(for: context)
+                )
             )
         )
     }
@@ -93,7 +92,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .head(for: item, on: context.site),
             .body(
                 .class("item-page"),
-                .header(for: context, selectedSection: item.sectionID),
+                .component(NavigationBar(selectedSection: item.sectionID, context: context)),
                 .mainContentWrapper(
                     .article(
                         .class("prose"),
@@ -104,8 +103,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                             .contentBody(item.body)
                         )
                     )
-                ),
-                .footer(for: context)
+                )
             )
         )
     }
@@ -116,9 +114,8 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: page, on: context.site),
             .body(
-                .header(for: context, selectedSection: nil),
-                .mainContentWrapper(.contentBody(page.body)),
-                .footer(for: context)
+                .component(NavigationBar(context: context)),
+                .mainContentWrapper(.contentBody(page.body))
             )
         )
     }
@@ -129,7 +126,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: page, on: context.site),
             .body(
-                .header(for: context, selectedSection: nil),
+                .component(NavigationBar(context: context)),
                 .mainContentWrapper(
                     .h1("Browse all tags"),
                     .ul(
@@ -144,8 +141,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                             )
                         }
                     )
-                ),
-                .footer(for: context)
+                )
             )
         )
     }
@@ -156,7 +152,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: page, on: context.site),
             .body(
-                .header(for: context, selectedSection: nil),
+                .component(NavigationBar(context: context)),
                 .mainContentWrapper(
                     .h1(
                         "Tagged with ",
@@ -175,8 +171,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                         ),
                         on: context.site
                     )
-                ),
-                .footer(for: context)
+                )
             )
         )
     }
@@ -200,20 +195,6 @@ private extension Node where Context == HTML.BodyContext {
                 ))
             }
             ))
-    }
-    
-    static func header<T: Website>(for context: PublishingContext<T>,
-                                   selectedSection: T.SectionID?) -> Node {
-        let sectionIDs = T.SectionID.allCases
-        
-        return .header(
-            .nav(
-                .a(.class("site-name"), .href("/"), .h3(.text(context.site.name))),
-                .if(sectionIDs.count > 1,
-                    mainNavigation(sectionIDs, selectedSection, context)
-                   )
-            )
-        )
     }
 
     static func itemList<T: Website>(for items: [Item<T>], on site: T) -> Node {
@@ -253,24 +234,6 @@ private extension Node where Context == HTML.BodyContext {
         },
         .li(
             .text("Published on \(dateFormatter.string(from: item.date))"))
-        )
-    }
-
-    static func footer<T: Website>(for context: PublishingContext<T>) -> Node {
-        return .footer(
-            .bottomLists(for: context),
-            .div(.class("copyright"),
-                 .p(
-                    .text("Copyright &#169; Oscar Gonzalez 2021. All rights reserved")
-                 ),
-                 .p(
-                    .text("Generated using "),
-                    .a(
-                        .text("Publish"),
-                        .href("https://github.com/johnsundell/publish")
-                    )
-                 )
-            )
         )
     }
     

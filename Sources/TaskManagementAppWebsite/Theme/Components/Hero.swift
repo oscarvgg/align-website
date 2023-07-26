@@ -54,7 +54,7 @@ struct Hero: Component {
                         url: imageUrl,
                         description: "hero image"
                     )
-                    .class("max-w-sm rounded-lg shadow-2xl")
+                    .class("max-w-sm rounded-lg")
                 }
                 
                 Div {
