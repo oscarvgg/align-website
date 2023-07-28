@@ -25,6 +25,6 @@ struct Collapsable: Component {
             }
             .class("collapse-content")
         }
-        .class("collapse collapse-arrow max-w-7xl mx-auto")
+        .class("collapse collapse-arrow container mx-auto")
     }
 }

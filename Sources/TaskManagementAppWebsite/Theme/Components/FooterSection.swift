@@ -26,7 +26,7 @@ struct FooterSection: Component {
                 }
                 .class("grid grid-flow-col gap-4")
             }
-            .class("footer footer-center p-10 text-base-content rounded")
+            .class("footer footer-center p-10 text-base-content rounded container mx-auto")
         }
         .class("flex flex-col w-full")
     }

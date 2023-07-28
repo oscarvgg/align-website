@@ -33,6 +33,6 @@ struct WelcomeHero: Component {
             }
             .class("hero-content flex-col lg:flex-row-reverse")
         }
-        .class("hero bg-base-200")
+        .class("hero")
     }
 }

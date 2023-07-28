@@ -32,13 +32,6 @@ struct Hero: Component {
         return "lg:flex-row"
     }
     
-    private var textContentClass: String {
-        if case .text = style {
-            return "" // "max-w-md"
-        }
-        return ""
-    }
-    
     private var mainContentClass: String {
         if case .text = style {
             return "text-center"
@@ -65,10 +58,9 @@ struct Hero: Component {
                     Paragraph(contentText)
                         .class("py-6")
                 }
-                .class(textContentClass)
             }
             .class("hero-content \(mainContentClass)")
         }
-        .class("hero bg-base-200")
+        .class("hero")
     }
 }

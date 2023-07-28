@@ -28,8 +28,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
                     .section(
-                        .component(WelcomeHero()),
-                        .class("pt-16")
+                        .component(WelcomeHero())
                     ),
                     .section(
                         .component(Hero(
@@ -75,12 +74,16 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .component(NavigationBar(selectedSection: section.id, context: context)),
                 .mainContentWrapper(
-                    .h1(.text(section.title)),
+                    .section(
+                        .class("prose"),
+                        .contentBody(section.body)
+                    ),
                     .component(SectionItemGrid(
                         items: section.items,
                         context: context)
                     )
-                )
+                ),
+                .component(FooterSection())
             )
         )
     }
@@ -103,7 +106,8 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                             .contentBody(item.body)
                         )
                     )
-                )
+                ),
+                .component(FooterSection())
             )
         )
     }
@@ -115,7 +119,8 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .head(for: page, on: context.site),
             .body(
                 .component(NavigationBar(context: context)),
-                .mainContentWrapper(.contentBody(page.body))
+                .mainContentWrapper(.contentBody(page.body)),
+                .component(FooterSection())
             )
         )
     }
@@ -179,7 +184,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
 
 private extension Node where Context == HTML.BodyContext {
     static func mainContentWrapper(_ nodes: Node...) -> Node {
-        .div(.class("container mx-auto"), .group(nodes))
+        .div(.class("container mx-auto pt-10 px-4"), .group(nodes))
     }
 
     static func mainNavigation<T: Website>(

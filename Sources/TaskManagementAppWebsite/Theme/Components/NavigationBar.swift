@@ -24,7 +24,8 @@ struct NavigationBar<T>: Component where T: Website {
         Div {
             Div {
                 Link(url: "/") {
-                    Image(url: "/", description: "app logo")
+//                    Image(url: "/", description: "app logo")
+                    Text("Time Block")
                 }
                 .class("btn btn-ghost normal-case text-xl")
             }
@@ -43,6 +44,6 @@ struct NavigationBar<T>: Component where T: Website {
             }
             .class("flex-none")
         }
-        .class("navbar bg-base-100")
+        .class("navbar container mx-auto")
     }
 }
