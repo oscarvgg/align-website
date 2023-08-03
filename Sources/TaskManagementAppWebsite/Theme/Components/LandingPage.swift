@@ -63,12 +63,25 @@ struct LandingPage: Component {
                     style: .image(imageUrl: "https://placehold.co/480x309", reversed: true))
             }
             
-            Paragraph("""
-            Unlock your full productivity potential with Align, the time management app that uses the power of time blocking to revolutionize your daily routine. With features designed to help you visualize, customize, and prioritize your tasks, Align keeps you organized and focused. Seamlessly sync your schedule across all your devices, and receive timely notifications to stay on track.
-            No subscriptions are required. Align offers a single in-app purchase, granting you access to all its powerful features without any recurring fees. Sign up to get notified when Align is available in the App Store and be among the first to experience a new level of time management like never before.
+            Section {
+                Div {
+                    Div {
+                        Div {
+                            H2 {
+                                Text("Join the waiting list")
+                            }
+                            Paragraph("""
+            Align is a powerful tool for staying focused and getting things done. Customize, prioritize, and visualize your tasks at a glance; sync your schedule across all devices, and get timely notifications. With only one in-app purchase, enjoy access to all powerful features without subscription fees.
+            Sign up now and be among the first to elevate your time management experience.
             Get ready to align your time and conquer your day.
             """)
-            .class("p-16")
+                            .class("py-6")
+                        }
+                    }
+                    .class("hero-content  mx-auto ")
+                }
+                .class("hero md:p-16")
+            }
             
             FooterSection()
         }

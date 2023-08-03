@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'serif': 'ui-serif, -apple-system-ui-serif, Charter, serif'
-      }
+      },
       screens: {
         'sm': '320px',
       },
