@@ -20,6 +20,7 @@ struct LandingPage: Component {
                     headingText: "Unlock your productivity potential.",
                     contentText: "Align is your personal time management tool helping you revolutionize your daily routine.")
             }
+            .class("bg-neutral rounded-lg")
             
             Section {
                 Hero(
@@ -33,7 +34,7 @@ struct LandingPage: Component {
                     headingText: "Customize and Recur Time Blocks",
                     contentText: "With Align, you have complete control over your time blocks. Add tasks to the timeline and customize each with different colors and icons to make them easily distinguishable. You can even make tasks recurrent, saving you time by automatically creating future time blocks. Align adapts to your unique needs, making it effortless to stay organized and focused.",
                     style: .image(imageUrl: "https://placehold.co/480x309", reversed: true))
-            }
+            }.class("bg-neutral rounded-lg")
             
             Section {
                 Hero(
@@ -48,6 +49,7 @@ struct LandingPage: Component {
                     contentText: "Align's intelligent algorithm automatically checks for overlapping time blocks. Say goodbye to double bookings or conflicting appointments. With Align, you'll have a clear view of your day without any scheduling conflicts, allowing you to maximize your time and focus on what's important.",
                     style: .image(imageUrl: "https://placehold.co/480x309", reversed: true))
             }
+            .class("bg-neutral rounded-lg")
             
             Section {
                 Hero(
@@ -62,6 +64,7 @@ struct LandingPage: Component {
                     contentText: "Align helps you stay on top of your schedule with timely notifications. Receive a notification when a task is about to start, so you can transition seamlessly between activities. Say goodbye to missed deadlines or running late. Align keeps you accountable and ensures you stay on track throughout your day.",
                     style: .image(imageUrl: "https://placehold.co/480x309", reversed: true))
             }
+            .class("bg-neutral rounded-lg")
             
             Section {
                 Div {
@@ -78,10 +81,11 @@ struct LandingPage: Component {
                             .class("py-6")
                         }
                     }
-                    .class("hero-content  mx-auto ")
+                    .class("hero-content  mx-auto")
                 }
                 .class("hero md:p-16")
             }
+            .class("mt-16")
             
             FooterSection()
         }

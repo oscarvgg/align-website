@@ -36,7 +36,7 @@ struct Hero: Component {
         if case .text = style {
             return "text-center"
         }
-        return "flex-col \(flexRowClass)"
+        return "flex-col \(flexRowClass) space-x-4"
     }
     
     var body: Component {
