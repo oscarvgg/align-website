@@ -9,9 +9,16 @@ module.exports = {
       fontFamily: {
         'serif': 'ui-serif, -apple-system-ui-serif, Charter, serif'
       }
+      screens: {
+        'sm': '320px',
+      },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      mainScreen: ['dark'],
+    },
+  },
   plugins: [
       require('@tailwindcss/typography'),
       require("daisyui")

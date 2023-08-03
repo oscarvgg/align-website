@@ -16,7 +16,7 @@ struct TaskManagementAppWebsite: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://your-website-url.com")!
-    var name = "Task Management AppWebsite"
+    var name = "Align: The Time Blocking App"
     var description = "The time blocking app"
     var language: Language { .english }
     var imagePath: Path? { nil }

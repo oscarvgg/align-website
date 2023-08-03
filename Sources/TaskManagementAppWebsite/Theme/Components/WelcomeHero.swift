@@ -11,28 +11,41 @@ import Foundation
 struct WelcomeHero: Component {
     
     var body: Component {
-        Div {
+        ComponentGroup {
             Div {
-                Image(
-                    url: "https://placehold.co/260x524",
-                    description: "hero image"
-                )
-                .class("max-w-sm rounded-lg shadow-2xl")
-                
                 Div {
-                    H1 {
-                        Text("Time Block")
+                    Div {
+                        Image(url: "/img/iphone-screenshot-light.webp",
+                              description: "iPhone main screenshot")
+                        .class("block dark:hidden")
+                        Image(url: "/img/iphone-screenshot-dark.webp",
+                              description: "iPhone main screenshot")
+                        .class("hidden dark:block")
                     }
-                    H2 {
-                        Text("the time blocking app")
+                    .class("md:max-w-fit sm:max-w-full h-auto")
+                    
+                    Div {
+                        H1 {
+                            Span("Organize Your Day Effectively with: ")
+                        }
+                        .class("md:text-5xl sm:pt-9")
+                        
+                        H1 {
+                            Span("Align")
+                        }
+                        .class("md:text-9xl text-accent pt-8")
+                        
+                        H2 ("The Time Blocking App")
+                            .class("text-4xl font-thin pt-8")
+                        
+                        Paragraph("Comming soon to the App Store")
+                            .class("font-thin pt-3")
                     }
-                    Paragraph("Split your day into small tasks and get a visual timeline of your day")
-                        .class("py-6")
+                    .class("max-w-md")
                 }
-                .class("max-w-md")
+                .class("hero-content mx-auto flex-col lg:flex-row-reverse sm:text-center lg:text-left")
             }
-            .class("hero-content flex-col lg:flex-row-reverse")
+            .class("md:hero sm:px-4 lg:px-16 pb-16")
         }
-        .class("hero")
     }
 }

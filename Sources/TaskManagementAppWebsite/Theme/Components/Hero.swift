@@ -47,7 +47,7 @@ struct Hero: Component {
                         url: imageUrl,
                         description: "hero image"
                     )
-                    .class("max-w-sm rounded-lg")
+                    .class("md:max-w-sm sm:max-w-full h-auto rounded-lg")
                 }
                 
                 Div {
@@ -61,6 +61,6 @@ struct Hero: Component {
             }
             .class("hero-content \(mainContentClass)")
         }
-        .class("hero")
+        .class("hero md:p-16")
     }
 }

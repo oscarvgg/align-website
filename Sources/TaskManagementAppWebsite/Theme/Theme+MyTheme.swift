@@ -27,40 +27,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
-                    .section(
-                        .component(WelcomeHero())
-                    ),
-                    .section(
-                        .component(Hero(
-                            headingText: "Organize your day",
-                            contentText: "Time Block combines your calendars and tasks into a visual timeline")
-                        ),
-                        .class("pt-16")
-                    ),
-                    .section(
-                        .component(Hero(
-                            headingText: "Organize your day",
-                            contentText: "Time Block combines your calendars and tasks into a visual timeline",
-                            style: .image(imageUrl: "https://placehold.co/480x309"))
-                        ),
-                        .class("pt-16")
-                    ),
-                    .section(
-                        .component(Hero(
-                            headingText: "Organize your day",
-                            contentText: "Time Block combines your calendars and tasks into a visual timeline",
-                            style: .image(imageUrl: "https://placehold.co/480x309", reversed: true))
-                        ),
-                        .class("pt-16 pb-16")
-                    ),
-                    .section(
-                        .component(Collapsable(title: "Question 1", content: "Here is your answer")),
-                        .component(Collapsable(title: "Question 2", content: "Here is your answer")),
-                        .component(Collapsable(title: "Question 3", content: "Here is your answer")),
-                        .component(Collapsable(title: "Question 4", content: "Here is your answer")),
-                        .component(Collapsable(title: "Question 5", content: "Here is your answer"))
-                    ),
-                    .component(FooterSection())
+                    .component(LandingPage())
                 )
             )
         )
@@ -184,7 +151,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
 
 private extension Node where Context == HTML.BodyContext {
     static func mainContentWrapper(_ nodes: Node...) -> Node {
-        .div(.class("container mx-auto pt-10 px-4"), .group(nodes))
+        .div(.class("md:container mx-auto pt-10 px-4"), .group(nodes))
     }
 
     static func mainNavigation<T: Website>(
