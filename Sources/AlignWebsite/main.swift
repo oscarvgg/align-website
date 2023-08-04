@@ -1,10 +1,9 @@
 import Foundation
 import Publish
 import Plot
-import NPMPublishPlugin
 
 // This type acts as the configuration for your website.
-struct TaskManagementAppWebsite: Website {
+struct AlignWebsite: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
         case blog
@@ -17,13 +16,13 @@ struct TaskManagementAppWebsite: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://your-website-url.com")!
     var name = "Align: The Time Blocking App"
-    var description = "The time blocking app"
+    var description = "Align: The time blocking app"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try TaskManagementAppWebsite().publish(
+try AlignWebsite().publish(
     withTheme: .myTheme,
     deployedUsing: .gitHub(
         "oscarvgg/align-website",
@@ -31,7 +30,7 @@ try TaskManagementAppWebsite().publish(
         useSSH: false)
 )
 
-//try TaskManagementAppWebsite().publish(using: [
+//try AlignWebsite().publish(using: [
 ////    .group(plugins.map(PublishingStep.installPlugin)),
 //    .step(named: "something", body: { context in
 //        let task = Process()

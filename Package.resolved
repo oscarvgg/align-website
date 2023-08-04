@@ -38,15 +38,6 @@
         }
       },
       {
-        "package": "NPMPublishPlugin",
-        "repositoryURL": "https://github.com/brightdigit/NPMPublishPlugin.git",
-        "state": {
-          "branch": null,
-          "revision": "8d5ee2e220cc84d75efea9cebc18a881ba7158f5",
-          "version": "1.0.0"
-        }
-      },
-      {
         "package": "Plot",
         "repositoryURL": "https://github.com/johnsundell/plot.git",
         "state": {

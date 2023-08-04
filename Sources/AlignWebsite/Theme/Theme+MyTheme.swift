@@ -9,7 +9,7 @@ import Foundation
 import Publish
 import Plot
 
-extension Theme where Site == TaskManagementAppWebsite {
+extension Theme where Site == AlignWebsite {
     static var myTheme: Self {
         Theme(
             htmlFactory: MyThemeHTMLFactory()
