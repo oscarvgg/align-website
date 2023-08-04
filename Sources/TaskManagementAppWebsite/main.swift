@@ -23,7 +23,13 @@ struct TaskManagementAppWebsite: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try TaskManagementAppWebsite().publish(withTheme: .myTheme)
+try TaskManagementAppWebsite().publish(
+    withTheme: .myTheme,
+    deployedUsing: .gitHub(
+        "oscarvgg/align-website",
+        branch: "prod",
+        useSSH: false)
+)
 
 //try TaskManagementAppWebsite().publish(using: [
 ////    .group(plugins.map(PublishingStep.installPlugin)),
