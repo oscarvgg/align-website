@@ -12,7 +12,9 @@ struct Hero: Component {
     
     enum Style {
         case text
-        case image(imageUrl: URLRepresentable, reversed: Bool = false)
+        case image(lightImage: Image,
+                   darkImageUrl: Image? = nil,
+                   reversed: Bool = false)
     }
 
     init(headingText: String, contentText: String, style: Hero.Style = .text) {
@@ -26,7 +28,7 @@ struct Hero: Component {
     private let style: Style
     
     private var flexRowClass: String {
-        if case let .image(_, reversed) = style, reversed == true {
+        if case let .image(_, _, reversed) = style, reversed == true {
             return "lg:flex-row-reverse"
         }
         return "lg:flex-row"
@@ -42,12 +44,16 @@ struct Hero: Component {
     var body: Component {
         Div {
             Div {
-                if case let .image(imageUrl, _) = style {
-                    Image(
-                        url: imageUrl,
-                        description: "hero image"
-                    )
-                    .class("md:max-w-sm sm:max-w-full h-auto rounded-lg")
+                if case let .image(lightImage, darkImage, _) = style {
+                    Div {
+                        lightImage
+                        .class("block dark:hidden md:max-w-sm sm:max-w-full h-auto")
+                        
+                        if let darkImage {
+                            darkImage
+                            .class("hidden dark:block md:max-w-sm sm:max-w-full h-auto")
+                        }
+                    }
                 }
                 
                 Div {
