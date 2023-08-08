@@ -14,7 +14,7 @@ struct AlignWebsite: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
+    var url = URL(string: "https://align.day")!
     var name = "Align: The Time Blocking App"
     var description = "Align: The time blocking app"
     var language: Language { .english }
