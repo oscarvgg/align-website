@@ -24,6 +24,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: index, on: context.site),
+            .googleTrackerHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
@@ -38,6 +39,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: section, on: context.site),
+            .googleTrackerHead(),
             .body(
                 .component(NavigationBar(selectedSection: section.id, context: context)),
                 .mainContentWrapper(
@@ -60,6 +62,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: item, on: context.site),
+            .googleTrackerHead(),
             .body(
                 .class("item-page"),
                 .component(NavigationBar(selectedSection: item.sectionID, context: context)),
@@ -84,6 +87,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site),
+            .googleTrackerHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(.contentBody(page.body)),
@@ -97,6 +101,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site),
+            .googleTrackerHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
@@ -123,6 +128,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site),
+            .googleTrackerHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
@@ -266,3 +272,21 @@ private extension Node where Context == HTML.BodyContext {
         )
     }
 }
+
+public extension Node where Context == HTML.DocumentContext {
+
+static func googleTrackerHead() -> Node {
+    .head(
+    .script(.src("https://www.googletagmanager.com/gtag/js?id=G-T0WWL4KDTV")),
+    .script(
+    """
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-T0WWL4KDTV');
+      </script>
+    """
+    ))
+}}
