@@ -114,7 +114,7 @@ struct LandingPage: Component {
                     Div {
                         Div {
                             H2 {
-                                Text("Join the waiting list")
+                                Text("Coming soon")
                             }
                             Paragraph("""
             Align is a powerful tool for staying focused and getting things done. Customize, prioritize, and visualize your tasks at a glance; sync your schedule across all devices, and get timely notifications. With only one in-app purchase, enjoy access to all powerful features without subscription fees.
