@@ -25,6 +25,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: index, on: context.site),
             .googleTrackerHead(),
+            .senderHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
@@ -40,6 +41,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: section, on: context.site),
             .googleTrackerHead(),
+            .senderHead(),
             .body(
                 .component(NavigationBar(selectedSection: section.id, context: context)),
                 .mainContentWrapper(
@@ -63,6 +65,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: item, on: context.site),
             .googleTrackerHead(),
+            .senderHead(),
             .body(
                 .class("item-page"),
                 .component(NavigationBar(selectedSection: item.sectionID, context: context)),
@@ -88,6 +91,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: page, on: context.site),
             .googleTrackerHead(),
+            .senderHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(.contentBody(page.body)),
@@ -102,6 +106,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: page, on: context.site),
             .googleTrackerHead(),
+            .senderHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
@@ -129,6 +134,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: page, on: context.site),
             .googleTrackerHead(),
+            .senderHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
@@ -274,17 +280,38 @@ private extension Node where Context == HTML.BodyContext {
 }
 
 public extension Node where Context == HTML.DocumentContext {
-
-static func googleTrackerHead() -> Node {
-    .head(
-    .script(.src("https://www.googletagmanager.com/gtag/js?id=G-T0WWL4KDTV")),
-    .script(
+    
+    static func googleTrackerHead() -> Node {
+        .head(
+            .script(.src("https://www.googletagmanager.com/gtag/js?id=G-T0WWL4KDTV")),
+            .script(
     """
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
+    
         gtag('config', 'G-T0WWL4KDTV');
     """
-    ))
-}}
+            ))
+    }
+    
+    static func senderHead() -> Node {
+        .head(
+        .script(
+        """
+            (function (s, e, n, d, er) {
+                s['Sender'] = er;
+                s[er] = s[er] || function () {
+                  (s[er].q = s[er].q || []).push(arguments)
+                }, s[er].l = 1 * new Date();
+                var a = e.createElement(n),
+                    m = e.getElementsByTagName(n)[0];
+                a.async = 1;
+                a.src = d;
+                m.parentNode.insertBefore(a, m)
+              })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+              sender('20f1418bde9678')
+        """
+        ))
+    }
+}

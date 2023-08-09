@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    'Sources/TaskManagementAppWebsite/Theme/*.swift',
-    'Sources/TaskManagementAppWebsite/Theme/**/*.swift'
+    'Sources/AlignWebsite/Theme/*.swift',
+    'Sources/AlignWebsite/Theme/**/*.swift'
   ],
   theme: {
     extend: {

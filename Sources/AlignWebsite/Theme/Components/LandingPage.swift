@@ -123,8 +123,18 @@ struct LandingPage: Component {
             """)
                             .class("py-6")
                         }
+                        
+                        Div {
+                            Div {
+
+                            }
+                            .style("text-align: left")
+                            .class("sender-form-field card-body")
+                            .data(named: "sender-form-id", value: "ll1zsrqiezbgrex67to")
+                        }
+                        .class("card flex-shrink-0")
                     }
-                    .class("hero-content  mx-auto")
+                    .class("hero-content flex-col lg:flex-row space-x-4")
                 }
                 .class("hero md:p-16")
             }
