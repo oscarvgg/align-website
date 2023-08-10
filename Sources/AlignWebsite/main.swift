@@ -16,7 +16,7 @@ struct AlignWebsite: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://align.day")!
     var name = "Align: The Time Blocking App"
-    var description = "Align: The time blocking app"
+    var description = "Elevate your time management with Align: a visual time blocking app. Plan, prioritize, and stay organized effortlessly. Conquer your day with ease."
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
