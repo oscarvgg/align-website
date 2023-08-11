@@ -38,6 +38,14 @@ struct LandingPage: Component {
             
             Section {
                 Hero(
+                    headingText: "Sync with calendars",
+                    contentText: "Align integrates with your calendar so that it can automatically sync your schedule across different devices. This means that no matter where you are or which device you're using, you'll always have an accurate representation of what needs to be done next.",
+                    style: .text
+                    )
+            }
+            
+            Section {
+                Hero(
                     headingText: "Customize and Recur Time Blocks",
                     contentText: "With Align, you have complete control over your time blocks. Add tasks to the timeline and customize each with different colors and icons to make them easily distinguishable. You can even make tasks recurrent, saving you time by automatically creating future time blocks. Align adapts to your unique needs, making it effortless to stay organized and focused.",
                     style: .image(
