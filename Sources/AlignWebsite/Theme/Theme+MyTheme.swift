@@ -71,7 +71,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                 .component(NavigationBar(selectedSection: item.sectionID, context: context)),
                 .mainContentWrapper(
                     .article(
-                        .class("prose md:prose-xl"),
+                        .class("prose md:prose-xl mx-auto"),
                         .h1(.text(item.title)),
                         .articleMetadataLine(for: item, on: context.site),
                         .div(
