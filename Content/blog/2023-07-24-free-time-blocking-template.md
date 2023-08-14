@@ -1,10 +1,9 @@
 ---
+title: Time Blocking Templates - Printable (PDF, Google Sheets & Excel)
 date: 2023-08-14 08:07
 description: Looking to stay productive and organized? Download our time blocking templates in PDF, Google Sheets, and Excel formats. Easily schedule and manage your time to boost productivity. Click now!
 tags: templates, time blocking, printable, guide
 ---
-# Time Blocking Templates - Printable (PDF, Google Sheets & Excel)
-
 ## Introduction
 
 Are you struggling to manage your time effectively? I've made a bunch of templates to get you started with time blocking quickly and easily.
