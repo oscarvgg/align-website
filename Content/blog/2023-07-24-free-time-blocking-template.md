@@ -102,15 +102,25 @@ That's why I've built Align, a powerful tool for staying focused and getting thi
 
 ## Who can benefit from a time blocking template
 
-Busy professionals: If you are a busy professional, then working with a time blocking template can help you manage your tasks effectively. You will be able to keep track of all the work that you have to do during the day, and this will help you finish everything on time.
+### Busy professionals
 
-Students: Students often struggle with studying because they don’t know how much time they need to spend on each subject. With a time blocking template, students will be able to manage their study hours more efficiently so they don’t fall behind or waste time studying unnecessary topics.
+If you are a busy professional, then working with a time blocking template can help you manage your tasks effectively. You will be able to keep track of all the work that you have to do during the day, and this will help you finish everything on time.
 
-Remote workers: Remote workers often struggle with managing their time at home because they don’t have an office environment where everyone works together. A remote work environment requires special attention when it comes to scheduling meetings and other important events in order for everyone to stay connected without missing anything important. With a remote work template, it is easy for remote workers to schedule meetings
+### Students
 
-Parents: Parents are busy with work and family life, but once again, there are ways for them to find more free time for themselves within their busy schedules. With a time blocking template, parents can make sure that they're spending enough time with their children while also making sure they're taking care of themselves as well!
+Students often struggle with studying because they don’t know how much time they need to spend on each subject. With a time blocking template, students will be able to manage their study hours more efficiently so they don’t fall behind or waste time studying unnecessary topics.
 
-People with ADHD: If you have ADHD, you may find it difficult to focus on one thing at a time. A time blocking template, can help you create a schedule that allows you to focus on each activity until it’s completed without constantly switching back and forth between different things.
+### Remote workers
+
+ Remote workers often struggle with managing their time at home because they don’t have an office environment where everyone works together. A remote work environment requires special attention when it comes to scheduling meetings and other important events in order for everyone to stay connected without missing anything important. With a remote work template, it is easy for remote workers to schedule meetings
+
+### Parents
+
+ Parents are busy with work and family life, but once again, there are ways for them to find more free time for themselves within their busy schedules. With a time blocking template, parents can make sure that they're spending enough time with their children while also making sure they're taking care of themselves as well!
+
+### People with ADHD
+
+ If you have ADHD, you may find it difficult to focus on one thing at a time. A time blocking template, can help you create a schedule that allows you to focus on each activity until it’s completed without constantly switching back and forth between different things.
 
 ## Conclusion
 
