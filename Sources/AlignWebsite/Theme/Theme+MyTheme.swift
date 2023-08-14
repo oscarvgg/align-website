@@ -46,7 +46,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                 .component(NavigationBar(selectedSection: section.id, context: context)),
                 .mainContentWrapper(
                     .section(
-                        .class("prose"),
+                        .class("prose md:prose-xl mx-auto"),
                         .contentBody(section.body)
                     ),
                     .component(SectionItemGrid(
