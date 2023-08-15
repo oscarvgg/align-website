@@ -71,11 +71,17 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                 .component(NavigationBar(selectedSection: item.sectionID, context: context)),
                 .mainContentWrapper(
                     .article(
-                        .class("prose md:prose-xl mx-auto"),
-                        .h1(.text(item.title)),
-                        .articleMetadataLine(for: item, on: context.site),
+//                        .class("mx-auto"),
                         .div(
-                            .class("content"),
+                            .class("prose md:prose-xl mx-auto"),
+                            .h1(.text(item.title))
+                        ),
+                        .div(
+                            .class("text-xl max-w-prose mx-auto"),
+                            .articleMetadataLine(for: item, on: context.site)
+                        ),
+                        .div(
+                            .class("prose md:prose-xl mx-auto"),
                             .contentBody(item.body)
                         )
                     )
@@ -210,15 +216,23 @@ private extension Node where Context == HTML.BodyContext {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM dd, yyyy"
         
-        return .ul(.class("article-metadata"), .forEach(item.tags) { tag in
-            .li(.class("tag"), .a(
-                .href(site.path(for: tag)),
-                .text(tag.string)
-            ))
-        },
-        .li(
-            .text("Published on \(dateFormatter.string(from: item.date))"))
-        )
+        return
+            .div(
+                .class("mb-10"),
+                .div(
+                    .class("my-2"),
+                    .text("Published on \(dateFormatter.string(from: item.date))")
+                ),
+                .ul(
+                    .class("flex flex-row my-2 items-center justify-items-start list-none p-0 m-0 pl-0 mt-0"),
+                    .forEach(item.tags) { tag in
+                            .li(
+                                .class("text-sm p-2 font-medium rounded bg-accent items-center justify-center"),
+                                .a(.href(site.path(for: tag)), .text(tag.string), .class("text-white no-underline"))
+                            )
+                    }
+                )
+            )
     }
     
     static func bottomLists<T: Website>(for context: PublishingContext<T>) -> Node {
