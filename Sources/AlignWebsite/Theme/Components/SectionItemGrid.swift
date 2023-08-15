@@ -24,24 +24,26 @@ struct SectionItemGrid<Site>: Component where Site: Website {
             Div {
                 for item in items {
                     Link(url: item.path.absoluteString) {
-//                        Element(name: "figure") {
-//                            Image(
-//                                url: item.path.string.replacingOccurrences(of: item.sectionID.rawValue, with: ""),
-//                                description: item.description
-//                            )
-//                        }
+                        Element(name: "figure") {
+                            Image(
+                                url: item.imagePath!.string,
+                                description: "blog post cover"
+                            )
+                        }
                         Div {
                             H2(item.title).class("card-title")
                             Paragraph {
                                 Text(item.description)
                             }
+                            .class("text-sm")
                         }
                         .class("card-body")
                     }
-                    .class("card")
+                    .class("card shadow-xl dark:border dark:border-gray-700")
                 }
             }
-            .class("grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10 container")
+            .class("grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 gap-8 pt-10")
         }
+        .class("text-xl max-w-prose mx-auto")
     }
 }
