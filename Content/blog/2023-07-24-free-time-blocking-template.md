@@ -16,11 +16,11 @@ A time blocking template is a pre-made structure for your day, week, or month. T
 You can download and print these templates or edit them on your computer and keep a digital copy. I recommend keeping them on your phone, so you can quickly access them anytime.
 
 - [Time Blocking Template on Google Sheets](https://docs.google.com/spreadsheets/d/1SU82fw8Viqa4RkNZkmHdqiXzknWDbUMEeCjEjLFJKBs/copy)
-- [Time Blocking Template on Excel](/templates/time-blocking-template-daily-weekly-monthly-by-align-v1.xlsx)
-- [Time Blocking Template on pdf (daily)](/templates/time-blocking-template-daily-by-align-v1.pdf)
-- [Time Blocking Template on pdf (weekly 5 days)](/templates/time-blocking-template-weekly-5-days-by-align-v1.pdf)
-- [Time Blocking Template on pdf (weekly 7 days)](/templates/time-blocking-template-weekly-7-days-by-align-v1.pdf)
-- [Time Blocking Template on pdf (monthly/calendar)](/templates/time-blocking-template-monthly-by-align-v1.pdf)
+- [Time Blocking Template on Excel](/templates/time-blocking-template-printable-daily-weekly-monthly-by-align-v1.xlsx)
+- [Time Blocking Template on pdf (daily)](/templates/time-blocking-template-printable-daily-by-align-v1.pdf)
+- [Time Blocking Template on pdf (weekly 5 days)](/templates/time-blocking-template-printable-weekly-5-days-by-align-v1.pdf)
+- [Time Blocking Template on pdf (weekly 7 days)](/templates/time-blocking-template-printable-weekly-7-days-by-align-v1.pdf)
+- [Time Blocking Template on pdf (monthly/calendar)](/templates/time-blocking-template-printable-monthly-by-align-v1.pdf)
 
 ## **How to do a time blocking schedule with a template**
 

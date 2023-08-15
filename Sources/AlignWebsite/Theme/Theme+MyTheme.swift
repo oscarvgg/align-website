@@ -71,7 +71,12 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                 .component(NavigationBar(selectedSection: item.sectionID, context: context)),
                 .mainContentWrapper(
                     .article(
-//                        .class("mx-auto"),
+                        .unwrap(item.imagePath, { imagePath in
+                                .div(
+                                    .class("prose md:prose-xl mx-auto mb-10"),
+                                    .img(.src(item.imagePath!), .alt("blog post cover"))
+                                )
+                        }),
                         .div(
                             .class("prose md:prose-xl mx-auto"),
                             .h1(.text(item.title))
