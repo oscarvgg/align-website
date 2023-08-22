@@ -15,14 +15,16 @@ struct FooterSection: Component {
             Div {}.class("bg-base-content/10 my-10 mx-1 h-px")
             Footer {
                 Div {
-                    Link("Blog", url: "/")
+                    Link("Home", url: "/")
                         .class("link link-hover")
-                    Link("Help", url: "/")
+                    Link("Blog", url: "/blog")
                         .class("link link-hover")
-                    Link("Press Kit", url: "/")
-                        .class("link link-hover")
-                    Link("Privacy Policy", url: "/")
-                        .class("link link-hover")
+//                    Link("Help", url: "/")
+//                        .class("link link-hover")
+//                    Link("Press Kit", url: "/")
+//                        .class("link link-hover")
+//                    Link("Privacy Policy", url: "/")
+//                        .class("link link-hover")
                 }
                 .class("grid grid-flow-col gap-4")
             }

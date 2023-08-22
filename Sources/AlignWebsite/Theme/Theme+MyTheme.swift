@@ -91,6 +91,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                         )
                     )
                 ),
+                .component(WaitingListSection()),
                 .component(FooterSection())
             )
         )

@@ -2,12 +2,12 @@
 title: Free Time Blocking Template Printable (Daily, Weekly, Monthly)
 date: 2023-08-14 08:07
 description: Looking to stay productive and organized? Download our time blocking templates in PDF, Google Sheets, and Excel formats. Easily schedule and manage your time to boost productivity. Click now!
-tags: printables
+tags: Printables
 image: /img/blog/covers/free-time-blocking-template-printable-cover.jpg
 ---
 ## **Introduction**
 
-Are you struggling to manage your time effectively? I've made a bunch of templates to get you started with time blocking quickly and easily.
+Are you struggling to manage your time effectively? I've made a bunch of templates to get you started with time blocking quickly and easily. If you want to learn more about time blocking [here](../time-blocking-a-productivity-game-changer) is a full article about it.
 
 A time blocking template is a pre-made structure for your day, week, or month. To use a time blocking template, you need to set aside blocks of time for the different tasks that need to get done. Then the day, week, or month is divided into those blocks, and each block has a specific task or goal associated with it.
 
@@ -97,9 +97,11 @@ If you want to start writing a book but don't know exactly how much time it will
 
 ## **Use an App**
 
-Templates are good to get started with time blocking but prioritizing, rearranging tasks, and setting alerts manually is hard. Using an app can make things easier; you can track our progress and based on what's important, rearrange or remove tasks and get notifications when is time to start a new task.
+Templates are good to get started with time blocking but prioritizing, rearranging tasks, and setting alerts manually is hard. Using an app can make things easier; you can track our progress and based on what's important, rearrange or remove tasks and get notifications when is time to start a new task. [Here](../time-blocking-apps-a-comprehensive-guide-to-maximizing-productivity) is an article with the best apps for time blocking.
 
-That's why I've built Align, a powerful tool for staying focused and getting things done. It allows you to customize, prioritize, and visualize time blocks at a glance, see double booking or conflicting tasks, sync with calendars across devices, and get timely notifications.
+That's why I'm building Align, a powerful tool for staying focused and getting things done. It allows you to customize, prioritize, and visualize time blocks at a glance, see double booking or conflicting tasks, sync with calendars across devices, and get timely notifications.
+
+Align is still in development, but you can [join the waiting list now](#waiting-list) and get notified when it's available for download.
 
 ## **Who can benefit from a time blocking template**
 
