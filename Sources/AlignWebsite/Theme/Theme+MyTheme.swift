@@ -358,8 +358,14 @@ public extension Node where Context == HTML.DocumentContext {
     ) -> Node {
         var title = location.title
 
-        if title.isEmpty {
-            title = site.name
+        if location is TagListPage {
+            title = "Tags "
+            title.append(titleSeparator + site.name)
+        } else if let tagPage = location as? TagDetailsPage {
+            title = "\(tagPage.tag.string.capitalized) "
+            title.append(titleSeparator + site.name)
+        } else if title.isEmpty {
+                title = site.name
         } else {
             title.append(titleSeparator + site.name)
         }
