@@ -34,7 +34,7 @@ struct NavigationBar<T>: Component where T: Website {
             Navigation {
                 List(T.SectionID.allCases) { section in
                     ListItem {
-                        Link(url: "/\(context.sections[section].path.string)") {
+                        Link(url: "/\(context.sections[section].path.string)/") {
                             Text(context.sections[section].title)
                         }
                     }

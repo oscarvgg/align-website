@@ -62,7 +62,7 @@ To help you get started, here are a few examples of time blocking schedules or t
    - 3:00 PM - 5:00 PM: Review notes and prepare for upcoming exams
    - 5:00 PM - 6:00 PM: Free time and relaxation
 
-Remember, these templates are just starting points. Feel free to customize them to suit your specific needs and preferences. If you want to learn more about time blocking templates and how to do it with plain paper and pencil, don't miss our article [free printable time blocking templates and pdf](../2023-07-24-free-time-blocking-template)
+Remember, these templates are just starting points. Feel free to customize them to suit your specific needs and preferences. If you want to learn more about time blocking templates and how to do it with plain paper and pencil, don't miss our article [free printable time blocking templates and pdf](../2023-07-24-free-time-blocking-template/)
 
 ## Prioritizing Tasks within a Time Blocking System
 
@@ -77,7 +77,7 @@ To prioritize tasks effectively within your time blocking system, consider the f
 
 To assist you in implementing time blocking, consider these popular tools and apps:
 
-1. Align: Align is a simple and elegant time blocking app that provides you with an overview of your day. The app makes it easy to break down tasks into specific blocks of time and organize them by priority. Align is still in development, but you can join the waiting list [here]().
+1. Align: Align is a simple and elegant time blocking app that provides you with an overview of your day. The app makes it easy to break down tasks into specific blocks of time and organize them by priority. Align is still in development, but you can join the waiting list [here](#waiting-list).
 2. **[Structured](https://structured.app)**: A user-friendly time blocking app that integrates with calendars, helping users efficiently create and manage tasks. With reminders and progress tracking, Structured keeps users focused on their time blocks, praised for its simplicity and effectiveness.
 3. **[Sorted 3](https://www.sortedapp.com)**:: A powerful time blocking app with robust task management capabilities. Users can easily create, categorize, and set reminders for tasks. Sorted 3's customizable interface and flexibility make it ideal for personalized time blocking approaches.
 4. **[TimeBloc](https://timebloc.app)**: A feature-rich time blocking app offering advanced calendar integration and task management. Users can sync with existing calendars, prioritize tasks within specific time blocks, and benefit from its functionality and productivity enhancement, as praised by positive user testimonials.

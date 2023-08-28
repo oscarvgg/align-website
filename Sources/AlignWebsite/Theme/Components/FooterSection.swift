@@ -17,7 +17,7 @@ struct FooterSection: Component {
                 Div {
                     Link("Home", url: "/")
                         .class("link link-hover")
-                    Link("Blog", url: "/blog")
+                    Link("Blog", url: "/blog/")
                         .class("link link-hover")
 //                    Link("Help", url: "/")
 //                        .class("link link-hover")
