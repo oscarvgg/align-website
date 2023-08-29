@@ -19,54 +19,125 @@ struct AlignWebsite: Website {
     var description = "Elevate your time management with Align: a visual time blocking app. Plan, prioritize, and stay organized effortlessly. Conquer your day with ease."
     var language: Language { .english }
     var imagePath: Path? { nil }
+    
+    @discardableResult
+    func publish(additionalSteps: [PublishingStep<Self>] = [],
+                 plugins: [Plugin<Self>] = [],
+                 file: StaticString = #file) throws -> PublishedWebsite<Self> {
+        try publish(
+            at: nil,
+            using: [
+                .group(plugins.map(PublishingStep.installPlugin)),
+                .optional(.copyResources()),
+                .addMarkdownFiles(),
+                .sortItems(by: \.date, order: .descending),
+                .group(additionalSteps),
+                .generateHTML(withTheme: .myTheme, indentation: nil),
+                .unwrap(.default) { config in
+                    .generateRSSFeed(
+                        including: Set(SectionID.allCases),
+                        config: config
+                    )
+                },
+                Self.generateSiteMap(),
+                .unwrap(.gitHub(
+                    "oscarvgg/align-website",
+                    branch: "prod",
+                    useSSH: false),
+                        PublishingStep.deploy
+                )
+            ],
+            file: file
+        )
+    }
+    
+    static func generateSiteMap(excluding excludedPaths: Set<Path> = []) -> PublishingStep<AlignWebsite> {
+        PublishingStep.step(named: "Generate site map") { context in
+            let generator = AlignSiteMapGenerator(
+                excludedPaths: excludedPaths,
+                indentation: nil,
+                context: context
+            )
+
+            try generator.generate()
+        }
+    }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try AlignWebsite().publish(
-    withTheme: .myTheme,
-    deployedUsing: .gitHub(
-        "oscarvgg/align-website",
-        branch: "prod",
-        useSSH: false)
-)
+try AlignWebsite().publish()
 
-//try AlignWebsite().publish(using: [
-////    .group(plugins.map(PublishingStep.installPlugin)),
-//    .step(named: "something", body: { context in
-//        let task = Process()
-//        let pipe = Pipe()
-//
-//        task.standardOutput = pipe
-//        task.standardError = pipe
-//        task.arguments = ["-c", "npx tailwindcss -i ./Sources/Theme/theme.css -o ./Resources/styles.css"]
-//        task.executableURL = URL(fileURLWithPath: "/bin/zsh") //<--updated
-//        task.standardInput = nil
-//
-//        try task.run() //<--updated
-//
-//        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-//        let output = String(data: data, encoding: .utf8)!
-//
-//        print(output)
-//    }),
-//    .optional(.copyResources()),
-//    .addMarkdownFiles(),
-//    .sortItems(by: \.date, order: .descending),
-//    //                    .group(additionalSteps),
-//    .generateHTML(withTheme: .myTheme, indentation: nil),
-//    //                    .unwrap(rssFeedConfig) { config in
-//    //                        .generateRSSFeed(
-//    //                            including: rssFeedSections,
-//    //                            config: config
-//    //                        )
-//    //                    },
-////        .generateRSSFeed(
-////            including: Set(TaskManagementAppWebsite.SectionID.allCases), // rssFeedSections,
-////            config: .default, //config
-////        ),
-//        .generateRSSFeed(
-//            including: Set(TaskManagementAppWebsite.SectionID.allCases),
-//            config: .default),
-//        .generateSiteMap(indentedBy: nil)
-////    .unwrap(deploymentMethod, PublishingStep.deploy)
-//])
+struct AlignSiteMapGenerator<Site: Website> {
+    let excludedPaths: Set<Path>
+    let indentation: Indentation.Kind?
+    let context: PublishingContext<Site>
+
+    func generate() throws {
+        let sections = context.sections.sorted {
+            $0.id.rawValue < $1.id.rawValue
+        }
+
+        let pages = context.pages.values.sorted {
+            $0.path < $1.path
+        }
+
+        let siteMap = makeSiteMap(for: sections, pages: pages, site: context.site)
+        let xml = siteMap.render(indentedBy: indentation)
+        let file = try context.createOutputFile(at: "sitemap.xml")
+        try file.write(xml)
+    }
+}
+
+private extension AlignSiteMapGenerator {
+    func shouldIncludePath(_ path: Path) -> Bool {
+        !excludedPaths.contains(where: {
+            path.string.hasPrefix($0.string)
+        })
+    }
+
+    func makeSiteMap(for sections: [Publish.Section<Site>], pages: [Page], site: Site) -> Plot.SiteMap {
+        Plot.SiteMap(
+            .forEach(sections) { section in
+                guard shouldIncludePath(section.path) else {
+                    return .empty
+                }
+
+                return .group(
+                    .url(
+                        .loc("\(site.url(for: section))/"),
+                        .changefreq(.daily),
+                        .priority(1.0),
+                        .lastmod(max(
+                            section.lastModified,
+                            section.lastItemModificationDate ?? .distantPast
+                        ))
+                    ),
+                    .forEach(section.items) { item in
+                        guard shouldIncludePath(item.path) else {
+                            return .empty
+                        }
+
+                        return .url(
+                            .loc("\(site.url(for: item))/"),
+                            .changefreq(.monthly),
+                            .priority(0.5),
+                            .lastmod(item.lastModified)
+                        )
+                    }
+                )
+            },
+            .forEach(pages) { page in
+                guard shouldIncludePath(page.path) else {
+                    return .empty
+                }
+
+                return .url(
+                    .loc("\(site.url(for: page))/"),
+                    .changefreq(.monthly),
+                    .priority(0.5),
+                    .lastmod(page.lastModified)
+                )
+            }
+        )
+    }
+}
