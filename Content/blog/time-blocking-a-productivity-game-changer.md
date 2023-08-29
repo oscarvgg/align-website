@@ -146,7 +146,7 @@ By implementing time blocking effectively, you can optimize your time utilizatio
 
 ## Studies and Research Supporting the Effectiveness of Time Blocking
 
-While formal studies specifically on time blocking are limited, research on related topics supports its effectiveness. Studies related to focused work, time management, and the impact of scheduling on productivity provide evidence of the benefits time blocking offers. Additionally, anecdotal evidence from professionals who have successfully implemented time blocking reinforces its viability as a productivity technique. Continuous improvement
+While formal studies specifically on time blocking are limited, research on related topics supports its effectiveness. Studies related to focused work, time management, and the impact of scheduling on productivity provide evidence of the benefits time blocking offers. Additionally, anecdotal evidence from professionals who have successfully implemented time blocking reinforces its viability as a productivity technique.
 
 ## Evaluating and Adjusting Your Time Blocking System for Continuous Improvement
 
