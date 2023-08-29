@@ -23,7 +23,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                        context: PublishingContext<Site>) throws -> HTML {
         HTML(
             .lang(context.site.language),
-            .head(for: index, on: context.site),
+            .head(for: index, on: context.site, addTrailingSlashToCanonical: false),
             .googleTrackerHead(),
             .senderHead(),
             .body(
@@ -39,7 +39,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                          context: PublishingContext<Site>) throws -> HTML {
         HTML(
             .lang(context.site.language),
-            .head(for: section, on: context.site),
+            .head(for: section, on: context.site, addTrailingSlashToCanonical: true),
             .googleTrackerHead(),
             .senderHead(),
             .body(
@@ -54,6 +54,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                         context: context)
                     )
                 ),
+                .component(WaitingListSection()),
                 .component(FooterSection())
             )
         )
@@ -63,7 +64,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                       context: PublishingContext<Site>) throws -> HTML {
         HTML(
             .lang(context.site.language),
-            .head(for: item, on: context.site),
+            .head(for: item, on: context.site, addTrailingSlashToCanonical: true),
             .googleTrackerHead(),
             .senderHead(),
             .body(
@@ -101,7 +102,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                       context: PublishingContext<Site>) throws -> HTML {
         HTML(
             .lang(context.site.language),
-            .head(for: page, on: context.site),
+            .head(for: page, on: context.site, addTrailingSlashToCanonical: true),
             .googleTrackerHead(),
             .senderHead(),
             .body(
@@ -116,27 +117,34 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                          context: PublishingContext<Site>) throws -> HTML? {
         HTML(
             .lang(context.site.language),
-            .title("All Tags"),
-            .head(for: page, on: context.site, rssFeedPath: .defaultForTagHTML, rssFeedTitle: "Tags"),
+            .head(for: page, on: context.site, addTrailingSlashToCanonical: true),
             .googleTrackerHead(),
             .senderHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
-                    .h1("Browse all tags"),
-                    .ul(
-                        .class("all-tags"),
-                        .forEach(page.tags.sorted()) { tag in
-                            .li(
-                                .class("tag"),
-                                .a(
-                                    .href(context.site.path(for: tag)),
-                                    .text(tag.string)
+                    .div(
+                        .class("prose md:prose-xl mx-auto"),
+                        .h1("Browse all tags")
+                    ),
+                    .section(
+                        .class("text-xl max-w-prose mx-auto pt-4"),
+                        .ul(
+                            .class("all-tags"),
+                            .forEach(page.tags.sorted()) { tag in
+                                .li(
+                                    .class("tag"),
+                                    .a(
+                                        .href(context.site.path(for: tag)),
+                                        .text(tag.string)
+                                    )
                                 )
-                            )
-                        }
+                            }
+                        )
                     )
-                )
+                ),
+                .component(WaitingListSection()),
+                .component(FooterSection())
             )
         )
     }
@@ -145,30 +153,38 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                             context: PublishingContext<Site>) throws -> HTML? {
         HTML(
             .lang(context.site.language),
-            .head(for: page, on: context.site),
+            .head(for: page, on: context.site, addTrailingSlashToCanonical: true),
             .googleTrackerHead(),
             .senderHead(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
-                    .h1(
-                        "Tagged with ",
-                        .span(.class("tag"), .text(page.tag.string))
+                    .div(
+                        .class("prose md:prose-xl mx-auto"),
+                        .h1(
+                            "Tagged with: ",
+                            .span(.class("tag"), .text(page.tag.string))
+                        )
                     ),
-                    .a(
-                        .class("browse-all"),
-                        .text("Browse all tags"),
-                        .href(context.site.tagListPath)
+                    .section(
+                        .class("text-xl max-w-prose mx-auto pt-4"),
+                        .a(
+                            .class("browse-all"),
+                            .text("Browse all tags"),
+                            .href("\(context.site.tagListPath.absoluteString)/")
+                        )
                     ),
-                    .itemList(
-                        for: context.items(
+                    .component(SectionItemGrid(
+                        items: context.items(
                             taggedWith: page.tag,
                             sortedBy: \.date,
                             order: .descending
                         ),
-                        on: context.site
+                        context: context)
                     )
-                )
+                ),
+                .component(WaitingListSection()),
+                .component(FooterSection())
             )
         )
     }
@@ -351,6 +367,7 @@ public extension Node where Context == HTML.DocumentContext {
     static func head<T: Website>(
         for location: Location,
         on site: T,
+        addTrailingSlashToCanonical: Bool,
         titleSeparator: String = " | ",
         stylesheetPaths: [Path] = ["/styles.css"],
         rssFeedPath: Path? = .defaultForRSSFeed,
@@ -359,7 +376,7 @@ public extension Node where Context == HTML.DocumentContext {
         var title = location.title
 
         if location is TagListPage {
-            title = "Tags "
+            title = "All Tags "
             title.append(titleSeparator + site.name)
         } else if let tagPage = location as? TagDetailsPage {
             title = "\(tagPage.tag.string.capitalized) "
@@ -379,7 +396,7 @@ public extension Node where Context == HTML.DocumentContext {
         return .head(
             .encoding(.utf8),
             .siteName(site.name),
-            .url(site.url(for: location)),
+            .url(site.url(for: location), addTrailingSlashToCanonical: addTrailingSlashToCanonical),
             .title(title),
             .description(description),
             .twitterCardType(location.imagePath == nil ? .summary : .summaryLargeImage),
@@ -401,11 +418,15 @@ public extension Node where Context == HTML.DocumentContext {
 public extension Node where Context == HTML.HeadContext {
     /// Declare the HTML page's canonical URL, for social sharing and SEO.
     /// - parameter url: The URL to declare as this document's canonical URL.
-    static func url(_ url: URLRepresentable) -> Node {
-        let url = url.description
+    static func url(_ url: URLRepresentable, addTrailingSlashToCanonical: Bool) -> Node {
+        var url = url.description
+        
+        if addTrailingSlashToCanonical {
+            url += "/"
+        }
         
         return .group([
-            .link(.rel(.canonical), .href("\(url)/")),
+            .link(.rel(.canonical), .href(url)),
             .meta(.name("twitter:url"), .content("\(url)/")),
             .meta(.property("og:url"), .content("\(url)/"))
         ])

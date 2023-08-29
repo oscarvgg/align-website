@@ -23,7 +23,7 @@ struct SectionItemGrid<Site>: Component where Site: Website {
         Section {
             Div {
                 for item in items {
-                    Link(url: item.path.absoluteString) {
+                    Link(url: "\(item.path.absoluteString)/") {
                         Element(name: "figure") {
                             Image(
                                 url: item.imagePath!.string,
