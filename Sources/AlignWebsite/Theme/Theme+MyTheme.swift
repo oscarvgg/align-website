@@ -135,7 +135,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                                 .li(
                                     .class("tag"),
                                     .a(
-                                        .href(context.site.path(for: tag)),
+                                        .href("\(context.site.path(for: tag))/"),
                                         .text(tag.string)
                                     )
                                 )
@@ -251,7 +251,7 @@ private extension Node where Context == HTML.BodyContext {
                     .forEach(item.tags) { tag in
                             .li(
                                 .class("text-sm p-2 font-medium rounded bg-accent items-center justify-center"),
-                                .a(.href(site.path(for: tag)), .text(tag.string), .class("text-white no-underline"))
+                                .a(.href("\(site.path(for: tag))/"), .text(tag.string), .class("text-white no-underline"))
                             )
                     }
                 )
