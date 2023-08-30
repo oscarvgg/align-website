@@ -85,7 +85,7 @@ To assist you in implementing time blocking, consider these popular tools and ap
 6. **[Todoist](https://todoist.com/home)**: A popular task management app that lets users conveniently create, track, and manage tasks in one place. Praised for its seamless integration with productivity apps like Google Calendar, Dropbox, and Evernote. Users can collaborate, set reminders, and add due dates for tasks.
 7. **[Any.do](https://www.any.do/en)**: A widely used task management app featuring reminders, collaboration through projects or labels, and due dates for tasks. With calendar integration, voice recognition, and automatic syncing across devices, Any.do enables users to create lists for various purposes, organize them, sync across devices, and share with others.
 
-You can find the full article [here](/blog/time-blocking-apps-a-comprehensive-guide-to-maximizing-productivity), where we go into detail about the best time-blocking apps.
+You can find the full article [here](/blog/time-blocking-apps-a-comprehensive-guide-to-maximizing-productivity/), where we go into detail about the best time-blocking apps.
 
 ## Achieving Work-Life Balance with Time Blocking
 
