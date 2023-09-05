@@ -92,6 +92,6 @@ Add an extra review step before the content reaches the content manager, ensurin
 
 And voila! You've successfully ridden the wave of workflow management. It may seem intimidating, but remember: every grand journey starts with a single step. Efficiency and time management in your productivity quest all start with a well-oiled workflow.
 
-Can't wait to explore more gems of productivity wisdom? Well, gear up! Our next episode will delve into the mystical realm of "Task Management". So, grab your pens and pads, and see you next time!
+Can't wait to explore more gems of productivity wisdom? Well, gear up! Our next episode will delve into the mystical realm of [Task Management](/blog/task-management/). So, grab your pens and pads, and see you next time!
 
 Until then, keep dancing to the rhythm of productivity!
