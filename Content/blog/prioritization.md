@@ -2,10 +2,10 @@
 title: The Art of Prioritization: Your Guide to Success
 date: 2023-08-29 08:00
 description: Unpack the secrets of efficient time management with this guide to prioritization
-tags: Time Management & Productivity Fundamentals
+tags: Time Management and Productivity Fundamentals
 image: /img/blog/covers/prioritization-cover.jpg
 ---
-Hello productivity enthusiasts, welcome back to the next installement of the Time Management & Productivity Fundamentals series. Last time, we talked about [productivity and time management](/blog/introduction-to-productivity-and-time-management/), today we'll talk about prioritization.
+Hello productivity enthusiasts, welcome back to the next installement of the [Time Management & Productivity Fundamentals series](/tags/time-management-and-productivity-fundamentals/). Last time, we talked about [productivity and time management](/blog/introduction-to-productivity-and-time-management/), today we'll talk about prioritization.
 
 Ever felt like a juggler at a circus, keeping multiple balls (or flaming torches - yikes!) in the air? That's kind of like trying to manage multiple tasks at the same time. Mastering the art of prioritization is like knowing exactly which torch to catch so you don't burn your fingers. Let's dive in!
 
