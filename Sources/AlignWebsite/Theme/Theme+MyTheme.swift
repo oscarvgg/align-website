@@ -455,8 +455,8 @@ public extension Node where Context == HTML.HeadContext {
         
         return .group([
             .link(.rel(.canonical), .href(url)),
-            .meta(.name("twitter:url"), .content("\(url)/")),
-            .meta(.property("og:url"), .content("\(url)/"))
+            .meta(.name("twitter:url"), .content("\(url)")),
+            .meta(.property("og:url"), .content("\(url)"))
         ])
     }
 }
