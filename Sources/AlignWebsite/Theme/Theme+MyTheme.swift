@@ -24,8 +24,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: index, on: context.site, addTrailingSlashToCanonical: false),
-            .googleTrackerHead(),
-            .senderHead(),
+            .addScripts(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
@@ -40,8 +39,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: section, on: context.site, addTrailingSlashToCanonical: true),
-            .googleTrackerHead(),
-            .senderHead(),
+            .addScripts(),
             .body(
                 .component(NavigationBar(selectedSection: section.id, context: context)),
                 .mainContentWrapper(
@@ -65,8 +63,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: item, on: context.site, addTrailingSlashToCanonical: true),
-            .googleTrackerHead(),
-            .senderHead(),
+            .addScripts(),
             .body(
                 .class("item-page"),
                 .component(NavigationBar(selectedSection: item.sectionID, context: context)),
@@ -103,8 +100,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site, addTrailingSlashToCanonical: true),
-            .googleTrackerHead(),
-            .senderHead(),
+            .addScripts(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(.contentBody(page.body)),
@@ -118,8 +114,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site, addTrailingSlashToCanonical: true),
-            .googleTrackerHead(),
-            .senderHead(),
+            .addScripts(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
@@ -154,8 +149,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site, addTrailingSlashToCanonical: true),
-            .googleTrackerHead(),
-            .senderHead(),
+            .addScripts(),
             .body(
                 .component(NavigationBar(context: context)),
                 .mainContentWrapper(
@@ -318,6 +312,14 @@ private extension Node where Context == HTML.BodyContext {
 
 public extension Node where Context == HTML.DocumentContext {
     
+    static func addScripts() -> Node {
+        .group([
+            .googleTrackerHead(),
+            .senderHead(),
+            .facebookPixel()
+        ])
+    }
+    
     static func googleTrackerHead() -> Node {
         .head(
             .script(.src("https://www.googletagmanager.com/gtag/js?id=G-T0WWL4KDTV")),
@@ -350,6 +352,32 @@ public extension Node where Context == HTML.DocumentContext {
               sender('20f1418bde9678')
         """
         ))
+    }
+    
+    static func facebookPixel() -> Node {
+        .head(
+            .script(
+            """
+                <!-- Meta Pixel Code -->
+                <script>
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '1030949014998046');
+                fbq('track', 'PageView');
+                </script>
+                <noscript><img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=1030949014998046&ev=PageView&noscript=1"
+                /></noscript>
+                <!-- End Meta Pixel Code -->
+            """
+            )
+        )
     }
     
     /// Add an HTML `<head>` tag within the current context, based
