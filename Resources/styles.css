@@ -2515,6 +2515,14 @@ h5 {
   height: 3rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -2525,6 +2533,10 @@ h5 {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .w-full {

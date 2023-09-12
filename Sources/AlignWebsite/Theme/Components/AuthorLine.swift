@@ -20,13 +20,7 @@ struct AuthorLine: Component {
     
     var body: Component {
         Link(url: "/authors/\(author.pageName)/") {
-            Div {
-                Div {
-                    Image("https://www.gravatar.com/avatar/\(author.gravatarHash)?s=40")
-                }
-                .class("w-12 h-12 rounded-full")
-            }
-            .class("avatar mr-3")
+            Avatar(gravatarHash: author.gravatarHash, size: .small)
             
             Div {
                 Paragraph("written by \(author.displayName)")
@@ -35,5 +29,44 @@ struct AuthorLine: Component {
             .class("text-left")
         }
         .class("inline-flex items-center justify-center")
+    }
+}
+
+struct Avatar: Component {
+    
+    enum Size {
+        case small
+        case large
+        
+        var gravatarSize: Int {
+            switch self {
+            case .small:
+                return 40
+            case .large:
+                return 200
+            }
+        }
+        
+        var classSize: String {
+            switch self {
+            case .small:
+                return /*class*/ "w-12 h-12"
+            case .large:
+                return  /*class*/ "w-48 h-48"
+            }
+        }
+    }
+    
+    let gravatarHash: String
+    let size: Size
+    
+    var body: Component {
+        Div {
+            Div {
+                Image("https://www.gravatar.com/avatar/\(gravatarHash)?s=\(size.gravatarSize)")
+            }
+            .class("\(size.classSize) rounded-full")
+        }
+        .class("avatar mr-3")
     }
 }

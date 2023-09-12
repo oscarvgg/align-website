@@ -106,7 +106,32 @@ private struct MyThemeHTMLFactory: HTMLFactory {
             .addScripts(),
             .body(
                 .component(NavigationBar(context: context)),
-                .mainContentWrapper(.contentBody(page.body)),
+                .mainContentWrapper(
+                    .article(
+                        .div(
+                            .if(page.content.imagePath != nil,
+                                .class("text-center")
+                            ),
+                            .unwrap(page.content.imagePath, { imagePath in
+                                    .group([
+                                        .component(Avatar(gravatarHash: "aa59488aa5bff84d04af399e4135a10e104192dd3512f4643ae961d3c890c6aa",
+                                                          size: .large)),
+                                        .div(.class("h-12"))
+                                    ])
+                            }),
+                            .div(
+                                .class("prose md:prose-xl mx-auto"),
+                                .h1(.text(page.content.title))
+                            )
+                        ),
+                        .div(.class("h-20")),
+                        .div(
+                            .class("prose md:prose-xl mx-auto"),
+                            .contentBody(page.content.body)
+                        )
+                    )
+                ),
+                .component(WaitingListSection()),
                 .component(FooterSection()),
                 .linkedInTag()
             )

@@ -1,4 +1,7 @@
-# Oscar Vicente Gonzalez Greco
+---
+title: Oscar V. Gonzalez Greco
+image: https://www.gravatar.com/avatar/aa59488aa5bff84d04af399e4135a10e104192dd3512f4643ae961d3c890c6aa?s=200
+---
 
 Oscar Vicente Gonzalez Greco is a dedicated iOS developer with over a decade of experience who is equally passionate about continuous learning and sharing knowledge with others. Born in Venezuela and currently residing in Italy, Oscar's journey in the world of technology and personal development has been marked by a commitment to self-improvement and helping others along the way.
 
