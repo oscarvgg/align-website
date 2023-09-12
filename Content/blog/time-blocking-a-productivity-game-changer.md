@@ -4,6 +4,7 @@ date: 2023-08-21 08:00
 description: Discover the power of time blocking to boost productivity and achieve your goals. Learn the common mistakes to avoid and effective techniques to maximize your time.
 tags: Time Blocking
 image: /img/blog/covers/time-blocking-a-productivity-game-changer.jpg
+author: oscarvgg
 ---
 
 In today's fast-paced world, managing your time effectively is more important than ever. With numerous tasks, deadlines, and responsibilities piling up, it's easy to feel overwhelmed and struggle to stay on top of everything. Enter time blocking – a powerful technique that can revolutionize productivity and time management. In this blog post, we'll explore what time blocking is, its benefits, effective strategies for implementation, tools to assist you, common pitfalls to avoid, and much more.

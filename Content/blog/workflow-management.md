@@ -4,6 +4,7 @@ date: 2023-08-30 08:00
 description: Transform your Workflow Management with this guide, and level up your productivity game!
 tags: Time Management and Productivity Fundamentals
 image: /img/blog/covers/workflow-management-cover.jpg
+author: oscarvgg
 ---
 Hey, productivity buffs! Great to see you back for more insights from our enlightening series on [productivity and time management](/tags/time-management-and-productivity-fundamentals/). Last time, we settled down with '[Prioritization](/blog/prioritization/)'. Today, we're diving into the captivating world of 'Workflow Management'. Fasten your seatbelts cause it's about to be an exhilarating journey.
 

@@ -24,11 +24,13 @@ struct SectionItemGrid<Site>: Component where Site: Website {
             Div {
                 for item in items {
                     Link(url: "\(item.path.absoluteString)/") {
-                        Element(name: "figure") {
-                            Image(
-                                url: item.imagePath!.string,
-                                description: "blog post cover"
-                            )
+                        if let imageUrl = item.imagePath?.string {
+                            Element(name: "figure") {
+                                Image(
+                                    url: imageUrl,
+                                    description: "blog post cover"
+                                )
+                            }
                         }
                         Div {
                             H2(item.title).class("card-title")

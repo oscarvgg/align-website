@@ -17,10 +17,10 @@ extension Theme where Site == AlignWebsite {
     }
 }
 
-private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
+private struct MyThemeHTMLFactory: HTMLFactory {
     
     func makeIndexHTML(for index: Index,
-                       context: PublishingContext<Site>) throws -> HTML {
+                       context: PublishingContext<AlignWebsite>) throws -> HTML {
         HTML(
             .lang(context.site.language),
             .head(for: index, on: context.site, addTrailingSlashToCanonical: false),
@@ -35,8 +35,8 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         )
     }
 
-    func makeSectionHTML(for section: Publish.Section<Site>,
-                         context: PublishingContext<Site>) throws -> HTML {
+    func makeSectionHTML(for section: Publish.Section<AlignWebsite>,
+                         context: PublishingContext<AlignWebsite>) throws -> HTML {
         HTML(
             .lang(context.site.language),
             .head(for: section, on: context.site, addTrailingSlashToCanonical: true),
@@ -60,8 +60,8 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
         )
     }
 
-    func makeItemHTML(for item: Item<Site>,
-                      context: PublishingContext<Site>) throws -> HTML {
+    func makeItemHTML(for item: Item<AlignWebsite>,
+                      context: PublishingContext<AlignWebsite>) throws -> HTML {
         HTML(
             .lang(context.site.language),
             .head(for: item, on: context.site, addTrailingSlashToCanonical: true),
@@ -74,7 +74,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
                         .unwrap(item.imagePath, { imagePath in
                                 .div(
                                     .class("prose md:prose-xl mx-auto mb-10"),
-                                    .img(.src(item.imagePath!), .alt("blog post cover"))
+                                    .img(.src(imagePath), .alt("\(item.title) cover"))
                                 )
                         }),
                         .div(
@@ -99,7 +99,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
     }
 
     func makePageHTML(for page: Page,
-                      context: PublishingContext<Site>) throws -> HTML {
+                      context: PublishingContext<AlignWebsite>) throws -> HTML {
         HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site, addTrailingSlashToCanonical: true),
@@ -114,7 +114,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
     }
 
     func makeTagListHTML(for page: TagListPage,
-                         context: PublishingContext<Site>) throws -> HTML? {
+                         context: PublishingContext<AlignWebsite>) throws -> HTML? {
         HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site, addTrailingSlashToCanonical: true),
@@ -150,7 +150,7 @@ private struct MyThemeHTMLFactory<Site: Website>: HTMLFactory {
     }
 
     func makeTagDetailsHTML(for page: TagDetailsPage,
-                            context: PublishingContext<Site>) throws -> HTML? {
+                            context: PublishingContext<AlignWebsite>) throws -> HTML? {
         HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site, addTrailingSlashToCanonical: true),
@@ -235,7 +235,7 @@ private extension Node where Context == HTML.BodyContext {
         })
     }
     
-    static func articleMetadataLine<T: Website>(for item: Item<T>, on site: T) -> Node {
+    static func articleMetadataLine(for item: Item<AlignWebsite>, on site: AlignWebsite) -> Node {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM dd, yyyy"
         
@@ -243,7 +243,7 @@ private extension Node where Context == HTML.BodyContext {
             .div(
                 .class("mb-10"),
                 .div(
-                    .class("my-2"),
+                    .class("my-2 text-sm"),
                     .text("Published on \(dateFormatter.string(from: item.date))")
                 ),
                 .ul(
@@ -254,7 +254,13 @@ private extension Node where Context == HTML.BodyContext {
                                 .a(.href("/\(site.path(for: tag))/"), .text(tag.string), .class("text-white no-underline"))
                             )
                     }
-                )
+                ),
+                .unwrap(item.metadata.author, { username in
+                        .div(
+                            .class("mt-4"),
+                            .component(AuthorLine(username: username))
+                        )
+                })
             )
     }
     

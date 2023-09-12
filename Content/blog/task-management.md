@@ -4,6 +4,7 @@ date: 2023-08-31 08:00
 description: Master the game of Task Management. Join Align for expert tips on managing your to-dos effectively
 tags: Time Management and Productivity Fundamentals
 image: /img/blog/covers/task-management.jpg
+author: oscarvgg
 ---
 Hello there, productivity enthusiasts! In the previous post, we talked about [workflow management](/blog/workflow-management/), now it's time for task management. Buckle up because we're about to embark on a journey towards becoming Task Management maestros. Trust me, it's going to be as exciting as watching a season finale of your favorite TV show! (Well, maybe not *Game of Thrones*—we all know how that ended.)
 

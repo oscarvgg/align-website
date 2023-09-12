@@ -4,6 +4,7 @@ date: 2023-08-18 08:00
 description: Discover top time blocking apps in this comprehensive guide. Compare features, pricing, and platforms for maximum productivity.
 tags: Apps
 image: /img/blog/covers/time-blocking-mobile-apps-cover.jpg
+author: oscarvgg
 ---
 
 In today's fast-paced world, effective time management has become critical to achieving success and maintaining a healthy work-life balance. One of the most popular techniques for efficient time management is time blocking. Time blocking involves allocating specific time slots for different tasks and activities, allowing individuals to focus and prioritize their work effectively. If you'd like to learn more about time blocking we have a full article about it [here](/blog/time-blocking-a-productivity-game-changer/).

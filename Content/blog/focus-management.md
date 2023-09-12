@@ -4,6 +4,7 @@ date: 2023-09-03 08:00
 description: Unlock the doors to superior focus management with easy-to-adopt habits for bolstered productivity, all in one engaging read
 tags: Time Management and Productivity Fundamentals
 image: /img/blog/covers/focus-management.jpg
+author: oscarvgg
 ---
 Welcome back, productivity enthusiasts! We've reached the grand finale of our [Productivity and Time Management Fundamentals](/tags/time-management-and-productivity-fundamentals/) series. Last time we covered [time investment](/blog/time-investment/). Today, we'll set our sights on the final topic: **Focus Management**. Think of it as the cherry on top of your productivity sundae!
 

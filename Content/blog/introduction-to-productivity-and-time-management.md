@@ -4,6 +4,7 @@ date: 2023-08-28 08:00
 description: Achieve more with less: Explore productivity & time management for a rewarding life
 tags: Time Management and Productivity Fundamentals
 image: /img/blog/covers/intro-productivity-and-time-management-cover.jpg
+author: oscarvgg
 ---
 
 Hello to all you time explorers and productivity enthusiasts! Ever wished for a few more hours in your day, just to get everything done? It's a tantalizing thought, isn't it? However, the reality is that we each have the same 24 hours in a day. The true challenge, and dare we say art, is in how we utilize those hours. That, my friends, is the essence of time management at its finest.

@@ -4,6 +4,7 @@ date: 2023-08-14 08:07
 description: Looking to stay productive and organized? Download our time blocking templates in PDF, Google Sheets, and Excel formats. Easily schedule and manage your time to boost productivity. Click now!
 tags: Printables
 image: /img/blog/covers/free-time-blocking-template-printable-cover.jpg
+author: oscarvgg
 ---
 ## Introduction
 

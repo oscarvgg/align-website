@@ -4,6 +4,7 @@ date: 2023-09-02 08:00
 description: Uncover the power of Time Investment! Boost productivity with effective strategies
 tags: Time Management and Productivity Fundamentals
 image: /img/blog/covers/time-investment.jpg
+author: oscarvgg
 ---
 Gather around fellow productivity enthusiasts! It's time to turn another page in our quest to conquer the [time management and productivity fundamentals](/tags/time-management-and-productivity-fundamentals/)! Previously, we talked about [time management strategies](/blog/time-management-strategies/). Today, we're shining a light on the secret ingredient to ultimate success: *Time Investment*. Picture yourself putting together a dream team dedicated to productivity; Time Investment would be the star player you want on your side.
 
