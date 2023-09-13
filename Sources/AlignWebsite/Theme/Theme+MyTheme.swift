@@ -377,8 +377,7 @@ public extension Node where Context == HTML.DocumentContext {
         .group([
             .googleTrackerHead(),
             .microsoftClarityHead(),
-            .senderHead(),
-            .senderModalHead(),
+            .mailerLiteUniversalHead(),
             .facebookPixel()
         ])
     }
@@ -399,58 +398,36 @@ public extension Node where Context == HTML.DocumentContext {
     
     static func microsoftClarityHead() -> Node {
         .head(
-            .script(
+            .raw(
                 """
-                <!-- Clarity tracking code for https://align.day/ --><script>    (function(c,l,a,r,i,t,y){        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    })(window, document, "clarity", "script", "irjgxuuujn");</script>
+                <!-- Clarity tracking code for https://align.day/ -->
+                <script>
+                (function(c,l,a,r,i,t,y){        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    })(window, document, "clarity", "script", "irjgxuuujn");
+                </script>
                 """
             ))
     }
     
-    static func senderHead() -> Node {
+    static func mailerLiteUniversalHead() -> Node {
         .head(
-        .script(
+        .raw(
         """
-            (function (s, e, n, d, er) {
-                s['Sender'] = er;
-                s[er] = s[er] || function () {
-                  (s[er].q = s[er].q || []).push(arguments)
-                }, s[er].l = 1 * new Date();
-                var a = e.createElement(n),
-                    m = e.getElementsByTagName(n)[0];
-                a.async = 1;
-                a.src = d;
-                m.parentNode.insertBefore(a, m)
-              })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
-              sender('20f1418bde9678')
-        """
-        ))
-    }
-    
-    static func senderModalHead() -> Node {
-        .head(
-        .script(
-        """
+            <!-- MailerLite Universal -->
             <script>
-              (function (s, e, n, d, er) {
-                s['Sender'] = er;
-                s[er] = s[er] || function () {
-                  (s[er].q = s[er].q || []).push(arguments)
-                }, s[er].l = 1 * new Date();
-                var a = e.createElement(n),
-                    m = e.getElementsByTagName(n)[0];
-                a.async = 1;
-                a.src = d;
-                m.parentNode.insertBefore(a, m)
-              })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
-              sender('20f1418bde9678')
+                (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+                .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+                n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+                (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+                ml('account', '593743');
             </script>
+            <!-- End MailerLite Universal -->
         """
         ))
     }
     
     static func facebookPixel() -> Node {
         .head(
-            .script(
+            .raw(
             """
                 <!-- Meta Pixel Code -->
                 <script>

@@ -30,12 +30,9 @@ Get ready to align your time and conquer your day.
                     }
                     
                     Div {
-                        Div {
-                            
-                        }
-                        .style("text-align: left")
-                        .class("sender-form-field card-body")
-                        .data(named: "sender-form-id", value: "ll1zsrqiezbgrex67to")
+                        Div {}
+                            .class("ml-embedded")
+                            .data(named: "form", value: "b1TLrP")
                     }
                     .class("card flex-shrink-0")
                 }
