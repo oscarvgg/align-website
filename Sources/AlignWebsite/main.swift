@@ -33,6 +33,7 @@ struct AlignWebsite: Website {
                 .sortItems(by: \.date, order: .descending),
                 .group(additionalSteps),
                 .generateHTML(withTheme: .myTheme, indentation: nil),
+                .move404FileForGitHubPages(),
                 .unwrap(.default) { config in
                     .generateRSSFeed(
                         including: Set(SectionID.allCases),
