@@ -86,7 +86,7 @@ private struct MyThemeHTMLFactory: HTMLFactory {
                             .articleMetadataLine(for: item, on: context.site)
                         ),
                         .div(
-                            .class("prose md:prose-xl mx-auto"),
+                            .class("prose md:prose-xl prose-quoteless mx-auto"),
                             .contentBody(item.body)
                         )
                     )
@@ -501,6 +501,7 @@ public extension Node where Context == HTML.DocumentContext {
             .twitterCardType(location.imagePath == nil ? .summary : .summaryLargeImage),
             .forEach(stylesheetPaths, { .stylesheet($0) }),
             .viewport(.accordingToDevice),
+            .caveatFont(),
             .unwrap(site.favicon, { .favicon($0) }),
             .unwrap(rssFeedPath, { path in
                 let title = rssFeedTitle ?? "Subscribe to \(site.name)"
@@ -529,5 +530,13 @@ public extension Node where Context == HTML.HeadContext {
             .meta(.name("twitter:url"), .content("\(url)")),
             .meta(.property("og:url"), .content("\(url)"))
         ])
+    }
+    
+    static func caveatFont() -> Node {
+        return .raw("""
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+            """)
     }
 }

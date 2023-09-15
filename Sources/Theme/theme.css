@@ -26,4 +26,15 @@
   h5 {
     @apply text-2xl;
   }
+  
+  h6 {
+    @apply text-xl;
+  }
+  
+  blockquote {
+    font-family: caveat, sans-serif;
+    color: #00afec !important;
+    border-left-color: #00afec !important;
+    @apply text-3xl;
+  }
 }

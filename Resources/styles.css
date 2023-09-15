@@ -515,10 +515,14 @@ html {
     --n: 213 18% 20%;
     --nf: 212 17% 17%;
     --nc: 220 13% 69%;
-    --b1: 240 3% 11%;
+    --b1: 222 47% 11%;
     --b2: 213 18% 12%;
     --b3: 213 18% 10%;
     --bc: 220 13% 69%;
+  }
+
+  :root h1, :root h2, :root h3, :root h4, :root h5, :root h6 {
+    color: #E2E8F0;
   }
 }
 
@@ -592,10 +596,14 @@ html {
   --n: 213 18% 20%;
   --nf: 212 17% 17%;
   --nc: 220 13% 69%;
-  --b1: 240 3% 11%;
+  --b1: 222 47% 11%;
   --b2: 213 18% 12%;
   --b3: 213 18% 10%;
   --bc: 220 13% 69%;
+}
+
+[data-theme=dark] h1, [data-theme=dark] h2, [data-theme=dark] h3, [data-theme=dark] h4, [data-theme=dark] h5, [data-theme=dark] h6 {
+  color: #E2E8F0;
 }
 
 *, ::before, ::after {
@@ -1190,6 +1198,14 @@ html {
   margin-bottom: 0;
 }
 
+.prose-quoteless :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before {
+  content: none;
+}
+
+.prose-quoteless :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::after {
+  content: none;
+}
+
 .alert {
   display: grid;
   width: 100%;
@@ -1667,6 +1683,48 @@ html {
   align-items: center;
 }
 
+.swap {
+  position: relative;
+  display: inline-grid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  place-content: center;
+  cursor: pointer;
+}
+
+.swap > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, opacity;
+}
+
+.swap input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.swap .swap-on,
+.swap .swap-indeterminate,
+.swap input:indeterminate ~ .swap-on {
+  opacity: 0;
+}
+
+.swap input:checked ~ .swap-off,
+.swap.swap-active .swap-off,
+.swap input:indeterminate ~ .swap-off {
+  opacity: 0;
+}
+
+.swap input:checked ~ .swap-on,
+.swap-active .swap-on,
+.swap input:indeterminate ~ .swap-indeterminate {
+  opacity: 1;
+}
+
 .avatar-group :where(.avatar) {
   overflow: hidden;
   border-radius: 9999px;
@@ -2124,6 +2182,12 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0;
 }
 
+.mockup-phone .display {
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: -25px;
+}
+
 @keyframes modal-pop {
   0% {
     opacity: 0;
@@ -2437,6 +2501,19 @@ h4 {
 h5 {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+blockquote {
+  font-family: caveat, sans-serif;
+  color: #00afec !important;
+  border-left-color: #00afec !important;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .collapse {

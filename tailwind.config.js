@@ -12,6 +12,14 @@ module.exports = {
       screens: {
         'sm': '320px',
       },
+      typography: {
+        quoteless: {
+          css: {
+            'blockquote p:first-of-type::before': { content: 'none' },
+            'blockquote p:first-of-type::after': { content: 'none' },
+          },
+        },
+      },
     },
   },
   variants: {
@@ -40,7 +48,10 @@ module.exports = {
           "primary": "#000000",
           "secondary": "#ffffff",
           "accent": "#EF6351",
-          "base-100": "#1C1C1E",
+          "base-100": "#0f172a",
+          "h1, h2, h3, h4, h5, h6": {
+            "color": "#E2E8F0",
+          },
         },
       },
     ],

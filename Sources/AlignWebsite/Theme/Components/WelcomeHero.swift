@@ -32,8 +32,9 @@ struct WelcomeHero: Component {
                         
                         H1 {
                             Span("Align")
+                                .class("text-accent")
                         }
-                        .class("md:text-9xl text-accent pt-8")
+                        .class("md:text-9xl pt-8")
                         
                         H2 ("The Time Blocking App")
                             .class("text-4xl font-thin pt-8")
