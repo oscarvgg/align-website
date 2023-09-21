@@ -2512,8 +2512,12 @@ blockquote {
   font-family: caveat, sans-serif;
   color: #00afec !important;
   border-left-color: #00afec !important;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.prose a {
+  color: #00afec;
 }
 
 .collapse {

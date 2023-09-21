@@ -35,6 +35,10 @@
     font-family: caveat, sans-serif;
     color: #00afec !important;
     border-left-color: #00afec !important;
-    @apply text-3xl;
+    @apply text-2xl;
+  }
+  
+  .prose a {
+      color: #00afec;
   }
 }
