@@ -2664,6 +2664,10 @@ blockquote {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -2674,6 +2678,10 @@ blockquote {
 
 .justify-items-start {
   justify-items: start;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-4 {

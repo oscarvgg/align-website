@@ -272,7 +272,7 @@ private extension Node where Context == HTML.BodyContext {
                     .text("Published on \(dateFormatter.string(from: item.date))")
                 ),
                 .ul(
-                    .class("flex flex-row my-2 items-center justify-items-start list-none p-0 m-0 pl-0 mt-0"),
+                    .class("flex flex-row gap-2 flex-wrap my-2 items-center justify-items-start list-none p-0 m-0 pl-0 mt-0"),
                     .forEach(item.tags) { tag in
                             .li(
                                 .class("text-sm p-2 font-medium rounded bg-accent items-center justify-center"),
