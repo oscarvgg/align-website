@@ -140,7 +140,7 @@ Harness the power of dedicated, distraction-free working zones. In tangible term
 
 Breaks aren't your foe—overworking is. Research indicates that regular breaks can actually bolster cognitive functions and sustain productivity.
 
-> 💡**Tip**: Consider giving the [Pomodoro Technique](https://francescocirillo.com/pages/pomodoro-technique) a shot, where work is partitioned into intervals, usually 25 minutes long, punctuated by short breaks. Consider these as mini pit stops offering a breath of fresh air, preparing you to stay energized as you traverse through your tasks.
+> 💡**Tip**: Consider giving the [Pomodoro Technique](https://francescocirillo.com/products/the-pomodoro-technique) a shot, where work is partitioned into intervals, usually 25 minutes long, punctuated by short breaks. Consider these as mini pit stops offering a breath of fresh air, preparing you to stay energized as you traverse through your tasks.
 
 Keep your foot on the pedal, and let's bid farewell to distractions, welcoming a more productive you!
 
@@ -166,7 +166,7 @@ There's more to this age-old adage than meets the eye. A study by [IDC and McKin
 
 ### 3. The Power of Deep Work:
 
-Cal Newport, a seasoned computer science professor at Georgetown University, penned the groundbreaking book [*Deep Work*](https://www.calnewport.com/books/deep-work/), extolling the virtues of immersive, focused work sessions. By diving deep into the intricate depths of a task, you can achieve higher quality and greater productivity in less time.
+Cal Newport, a seasoned computer science professor at Georgetown University, penned the groundbreaking book [*Deep Work*](https://calnewport.com/writing/#books), extolling the virtues of immersive, focused work sessions. By diving deep into the intricate depths of a task, you can achieve higher quality and greater productivity in less time.
 
 > 💡**Tip**: Carve out distraction-free blocks of time in your daily schedule, allowing you to plunge into deep work. Bask in the pride of delivering exceptional output while optimizing your productivity.
 

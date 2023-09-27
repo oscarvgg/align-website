@@ -17,7 +17,7 @@ So, buckle up and get ready to embark on a journey of self-discovery as we delve
 
 ## The Power of a 5 AM Morning Routine
 
-Did you know that waking up at 5 AM can give you a significant head start in achieving your goals? Many self-improvement enthusiasts and successful people swear by this secret weapon to supercharge their lives. In fact, [studies and personal testimonies](https://www.msn.com/en-us/health/wellness/20-surprising-benefits-of-waking-up-at-5-am/ss-AA17ItX7) highlight abundant advantages of adopting this life-changing habit.
+Did you know that waking up at 5 AM can give you a significant head start in achieving your goals? Many self-improvement enthusiasts and successful people swear by this secret weapon to supercharge their lives. In fact, [studies and personal testimonies](https://www.msn.com/en-us/health/wellness/20-surprising-benefits-of-waking-up-at-5-am/ss-AA17ItX7#image=1) highlight abundant advantages of adopting this life-changing habit.
 
 Waking up at 5 am sets a strong foundation for a productive and fulfilling day. By starting your day before the rest of the world, you enjoy peaceful, uninterrupted, and calm mornings that facilitate a clear and focused mindset. This additional "focus time" allows you to plan, strategize, and prioritize the tasks ahead.
 
