@@ -63,7 +63,8 @@ struct Avatar: Component {
     var body: Component {
         Div {
             Div {
-                Image("https://www.gravatar.com/avatar/\(gravatarHash)?s=\(size.gravatarSize)")
+                Image(url: "https://www.gravatar.com/avatar/\(gravatarHash)?s=\(size.gravatarSize)",
+                description: "Author's bio")
             }
             .class("\(size.classSize) rounded-full")
         }
