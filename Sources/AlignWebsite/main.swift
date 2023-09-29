@@ -19,6 +19,9 @@ struct AlignWebsite: Website {
     var description = "Elevate your time management with Align: a visual time blocking app. Plan, prioritize, and stay organized effortlessly. Conquer your day with ease."
     var language: Language { .english }
     var imagePath: Path? { nil }
+    var favicon: Favicon? {
+        return Favicon(path: "favicon.png", type: "image/x-icon")
+    }
     
     @discardableResult
     func publish(additionalSteps: [PublishingStep<Self>] = [],
