@@ -5,12 +5,15 @@ import Plot
 // This type acts as the configuration for your website.
 struct AlignWebsite: Website {
     enum SectionID: String, WebsiteSectionID {
-        // Add the sections that you want your website to contain here:
-        case blog
+      // Add the sections that you want your website to contain here:
+      case blog
+      case help
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
         var author: Username?
+        var customContent: String?
+        var hidePublishedDate: Bool?
     }
 
     // Update these properties to configure your website:
@@ -44,6 +47,8 @@ struct AlignWebsite: Website {
                     )
                 },
                 .generateSiteMap(excluding: [Path("404")]),
+//                .installTailwindIfNeeded(),
+//                .generateTailwindCSS(input: "./Sources/Theme/theme.css", output: "./Resources/styles.css"),
                 .unwrap(.gitHub(
                     "oscarvgg/align-website",
                     branch: "prod",

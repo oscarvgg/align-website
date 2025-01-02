@@ -88,7 +88,13 @@ private struct MyThemeHTMLFactory: HTMLFactory {
                         .div(
                             .class("prose md:prose-xl prose-quoteless mx-auto"),
                             .contentBody(item.body)
-                        )
+                        ),
+                        .unwrap(item.metadata.customContent, { customContent in
+                            .div(
+                              .class("prose md:prose-xl prose-quoteless mx-auto mt-4"),
+                              .component(CustomContentFactory.makeContent(named: customContent))
+                            )
+                        })
                     )
                 ),
                 .component(WaitingListSection()),
@@ -267,9 +273,11 @@ private extension Node where Context == HTML.BodyContext {
         return
             .div(
                 .class("mb-10"),
-                .div(
-                    .class("my-2 text-sm"),
-                    .text("Published on \(dateFormatter.string(from: item.date))")
+                .if(item.metadata.hidePublishedDate == nil,
+                    .div(
+                      .class("my-2 text-sm"),
+                      .text("Published on \(dateFormatter.string(from: item.date))")
+                    )
                 ),
                 .ul(
                     .class("flex flex-row gap-2 flex-wrap my-2 items-center justify-items-start list-none p-0 m-0 pl-0 mt-0"),
