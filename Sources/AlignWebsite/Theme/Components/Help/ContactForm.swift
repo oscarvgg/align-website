@@ -99,7 +99,7 @@ struct ContactForm: Component {
             Input(
                 type: .hidden,
                 name: "_captcha",
-                value: "false"
+                value: "true"
             )
 
             Div {

@@ -1,5 +1,5 @@
 ---
-title: Time Blocking: A Productivity Game Changer
+title: Time blocking: a productivity game changer
 date: 2023-08-21 08:00
 description: Discover the power of time blocking to boost productivity and achieve your goals. Learn the common mistakes to avoid and effective techniques to maximize your time.
 tags: Time Blocking

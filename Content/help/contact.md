@@ -1,7 +1,6 @@
 ---
 title: Contact
 customContent: contactForm
-hidePublishedDate: true
 ---
 We Value Your Feedback!
 

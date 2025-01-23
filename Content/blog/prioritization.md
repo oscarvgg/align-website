@@ -1,5 +1,5 @@
 ---
-title: The Art of Prioritization: Your Guide to Success
+title: The art of prioritization: your guide to success
 date: 2023-08-29 08:00
 description: Unpack the secrets of efficient time management with this guide to prioritization
 tags: Time Management and Productivity Fundamentals

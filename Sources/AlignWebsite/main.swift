@@ -7,7 +7,6 @@ struct AlignWebsite: Website {
     enum SectionID: String, WebsiteSectionID {
       // Add the sections that you want your website to contain here:
       case blog
-      case help
     }
 
     struct ItemMetadata: WebsiteItemMetadata {

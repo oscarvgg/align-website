@@ -1,5 +1,5 @@
 ---
-title: 41 Productivity Tips to Supercharge Your Day and Skyrocket Efficiency
+title: 41 productivity tips to supercharge your day and skyrocket efficiency
 date: 2023-09-24 08:00
 description: Discover these practical productivity tips designed to enhance your workday efficiency and transform every day into a productive day. Become the master of your routine with our comprehensive guide.
 tags: Productivity Techniques, Efficiency, tips

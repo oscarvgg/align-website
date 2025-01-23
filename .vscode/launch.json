@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:align-website}",
+            "name": "Debug AlignWebsite",
+            "program": "${workspaceFolder:align-website}/.build/debug/AlignWebsite",
+            "preLaunchTask": "swift: Build Debug AlignWebsite"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:align-website}",
+            "name": "Release AlignWebsite",
+            "program": "${workspaceFolder:align-website}/.build/release/AlignWebsite",
+            "preLaunchTask": "swift: Build Release AlignWebsite"
+        }
+    ]
+}

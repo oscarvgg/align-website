@@ -88,13 +88,7 @@ private struct MyThemeHTMLFactory: HTMLFactory {
                         .div(
                             .class("prose md:prose-xl prose-quoteless mx-auto"),
                             .contentBody(item.body)
-                        ),
-                        .unwrap(item.metadata.customContent, { customContent in
-                            .div(
-                              .class("prose md:prose-xl prose-quoteless mx-auto mt-4"),
-                              .component(CustomContentFactory.makeContent(named: customContent))
-                            )
-                        })
+                        )
                     )
                 ),
                 .component(WaitingListSection()),
@@ -135,6 +129,12 @@ private struct MyThemeHTMLFactory: HTMLFactory {
                             .class("prose md:prose-xl mx-auto"),
                             .contentBody(page.content.body)
                         )
+                    )
+                ),
+                .if(page.title == "Contact",
+                    .div(
+                      .class("prose md:prose-xl prose-quoteless mx-auto mt-4"),
+                      .component(CustomContentFactory.makeContent(named: "contactForm"))
                     )
                 ),
                 .component(WaitingListSection()),

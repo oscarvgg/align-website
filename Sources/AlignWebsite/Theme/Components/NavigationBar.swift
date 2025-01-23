@@ -1,16 +1,16 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Oscar Gonzalez on 24/07/23.
 //
 
+import Foundation
 import Plot
 import Publish
-import Foundation
 
 struct NavigationBar<T>: Component where T: Website {
-    
+
     private let selectedSection: T.SectionID?
     private let context: PublishingContext<T>
 
@@ -18,27 +18,45 @@ struct NavigationBar<T>: Component where T: Website {
         self.selectedSection = selectedSection
         self.context = context
     }
-    
+
     var body: Component {
-        
+
         Div {
             Div {
                 Link(url: "/") {
-//                    Image(url: "/", description: "app logo")
+                    Image(url: "/img/align-logo.webp", description: "Align logo")
                     Text("Align")
                 }
                 .class("btn btn-ghost normal-case text-xl")
             }
             .class("flex-1")
-            
+
             Navigation {
-                List(T.SectionID.allCases) { section in
+                //                List(T.SectionID.allCases) { section in
+                //                    ListItem {
+                //                        Link(url: "/\(context.sections[section].path.string)/") {
+                //                            Text(context.sections[section].title)
+                //                        }
+                //                    }
+                //                    .class(section == selectedSection ? "selected" : "")
+                //                }
+                List {
                     ListItem {
-                        Link(url: "/\(context.sections[section].path.string)/") {
-                            Text(context.sections[section].title)
+                        Link(url: "/blog/") {
+                            Text("Blog")
                         }
                     }
-                    .class(section == selectedSection ? "selected" : "")
+                    ListItem {
+                        Link(url: "/help/") {
+                            Text("Help")
+                        }
+                    }
+//                    ListItem {
+//                        Link(url: "/about/") {
+//                            Text("About")
+//                        }
+//                    }
+                    //                    .class(section == selectedSection ? "selected" : "")
                 }
                 .class("menu menu-horizontal px-1")
             }

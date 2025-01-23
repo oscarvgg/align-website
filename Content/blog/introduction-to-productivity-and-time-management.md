@@ -1,5 +1,5 @@
 ---
-title: Getting More Done: An introduction to Productivity and Time Management
+title: Getting more done: an introduction to productivity and time management
 date: 2023-08-28 08:00
 description: Achieve more with less: Explore productivity & time management for a rewarding life
 tags: Time Management and Productivity Fundamentals, Productivity, Time Management, Efficiency

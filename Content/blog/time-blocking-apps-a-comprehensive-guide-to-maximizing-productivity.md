@@ -1,5 +1,5 @@
 ---
-title: Time Blocking Apps: A Comprehensive Guide for Maximizing Productivity
+title: Time blocking apps: a comprehensive guide for maximizing productivity
 date: 2023-08-18 08:00
 description: Discover top time blocking apps in this comprehensive guide. Compare features, pricing, and platforms for maximum productivity.
 tags: Apps

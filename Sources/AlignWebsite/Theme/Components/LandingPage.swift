@@ -58,19 +58,19 @@ struct LandingPage: Component {
                         reversed: true))
             }.class("bg-neutral rounded-lg")
             
-            Section {
-                Hero(
-                    headingText: "Prioritize and Rearrange Tasks with Ease",
-                    contentText: "Align's drag-and-drop functionality lets you rearrange your time blocks effortlessly. Prioritize tasks by moving them up or down, ensuring you allocate time to what matters most. This flexibility empowers you to adapt and adjust your schedule based on your priorities, keeping you productive and proactive throughout the day.",
-                    style: .image(
-                        lightImage: Image(
-                            url: "/img/prioritize-and-rearrange-tasks-with-ease-light.webp",
-                            description: "drag and drop time block"),
-                        darkImageUrl: Image(
-                            url: "/img/prioritize-and-rearrange-tasks-with-ease-dark.webp",
-                            description: "drag and drop time block"))
-                )
-            }
+//            Section {
+//                Hero(
+//                    headingText: "Prioritize and Rearrange Tasks with Ease",
+//                    contentText: "Align's drag-and-drop functionality lets you rearrange your time blocks effortlessly. Prioritize tasks by moving them up or down, ensuring you allocate time to what matters most. This flexibility empowers you to adapt and adjust your schedule based on your priorities, keeping you productive and proactive throughout the day.",
+//                    style: .image(
+//                        lightImage: Image(
+//                            url: "/img/prioritize-and-rearrange-tasks-with-ease-light.webp",
+//                            description: "drag and drop time block"),
+//                        darkImageUrl: Image(
+//                            url: "/img/prioritize-and-rearrange-tasks-with-ease-dark.webp",
+//                            description: "drag and drop time block"))
+//                )
+//            }
             
             Section {
                 Hero(
@@ -83,10 +83,10 @@ struct LandingPage: Component {
                         darkImageUrl: Image(
                             url: "/img/avoid-overlapping-blocks-dark.webp",
                             description: "timeline view showing an indicator when time blocks overlap"),
-                        reversed: true)
+                        reversed: false)
                 )
             }
-            .class("bg-neutral rounded-lg")
+//            .class("bg-neutral rounded-lg")
             
             Section {
                 Hero(

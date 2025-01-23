@@ -1,5 +1,5 @@
 ---
-title: Mastering Task Management: Your Invisible Productivity Superpower
+title: Mastering task management: Your invisible productivity superpower
 date: 2023-08-31 08:00
 description: Master the game of Task Management. Join Align for expert tips on managing your to-dos effectively
 tags: Time Management and Productivity Fundamentals

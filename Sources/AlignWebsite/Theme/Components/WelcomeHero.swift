@@ -41,6 +41,8 @@ struct WelcomeHero: Component {
                         
                         Paragraph("Comming soon to the App Store")
                             .class("font-thin pt-3")
+                        Paragraph("Get the beta now! 👇")
+                            .class("font-thin pt-3")
                     }
                     .class("max-w-md")
                 }

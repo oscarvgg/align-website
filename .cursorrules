@@ -20,7 +20,7 @@ Align is still in development but it’s coming soon to the App Store for iOS, i
 
 ## Project structure
 - Sources: contains the source code of the site.
-- Content: contains the articels and page contents.
+- Content: contains the article and page contents.
 - Resources: contains the images and other resources.
 
 ## Guidelines for Adopting the Desired Article Voice
@@ -104,3 +104,10 @@ Feedback Loop: Encourage peer reviews among authors to maintain the desired voic
 Continuous Learning: Stay updated with best practices in writing and incorporate feedback to refine your approach.
 
 By following these guidelines, authors can craft engaging, credible, and motivational articles that resonate with readers and effectively convey valuable information.
+
+### Recommended Article Structure
+* Start with a relatable problem
+* Provide actionable solutions
+* Include real-life examples
+* Naturally integrate Align's features
+* End with a clear call-to-action

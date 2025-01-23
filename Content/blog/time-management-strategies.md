@@ -1,5 +1,5 @@
 ---
-title: Time Management Strategies and tips: Your Guide to Conquering the Clock!
+title: Time management strategies and tips: your guide to conquering the clock!
 date: 2023-09-01 08:00
 description: Master time with proven strategies! Read our guiding techniques on time management
 tags: Time Management and Productivity Fundamentals
