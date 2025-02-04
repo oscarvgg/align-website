@@ -7,12 +7,12 @@ title: FAQs
 ## General Questions
 
 ### On what platforms is Align available?
-Align is coming soon to all Apple platforms - iOS, iPadOS, watchOS, and macOS. This means you'll be able to manage your time blocks seamlessly across all your Apple devices.
+Align is available for iOS on the App Store and is coming soon to the rest of Apple platforms - iPadOS, watchOS, and macOS. This means you'll be able to manage your time blocks seamlessly across all your Apple devices.
 
-Align will launch first on iOS and then roll out to other Apple platforms (iPadOS, watchOS, and macOS) based on user demand. This staged approach allows us to focus on delivering the best possible experience on each platform while responding to our users' needs.
+Align will launched first on iOS and then will roll out to other Apple platforms (iPadOS, watchOS, and macOS) based on user demand. This staged approach allows us to focus on delivering the best possible experience on each platform while responding to our users' needs.
 
 ### Is Align free?
-Align will be available as a free download with core features. Still, we plan to offer a Pro subscription that unlocks additional powerful features for users who want to improve their time management.
+Align will be available as a free download with core features. Still, we plan to offer a Plus subscription that unlocks additional powerful features for users who want to improve their time management.
 
 ### Why should I use time blocking?
 Time blocking is one of the most effective time management strategies successful people like Elon Musk and Cal Newport use. By assigning specific time slots to tasks, you gain better control over your day, reduce context switching, and make your goals more achievable by turning them into concrete actions.

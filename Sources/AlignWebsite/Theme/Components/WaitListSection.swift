@@ -17,25 +17,30 @@ struct WaitingListSection: Component {
         Section {
             Div {
                 Div {
-                    Div {
-                        H2 {
-                            Text("Coming soon")
-                        }
-                        Paragraph("""
+                  Div {
+                    H2 {
+                      Text("Download Align for free")
+                    }
+                    Paragraph("""
 Align is a powerful tool for staying focused and getting things done. Customize, prioritize, and visualize your tasks at a glance; sync your schedule across all devices, and get timely notifications.
-Sign up now and be among the first to elevate your time management experience.
 Get ready to align your time and conquer your day.
 """)
-                        .class("py-6")
+                    .class("py-6")
+                    
+                    Div {
                       
-                        Node<Any>.raw(
+                      Node<Any>.raw(
                            """
                            <a target="_blank" href="https://betalist.com/startups/align-day?utm_campaign=badge-align-day&amp;utm_medium=badge&amp;utm_source=badge-featured">
-                           <img alt="Align - Time blocking app that helps you plan, organize, and track your daily tasks | BetaList" width="156" height="54" style="width: 156px; height: 54px" src="https://betalist.com/badges/featured?id=117212&amp;theme=color">
+                           <img alt="Align - Time blocking app that helps you plan, organize, and track your daily tasks | BetaList" height="40" style="height: 40px" src="https://betalist.com/badges/featured?id=117212&amp;theme=color">
                            </a>
                            """
-                        )
+                      )
+                      
+                      AppStoreBadge()
                     }
+                    .class("flex gap-4 justify-left")
+                  }
                     
                     Div {
                         Div {}
