@@ -33,7 +33,9 @@ struct AlignWebsite: Website {
             at: nil,
             using: [
                 .group(plugins.map(PublishingStep.installPlugin)),
-                .optional(.copyResources()),
+//                .optional(.copyResources()),
+                .generateTailwindCSS,
+                .copyResourcesWithShell,
                 .addMarkdownFiles(),
                 .sortItems(by: \.date, order: .descending),
                 .group(additionalSteps),
@@ -47,7 +49,6 @@ struct AlignWebsite: Website {
                 },
                 .generateSiteMap(excluding: [Path("404")]),
 //                .installTailwindIfNeeded(),
-//                .generateTailwindCSS(input: "./Sources/Theme/theme.css", output: "./Resources/styles.css"),
                 .unwrap(.gitHub(
                     "oscarvgg/align-website",
                     branch: "prod",
