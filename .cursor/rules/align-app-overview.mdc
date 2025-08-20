@@ -1,0 +1,20 @@
+---
+description: Agent-requested overview of the Align app to provide product context when writing or editing content.
+globs:
+alwaysApply: false
+---
+
+## About the Align app
+
+Align is a time management app that uses time blocking as its main time management strategy. It helps you get things done and build better habits by visualizing your daily tasks in one place, keeping them on track with recurring schedules, and offering simple reminders when it's time to get things done.
+
+These are Align’s main features:
+- Visual timeline of all day tasks as time blocks
+- Add a time block to the timeline, customise them with color, icon, make them recurrent
+- Drag and drop blocks to rearrange and prioritize them
+- See when time blocks are overlapping
+- Import and sync time blocks with calendars from the user’s device
+- Get notifications when a task starts
+
+Align is available on the App Store for iOS and comming soon to iPadOS, watchOS and macOS.
+

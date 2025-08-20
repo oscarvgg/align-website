@@ -1,0 +1,15 @@
+---
+description: Auto-attached rule describing the Align website project structure.
+globs:
+  - Sources/**
+  - Content/**
+  - Resources/**
+alwaysApply: false
+---
+
+## Project structure
+
+- Sources: contains the source code of the site.
+- Content: contains the article and page contents.
+- Resources: contains the images and other resources.
+
