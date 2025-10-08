@@ -29,7 +29,7 @@ Align ensures you never miss a task with its notification feature. Set alerts fo
 
 ## Manage Overlapping Tasks
 
-Align helps you identify overlapping tasks, allowing you to adjust your schedule for maximum efficiency.
+Align helps you identify overlapping tasks, allowing you to adjust your schedule for maximum efficiency. With [overlap avoidance](/help/overlap-avoidance) enabled, your time blocks automatically shift to prevent conflicts as you organize your day.
 
 ## Import Your Calendars
 

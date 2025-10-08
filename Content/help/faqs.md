@@ -70,6 +70,15 @@ After the provisional permission expires, you will stop receiving notifications 
 ### What happens if time blocks overlap?
 Align visually highlights overlapping time blocks, making spotting and resolving scheduling conflicts easy. You can easily drag and drop blocks to reorganize your schedule when conflicts occur.
 
+With [overlap avoidance](/help/overlap-avoidance) enabled (the default setting), Align automatically prevents overlaps by shifting time blocks as you resize or move them. You can disable this feature if you want to intentionally create overlapping time blocks for concurrent tasks or flexible planning.
+
+### How do I refresh my timeline to see the latest calendar updates?
+You can refresh your timeline by pulling down on the timeline view. This syncs Align with your device's calendar system to ensure you're seeing the most up-to-date information from all your connected calendars.
+
+**Important note**: The refresh feature works with Apple's calendar system, which has built-in rate limiting for performance and battery optimization. This means refreshing won't always trigger an immediate update - Apple's system will only refresh when it determines it's necessary. If you don't see changes right away after refreshing, it's likely because Apple's calendar system hasn't detected any new updates since your last sync.
+
+For the most reliable sync experience, make sure your device has a good internet connection and that your calendars are properly synced in your device's Settings app.
+
 ## Privacy & Data
 
 ### How is my data protected?

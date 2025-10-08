@@ -2,12 +2,17 @@
 description: Align blog writing voice, structure, and subtle promotion guidelines. Auto-attached for blog content.
 globs:
   - Content/blog/**
+  - Content/help/**
 alwaysApply: false
 ---
 
-## Guidelines for Adopting the Desired Article Voice
+# Align Website Writing Voice Guidelines
 
-To ensure consistency and effectiveness across all blog articles, authors should adhere to the following guidelines inspired by the voice analysis of Ali Abdaal's "10 Time Management Tips to Up Your Productivity Game" article.
+This document outlines the writing voice and style guidelines for different types of content on the Align website.
+
+## Blog Articles
+
+For blog content, follow these guidelines inspired by Ali Abdaal's conversational yet authoritative approach:
 
 ### 1. Conversational and Relatable
 
@@ -54,18 +59,12 @@ To ensure consistency and effectiveness across all blog articles, authors should
 
 ### 8. Subtle Promotion of Align App and Newsletter
 
-- Promote Align’s Features Gently: Integrate mentions of Align’s app features seamlessly within the content. Highlight how specific features can enhance the reader’s productivity without being overly sales-driven.
-- Example: "Using time blocks can help you organize your day more effectively. Align’s visual timeline feature makes it easy to see all your tasks at a glance."
+- Promote Align's Features Gently: Integrate mentions of Align's app features seamlessly within the content. Highlight how specific features can enhance the reader's productivity without being overly sales-driven.
+- Example: "Using time blocks can help you organize your day more effectively. Align's visual timeline feature makes it easy to see all your tasks at a glance."
 - Invite Newsletter Subscriptions: Encourage readers to subscribe to the newsletter to receive valuable tips, updates on new features, and exclusive content. This invitation should feel natural and beneficial to the reader.
 - Example: "For more productivity tips and updates on new features, make sure to subscribe to our newsletter."
 
-### Implementation Tips for Authors
-
-- Voice Consistency: Regularly review your articles to ensure the tone remains consistent with these guidelines.
-- Feedback Loop: Encourage peer reviews among authors to maintain the desired voice across all content.
-- Continuous Learning: Stay updated with best practices in writing and incorporate feedback to refine your approach.
-
-### Recommended Article Structure
+### Blog Article Structure
 
 - Start with a relatable problem
 - Provide actionable solutions
@@ -73,3 +72,85 @@ To ensure consistency and effectiveness across all blog articles, authors should
 - Naturally integrate Align's features
 - End with a clear call-to-action
 
+## Help Pages
+
+Help pages serve a different purpose than blog articles and require a more formal, documentation-style approach:
+
+### 1. Direct and Informational
+
+- Get Straight to the Point: Start with a clear, concise explanation of what the feature or process does
+- Example: "Align's Icon Suggestion feature automatically recommends relevant icons for your time blocks based on the activity title you enter."
+- Avoid Questions: Don't start with rhetorical questions or casual conversation starters
+- Avoid: "Have you ever struggled to find the perfect icon?"
+- Prefer: "The Icon Suggestion feature helps you quickly select appropriate icons for your activities."
+
+### 2. Professional and Authoritative
+
+- Use Professional Language: Maintain a serious, documentation-style tone
+- Avoid Casual Expressions: Remove phrases like "No problem!", "like magic", or overly enthusiastic language
+- Example: Instead of "Don't like the suggestion? No problem!" use "You can override automatic suggestions"
+- Be Factual: Present information objectively without emotional language
+
+### 3. Clear and Structured
+
+- Use Descriptive Headings: Choose straightforward section titles
+- Avoid: "The Magic Behind the Scenes"
+- Prefer: "How It Works" or "Process"
+- Organize Logically: Structure information in a logical flow from overview to specific details
+- Use Numbered Lists: For processes and step-by-step instructions
+
+### 4. Concise and Practical
+
+- Eliminate Fluff: Every sentence should provide useful information
+- Use Bullet Points: Break down complex information into digestible points
+- Be Specific: Provide concrete examples and clear instructions
+- Example: "Type the title of your time block (e.g., 'Morning Workout' or 'Team Meeting')"
+
+### 5. Technical Accuracy
+
+- Use Precise Language: Be specific about how features work
+- Avoid Anthropomorphism: Don't give human qualities to the software
+- Avoid: "Align thinks about your input"
+- Prefer: "The system processes your text"
+- Maintain Consistency: Use the same terminology throughout
+
+### 6. Minimal Promotional Content
+
+- Focus on Functionality: Prioritize explaining how features work over selling benefits
+- Link to Related Pages: Reference other help articles or quick start guides when relevant
+- Keep CTAs Simple: End with brief references to related documentation rather than promotional content
+
+### Help Page Structure
+
+- Clear title that matches the feature name
+- Brief introductory sentence explaining the feature's purpose
+- "How It Works" section with step-by-step process
+- Key features and functionality details
+- Usage tips and best practices
+- Related links to other help content
+
+## Implementation Guidelines
+
+### For Authors
+
+- Voice Consistency: Regularly review content to ensure the tone remains consistent with these guidelines
+- Content Type Awareness: Always consider whether you're writing a blog article or help documentation
+- Feedback Loop: Encourage peer reviews to maintain the desired voice across all content
+- Continuous Learning: Stay updated with best practices and incorporate feedback
+
+### Content Review Checklist
+
+**For Blog Articles:**
+- [ ] Conversational and engaging tone
+- [ ] Personal anecdotes or relatable examples included
+- [ ] Actionable advice provided
+- [ ] Align features naturally integrated
+- [ ] Clear call-to-action at the end
+
+**For Help Pages:**
+- [ ] Direct, informational tone
+- [ ] Professional language without casual expressions
+- [ ] Clear, descriptive headings
+- [ ] Step-by-step processes clearly explained
+- [ ] Technical accuracy maintained
+- [ ] Minimal promotional content
