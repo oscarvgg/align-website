@@ -52,7 +52,7 @@ struct AlignWebsite: Website {
                 .unwrap(.gitHub(
                     "oscarvgg/align-website",
                     branch: "prod",
-                    useSSH: false),
+                    useSSH: true),
                         PublishingStep.deploy
                 )
             ],
