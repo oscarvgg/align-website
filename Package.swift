@@ -14,7 +14,8 @@ let package = Package(
     dependencies: [
         .package(name: "Publish",
                  url: "https://github.com/johnsundell/publish.git",
-                 .exact("0.8.0"))
+                 from: "0.8.0"
+                )
     ],
     targets: [
         .executableTarget(

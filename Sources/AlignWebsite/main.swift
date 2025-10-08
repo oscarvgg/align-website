@@ -49,11 +49,10 @@ struct AlignWebsite: Website {
                 },
                 .generateSiteMap(excluding: [Path("404")]),
 //                .installTailwindIfNeeded(),
-                .unwrap(.gitHub(
-                    "oscarvgg/align-website",
+                .customGitHubDeploy(
+                    repository: "oscarvgg/align-website",
                     branch: "prod",
-                    useSSH: true),
-                        PublishingStep.deploy
+                    useSSH: true
                 )
             ],
             file: file
