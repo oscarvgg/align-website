@@ -9,9 +9,9 @@ import Foundation
 import Publish
 import Files
 
-extension PublishingStep where Site == AlignWebsite {
-    static func customGitHubDeploy(repository: String, branch: String, useSSH: Bool) -> Self {
-        step(named: "Deploy to GitHub") { context in
+extension DeploymentMethod where Site == AlignWebsite {
+    static func customGitHub(_ repository: String, branch: String, useSSH: Bool) -> Self {
+        DeploymentMethod(name: "Deploy to GitHub") { context in
             let outputPath = try context.outputFolder(at: "/").path
             let publishPath = outputPath.replacingOccurrences(of: "/Output", with: "/.publish")
             let gitDeployPath = "\(publishPath)/GitDeploy"
