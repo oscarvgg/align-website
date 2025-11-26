@@ -27,6 +27,8 @@ struct FooterSection: Component {
                         .class("link link-hover")
                     Link("Privacy Policy", url: "/about/privacy-policy/")
                         .class("link link-hover")
+                    Link("Terms of Service", url: "/about/terms-of-service/")
+                        .class("link link-hover")
                 }
                 .class("grid grid-flow-col gap-4")
             }
