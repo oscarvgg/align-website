@@ -16,6 +16,7 @@ Master every aspect of Align's powerful features.
 - [Locking Time Blocks](/help/locking-time-blocks)
 - [Overlap Avoidance](/help/overlap-avoidance)
 - [Icon Suggestion Feature](/help/icon-suggestion)
+- [Subtasks](/help/subtasks)
 <!-- - [Calendar Integration](/help/calendar-integration)
 - [Recurring Tasks](/help/recurring-tasks)
 - [Notifications](/help/notifications) -->

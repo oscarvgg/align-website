@@ -60,6 +60,9 @@ Align lets you customize when you want to be notified about your time blocks. Yo
 - Set reminders ahead of time (like 5, 15, 30 minutes before or even weeks!)
 - Choose different notification settings for each time block.
 
+### Can I break a time block into smaller steps?
+Yes! Use the **[Subtasks](/help/subtasks)** feature to add checklist items within any time block. This is perfect for complex tasks or routines where you want to track individual steps. When you complete all subtasks, the parent time block is automatically marked as finished.
+
 ### How do notification permissions work?
 Align starts with iOS's "provisional" notification permission, which lets you receive quiet notifications on your lock screen without sounds or interruptions for a short period. This allows you to test out Align's notifications in a non-intrusive way.
 

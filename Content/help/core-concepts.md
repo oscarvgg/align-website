@@ -25,6 +25,7 @@ Each time block has:
 - **A start time and end time** defining when the activity happens
 - **Visual customization** with colors and icons to make your schedule easy to scan
 - **Optional recurrence** for tasks that repeat daily, weekly, or on a custom schedule
+- **[Subtasks](/help/subtasks)** to break larger activities into smaller, manageable steps
 
 ### Types of Time Blocks
 

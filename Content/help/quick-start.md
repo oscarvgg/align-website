@@ -13,6 +13,7 @@ When you open Align, you'll be greeted by a **visual timeline**. This is where y
 - **Visual Timeline**: See all your tasks at a glance.
 - **Calendar browser**: View your week or expand to see the whole month. Swipe right or left to navigate through previous or next dates.
 - **Color Coding**: Customize your time blocks with colors and icons for quick identification.
+- **[Subtasks](/help/subtasks)**: Break down large tasks into smaller steps within a time block.
 - **Sync calendars**: Import and view all your existing calendars from your device in one unified timeline. Changes made in your other calendar apps will automatically sync with Align.
 
 ## Creating Your First Time Block
