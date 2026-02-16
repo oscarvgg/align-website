@@ -1,10 +1,5 @@
 .DS_Store
-/build
 /.build
-/.swiftpm
-/*.xcodeproj
-.publish
-
 Output/
 node_modules/
 .hugo_build.lock
