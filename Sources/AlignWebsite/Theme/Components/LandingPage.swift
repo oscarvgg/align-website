@@ -21,7 +21,7 @@ struct LandingPage: Component {
                     contentText: "Align is your personal time management tool helping you revolutionize your daily routine.")
             }
             .class("bg-neutral rounded-lg")
-            
+
             Section {
                 Hero(
                     headingText: "Visualize Your Day with Time Blocks",
@@ -116,6 +116,33 @@ struct LandingPage: Component {
                         reversed: true))
             }
             .class("bg-neutral rounded-lg")
+            
+            Section {
+                Div {
+                    H2("Explore Align")
+                        .class("text-3xl font-semibold")
+                    
+                    Paragraph("Start here if you’re looking for a time blocking planner or app:")
+                        .class("pt-2")
+                    
+                    List {
+                        ListItem {
+                            Link(url: "/time-blocking-planner/") { Text("Time Blocking Planner") }
+                        }
+                        ListItem {
+                            Link(url: "/time-blocking-app/") { Text("Time Blocking App") }
+                        }
+                        ListItem {
+                            Link(url: "/blog/time-blocking-apps-a-comprehensive-guide-to-maximizing-productivity/") { Text("Top Time Blocking Apps (comparison)") }
+                        }
+                        ListItem {
+                            Link(url: "/help/core-concepts/") { Text("Core Concepts: how time blocking works") }
+                        }
+                    }
+                    .class("list-disc pl-6 pt-4")
+                }
+                .class("prose md:prose-xl mx-auto")
+            }
             
             WaitingListSection()
             

@@ -3005,6 +3005,10 @@ blockquote {
   flex-shrink: 0;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -3124,8 +3128,16 @@ blockquote {
   padding-left: 0px;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .pt-4 {
@@ -3148,6 +3160,11 @@ blockquote {
   text-align: right;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -3165,6 +3182,10 @@ blockquote {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .font-thin {

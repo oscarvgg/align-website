@@ -37,7 +37,7 @@ Get ready to align your time and conquer your day.
                            """
                       )
                       
-                      AppStoreBadge()
+                      AppStoreBadge(campaign: .webWaitingList)
                     }
                     .class("flex gap-4 justify-left")
                   }

@@ -9,9 +9,14 @@ import Foundation
 import Plot
 
 struct AppStoreBadge: Component {
+    private let campaign: AppStoreCampaign
+
+    init(campaign: AppStoreCampaign = .webHome) {
+        self.campaign = campaign
+    }
 
     var body: Component {
-        Link(url: "https://apps.apple.com/app/align-time-blocking-planner/id6740183716") {
+        Link(url: AppStoreLink.urlString(campaign: campaign)) {
             Div {
                 Image(
                     url: "/img/download-on-the-app-store-badge-black.svg",

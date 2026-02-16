@@ -43,7 +43,7 @@ struct WelcomeHero: Component {
                         H2("The Time Blocking App")
                             .class("text-4xl font-thin pt-8 pb-8")
 
-                        AppStoreBadge()
+                        AppStoreBadge(campaign: .webHome)
                     }
                     .class("max-w-md")
                 }
