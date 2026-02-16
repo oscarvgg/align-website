@@ -1,0 +1,7 @@
+{{- $url := partial "app-store-link.html" . -}}
+<a href="{{ $url }}">
+  <div class="text-left">
+    <img src="/img/download-on-the-app-store-badge-black.svg" alt="Download on the App Store badge" class="block dark:hidden"/>
+    <img src="/img/download-on-the-app-store-badge-white.svg" alt="Download on the App Store badge" class="hidden dark:block"/>
+  </div>
+</a>

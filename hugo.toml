@@ -1,0 +1,53 @@
+baseURL = "https://align.day/"
+title = "Align: The Time Blocking App"
+languageCode = "en"
+defaultContentLanguage = "en"
+contentDir = "Content"
+staticDir = ["Resources"]
+publishDir = "Output"
+disableHugoGeneratorInject = true
+
+taxonomies = { tag = "tags" }
+
+[params]
+description = "Elevate your time management with Align: a visual time blocking app. Plan, prioritize, and stay organized effortlessly. Conquer your day with ease."
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.extensions.typographer]
+disable = true
+
+[markup.goldmark.parser]
+autoHeadingID = false
+
+[outputFormats.RSS]
+baseName = "feed"
+mediaType = "application/rss+xml"
+isPlainText = true
+noUgly = true
+permalinkable = true
+protocol = "https://"
+rel = "alternate"
+suffix = "rss"
+
+[outputFormats.SITEMAP]
+baseName = "sitemap"
+isPlainText = true
+mediaType = "application/xml"
+noUgly = true
+rel = "sitemap"
+suffix = "xml"
+
+[outputs]
+home = ["HTML", "RSS", "SITEMAP"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]
+page = ["HTML"]
+
+[mediaTypes."application/rss+xml"]
+suffixes = ["rss"]
+
+[security.funcs]
+getenv = ["^HUGO_", "^CI$", "^APP_STORE_PROVIDER_TOKEN$"]

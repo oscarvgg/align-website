@@ -1,8 +1,9 @@
 ---
-title: Focus management: the final frontier in Productivity
-date: 2023-09-03 08:00
-description: Unlock the doors to superior focus management with easy-to-adopt habits for bolstered productivity, all in one engaging read
-tags: Time Management and Productivity Fundamentals
+title: "Focus management: the final frontier in Productivity"
+date: "2023-09-03T08:00:00"
+description: "Unlock the doors to superior focus management with easy-to-adopt habits for bolstered productivity, all in one engaging read"
+tags:
+  - "Time Management and Productivity Fundamentals"
 image: /img/blog/covers/focus-management.jpg
 author: oscarvgg
 ---

@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="md:container mx-auto pt-10 px-4">
+  <article>
+    <div>
+      <div class="prose md:prose-xl mx-auto">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+
+    <div class="h-20"></div>
+
+    <div class="prose md:prose-xl mx-auto">
+      {{ partial "sanitize-content.html" .Content }}
+    </div>
+  </article>
+</div>
+{{ partial "waitlist.html" . }}
+{{ partial "footer.html" . }}
+{{ end }}

@@ -3,6 +3,10 @@
 ## Unlock your productivity potential.
 Align is your personal time management tool helping you revolutionize your daily routine.
 
+## Development
+- Build the static site: `hugo --cleanDestinationDir`
+- Run locally: `hugo server`
+
 ## A time management and productivity source of knowledge
 Get periodic time management and productivity tips with our blog.
 

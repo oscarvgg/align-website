@@ -1,8 +1,12 @@
 ---
-title:The productivity fundamentals: winning strategies for balance and success in life
-date: 2023-09-04 08:00
-description: description: Discover the power of productivity! Embark on a riveting journey through its strategic role in work, education, personal life and more.
-tags: Time Management and Productivity Fundamentals, Productivity, Time Management, Efficiency
+title: "The productivity fundamentals: winning strategies for balance and success in life"
+date: "2023-09-04T08:00:00"
+description: "description: Discover the power of productivity! Embark on a riveting journey through its strategic role in work, education, personal life and more."
+tags:
+  - "Time Management and Productivity Fundamentals"
+  - "Productivity"
+  - "Time Management"
+  - "Efficiency"
 image: /img/blog/covers/productivity-fundamentals.jpg
 author: oscarvgg
 ---
@@ -240,4 +244,3 @@ Align helps you manage your tasks and elegantly adapts to your life rhythm, prov
 We understand you're eager to experience this transformation in time management, so we're extending an invitation to [join the waiting list for Align](#waiting-list). Be among the first to be notified at launch and step into this exciting new chapter of enhanced productivity.
 
 Be the maestro of your time. Clear the starting blocks—it's time to unlock your productivity with Align!
-

@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="md:container mx-auto pt-10 px-4">
+  <section class="prose md:prose-xl mx-auto">
+    {{ partial "sanitize-content.html" .Content }}
+  </section>
+  {{ partial "item-grid.html" (dict "items" (.RegularPages.ByDate.Reverse)) }}
+</div>
+{{ partial "waitlist.html" . }}
+{{ partial "footer.html" . }}
+{{ end }}

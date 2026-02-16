@@ -1,8 +1,11 @@
 ---
-title: The science behind effective daily planning
-date: 2025-01-09 08:00
-description: Discover the fascinating neuroscience behind effective daily planning. Learn research-backed strategies to reduce decision fatigue, optimize your brain's natural patterns, and transform your productivity through science-based planning techniques.
-tags: Productivity, Neuroscience, Time Management
+title: "The science behind effective daily planning"
+date: "2025-01-09T08:00:00"
+description: "Discover the fascinating neuroscience behind effective daily planning. Learn research-backed strategies to reduce decision fatigue, optimize your brain's natural patterns, and transform your productivity through science-based planning techniques."
+tags:
+  - "Productivity"
+  - "Neuroscience"
+  - "Time Management"
 image: /img/blog/covers/science-behind-effective-daily-planning.jpg
 author: oscarvgg
 ---
@@ -523,4 +526,3 @@ Remember: your brain is already an incredible planning machine – it just needs
 Ready to put these scientific principles into practice? While you can start implementing these strategies with any planning tool, having the right technology can make the process more intuitive. Join other science-minded planners on Align's waitlist to be notified when our brain-friendly planning tools become available.
 
 The science is clear: better planning leads to better days. Your future self will thank you for starting today.
-

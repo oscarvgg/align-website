@@ -1,8 +1,11 @@
 ---
-title: Transform your daily habits with intentional time blocking
-description: Learn how to use time blocking to build better habits and become the person you want to be, one scheduled block at a time.
-date: 2024-03-21 08:00
-tags: Habits, Self-improvement, Time Management
+title: "Transform your daily habits with intentional time blocking"
+description: "Learn how to use time blocking to build better habits and become the person you want to be, one scheduled block at a time."
+date: "2024-03-21T08:00:00"
+tags:
+  - "Habits"
+  - "Self-improvement"
+  - "Time Management"
 image: /img/blog/covers/transform-your-daily-habits-with-intentional-time-blocking.jpg
 author: oscarvgg
 ---

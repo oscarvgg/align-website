@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body{{ if and (eq .Kind "page") (eq .Section "blog") }} class="item-page"{{ end }}>
+  {{ partial "navbar.html" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "linkedin.html" . }}
+</body>
+</html>

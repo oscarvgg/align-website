@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="md:container mx-auto pt-10 px-4">
+  <article>
+    <div{{ if .Params.image }} class="text-center"{{ end }}>
+      {{ with .Params.image }}
+      <div class="avatar mr-3">
+        <div class="w-48 h-48 rounded-full">
+          <img src="{{ . }}" alt="Author's bio"/>
+        </div>
+      </div>
+      <div class="h-12"></div>
+      {{ end }}
+
+      <div class="prose md:prose-xl mx-auto">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+
+    <div class="h-20"></div>
+
+    <div class="prose md:prose-xl mx-auto">
+      {{ partial "sanitize-content.html" .Content }}
+    </div>
+  </article>
+</div>
+{{ if eq .Params.customContent "contactForm" }}
+<div class="prose md:prose-xl prose-quoteless mx-auto mt-4">
+  {{ partial "contact-form.html" . }}
+</div>
+{{ end }}
+{{ partial "waitlist.html" . }}
+{{ partial "footer.html" . }}
+{{ end }}

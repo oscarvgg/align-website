@@ -1,8 +1,9 @@
 ---
-title: Workflow management: your hidden superpower in productivity
-date: 2023-08-30 08:00
-description: Transform your Workflow Management with this guide, and level up your productivity game!
-tags: Time Management and Productivity Fundamentals
+title: "Workflow management: your hidden superpower in productivity"
+date: "2023-08-30T08:00:00"
+description: "Transform your Workflow Management with this guide, and level up your productivity game!"
+tags:
+  - "Time Management and Productivity Fundamentals"
 image: /img/blog/covers/workflow-management-cover.jpg
 author: oscarvgg
 ---

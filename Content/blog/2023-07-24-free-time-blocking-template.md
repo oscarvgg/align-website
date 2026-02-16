@@ -1,8 +1,12 @@
 ---
-title: Free Time Blocking Templates - Printable PDFs, Google Sheets & Excel Downloads
-date: 2023-08-14 08:07
-description: Download free printable time blocking templates in PDF, Google Sheets & Excel. Daily, weekly & monthly schedule templates to boost productivity. Start planning today!
-tags: Printables, Time Blocking, Productivity, Templates
+title: "Free Time Blocking Templates - Printable PDFs, Google Sheets & Excel Downloads"
+date: "2023-08-14T08:07:00"
+description: "Download free printable time blocking templates in PDF, Google Sheets & Excel. Daily, weekly & monthly schedule templates to boost productivity. Start planning today!"
+tags:
+  - "Printables"
+  - "Time Blocking"
+  - "Productivity"
+  - "Templates"
 image: /img/blog/covers/free-time-blocking-template-printable-cover.jpg
 author: oscarvgg
 ---

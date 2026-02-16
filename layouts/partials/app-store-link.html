@@ -1,0 +1,8 @@
+{{- $base := "https://apps.apple.com/app/align-time-blocking-planner/id6740183716" -}}
+{{- $campaign := .campaign | default "web_home" -}}
+{{- $provider := getenv "APP_STORE_PROVIDER_TOKEN" -}}
+{{- $url := printf "%s?ct=%s&mt=8" $base ($campaign | urlquery) -}}
+{{- if $provider -}}
+  {{- $url = printf "%s&pt=%s" $url ($provider | urlquery) -}}
+{{- end -}}
+{{- return $url -}}

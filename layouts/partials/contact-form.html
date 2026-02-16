@@ -1,0 +1,32 @@
+<form action="https://formsubmit.co/contact@align.day" method="post">
+  <label class="form-control w-full max-w-xs">
+    <div class="label"><span class="label-text">Your name:</span></div>
+    <input type="text" placeholder="John Doe" class="input input-bordered w-full max-w-xs" id="name" name="name"/>
+  </label>
+
+  <label class="form-control w-full max-w-xs">
+    <div class="label"><span class="label-text">Your Email:</span></div>
+    <input type="email" placeholder="john.doe@example.com" class="input input-bordered w-full max-w-xs" id="email" name="email"/>
+  </label>
+
+  <label class="form-control w-full max-w-xs">
+    <div class="label"><span class="label-text">Subject:</span></div>
+    <select class="select select-bordered" name="subject">
+      <option selected="true">Feedback</option>
+      <option>Bug report</option>
+    </select>
+  </label>
+
+  <label class="form-control">
+    <div class="label"><span class="label-text">Your message:</span></div>
+    <textarea id="message" class="textarea textarea-bordered h-24" placeholder="Enter your feedback or describe the bug you encountered..." required="true" name="message"></textarea>
+  </label>
+
+  <input type="hidden" name="_subject" value="New Contact Submission from Align.day"/>
+  <input type="hidden" name="_next" value="https://align.day/help/thank-you/"/>
+  <input type="hidden" name="_captcha" value="true"/>
+
+  <div class="text-right mt-4">
+    <button type="submit" class="btn btn-accent btn-block sm:btn-wide">Send</button>
+  </div>
+</form>

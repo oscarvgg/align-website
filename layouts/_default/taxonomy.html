@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="md:container mx-auto pt-10 px-4">
+  <div class="prose md:prose-xl mx-auto">
+    <h1>Tagged with: <span class="tag">{{ .Title }}</span></h1>
+  </div>
+
+  <section class="text-xl max-w-prose mx-auto pt-4">
+    <a class="browse-all" href="/tags/">Browse all tags</a>
+  </section>
+
+  {{ partial "item-grid.html" (dict "items" (.Pages.ByDate.Reverse)) }}
+</div>
+{{ partial "waitlist.html" . }}
+{{ partial "footer.html" . }}
+{{ end }}

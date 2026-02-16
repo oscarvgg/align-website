@@ -1,0 +1,2 @@
+{{- $html := . | replaceRE `<h([1-6]) id="[^"]+">` `<h$1>` -}}
+{{- $html | safeHTML -}}

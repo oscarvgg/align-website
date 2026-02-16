@@ -1,8 +1,12 @@
 ---
-title: Getting more done: an introduction to productivity and time management
-date: 2023-08-28 08:00
-description: Achieve more with less: Explore productivity & time management for a rewarding life
-tags: Time Management and Productivity Fundamentals, Productivity, Time Management, Efficiency
+title: "Getting more done: an introduction to productivity and time management"
+date: "2023-08-28T08:00:00"
+description: "Achieve more with less: Explore productivity & time management for a rewarding life"
+tags:
+  - "Time Management and Productivity Fundamentals"
+  - "Productivity"
+  - "Time Management"
+  - "Efficiency"
 image: /img/blog/covers/intro-productivity-and-time-management-cover.jpg
 author: oscarvgg
 ---

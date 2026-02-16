@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="md:container mx-auto pt-10 px-4">
+  <div class="prose md:prose-xl mx-auto">
+    <h1>Browse all tags</h1>
+  </div>
+
+  <section class="text-xl max-w-prose mx-auto pt-4">
+    <ul class="all-tags">
+      {{ range .Data.Terms.Alphabetical }}
+      <li class="tag"><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+</div>
+{{ partial "waitlist.html" . }}
+{{ partial "footer.html" . }}
+{{ end }}

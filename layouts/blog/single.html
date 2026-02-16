@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="md:container mx-auto pt-10 px-4">
+  <article>
+    {{ with .Params.image }}
+    <div class="prose md:prose-xl mx-auto mb-10">
+      <img src="{{ . }}" alt="{{ $.Title }} cover"/>
+    </div>
+    {{ end }}
+
+    <div class="prose md:prose-xl mx-auto">
+      <h1>{{ .Title }}</h1>
+    </div>
+
+    <div class="text-xl max-w-prose mx-auto">
+      <div class="mb-10">
+        {{ if not (.Params.hidePublishedDate | default false) }}
+        <div class="my-2 text-sm">Published on {{ .Date.Format "Jan 02, 2006" }}</div>
+        {{ end }}
+
+        <ul class="flex flex-row gap-2 flex-wrap my-2 items-center justify-items-start list-none p-0 m-0 pl-0 mt-0">
+          {{ range .GetTerms "tags" }}
+          <li class="text-sm p-2 font-medium rounded bg-accent items-center justify-center">
+            <a href="{{ .RelPermalink }}" class="text-white no-underline">{{ .LinkTitle }}</a>
+          </li>
+          {{ end }}
+        </ul>
+
+        {{ with .Params.author }}
+        <div class="mt-4">
+          {{ partial "author-line.html" . }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="prose md:prose-xl prose-quoteless mx-auto">
+      {{ partial "sanitize-content.html" .Content }}
+    </div>
+  </article>
+</div>
+{{ partial "waitlist.html" . }}
+{{ partial "footer.html" . }}
+{{ end }}

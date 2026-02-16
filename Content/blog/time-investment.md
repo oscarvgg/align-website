@@ -1,8 +1,9 @@
 ---
-title: Time investment unlocked: skyrocket your productivity today
-date: 2023-09-02 08:00
-description: Uncover the power of Time Investment! Boost productivity with effective strategies
-tags: Time Management and Productivity Fundamentals
+title: "Time investment unlocked: skyrocket your productivity today"
+date: "2023-09-02T08:00:00"
+description: "Uncover the power of Time Investment! Boost productivity with effective strategies"
+tags:
+  - "Time Management and Productivity Fundamentals"
 image: /img/blog/covers/time-investment.jpg
 author: oscarvgg
 ---
