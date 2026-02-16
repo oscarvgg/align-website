@@ -1,8 +1,8 @@
 {{ define "main" }}
-<div class="md:container mx-auto pt-10 px-4">
+<div class="site-shell">
   <article>
     {{ with .Params.image }}
-    <div class="prose md:prose-xl mx-auto mb-10">
+    <div class="prose md:prose-xl mx-auto mb-8 md:mb-10">
       <img src="{{ . }}" alt="{{ $.Title }} cover"/>
     </div>
     {{ end }}
@@ -11,7 +11,7 @@
       <h1>{{ .Title }}</h1>
     </div>
 
-    <div class="text-xl max-w-prose mx-auto">
+    <div class="text-base md:text-xl max-w-prose mx-auto">
       <div class="mb-10">
         {{ if not (.Params.hidePublishedDate | default false) }}
         <div class="my-2 text-sm">Published on {{ .Date.Format "Jan 02, 2006" }}</div>

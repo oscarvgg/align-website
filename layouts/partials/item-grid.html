@@ -1,6 +1,6 @@
 {{- $items := .items -}}
-<section class="text-xl max-w-prose mx-auto">
-  <div class="grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 gap-8 pt-10">
+<section class="text-base md:text-xl max-w-prose mx-auto">
+  <div class="grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pt-8 md:pt-10">
     {{- range $items -}}
     <a href="{{ .RelPermalink }}" class="card shadow-xl dark:border dark:border-gray-700">
       {{- with .Params.image }}

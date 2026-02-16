@@ -1,133 +1,245 @@
 {{ define "main" }}
-<div class="md:container mx-auto pt-10 px-4">
-  <section>
-    <div class="md:hero sm:px-4 lg:px-16 pb-16">
-      <div class="hero-content mx-auto flex-col lg:flex-row-reverse sm:text-center lg:text-left">
-        <div class="md:max-w-fit sm:max-w-full h-auto">
-          <img src="/img/iphone-screenshot-light.webp" alt="iPhone main screenshot" class="block dark:hidden"/>
-          <img src="/img/iphone-screenshot-dark.webp" alt="iPhone main screenshot" class="hidden dark:block"/>
+<div class="site-shell">
+
+  <!-- ── Hero ── -->
+  <section class="hero-section">
+    <div class="max-w-2xl mx-auto">
+      <p class="hero-kicker">Organize your day effectively with</p>
+      <h1 class="hero-word"><span class="text-accent">Align</span></h1>
+      <p class="hero-subtitle">The time blocking app that helps you visualize, plan, and own every hour of your day.</p>
+      <div class="flex justify-center">
+        {{ partial "app-store-badge.html" (dict "campaign" "web_home") }}
+      </div>
+    </div>
+    <div class="hero-phone-wrapper mt-12 md:mt-16 flex justify-center">
+      <div class="hero-phone-glow">
+        <img src="/img/iphone-screenshot-light.webp" alt="Align app showing daily time blocks on iPhone" class="hero-phone-img block dark:hidden"/>
+        <img src="/img/iphone-screenshot-dark.webp" alt="Align app showing daily time blocks on iPhone" class="hero-phone-img hidden dark:block"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trust Bar ── -->
+  <section class="bg-neutral rounded-lg reveal">
+    <div class="trust-bar py-10 md:py-14 px-6 text-center">
+      <p class="text-lg md:text-xl font-medium" style="color: var(--text-secondary);">
+        Unlock your productivity potential with visual time blocking.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3 mt-5">
+        <span class="trust-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          4.9 on the App Store
+        </span>
+        <span class="trust-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          iPhone, iPad &amp; Mac
+        </span>
+        <span class="trust-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9"/></svg>
+          iCloud Sync
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Bento Feature Grid ── -->
+  <section class="reveal">
+    <div class="text-center max-w-2xl mx-auto mb-10 md:mb-14">
+      <h2>Everything you need to own your day</h2>
+      <p class="mt-4" style="color: var(--text-secondary);">
+        A focused set of tools designed around how you actually work.
+      </p>
+    </div>
+    <div class="bento-grid reveal-stagger">
+      <!-- Large: Visual Timeline -->
+      <div class="bento-card bento-card-lg reveal">
+        <div class="bento-card-text">
+          <h3>Visual Timeline</h3>
+          <p>See your entire day as color-coded time blocks. Plan, rearrange, and stay on track at a glance.</p>
         </div>
-        <div class="max-w-md">
-          <h1 class="md:text-5xl sm:pt-9"><span>Organize Your Day Effectively with: </span></h1>
-          <h1 class="md:text-9xl pt-8"><span class="text-accent">Align</span></h1>
-          <h2 class="text-4xl font-thin pt-8 pb-8">The Time Blocking App</h2>
-          {{ partial "app-store-badge.html" (dict "campaign" "web_home") }}
+        <div class="bento-card-img">
+          <img src="/img/day-time-blocks-view-light.webp" alt="Timeline view with color-coded time blocks" class="block dark:hidden"/>
+          <img src="/img/day-time-blocks-view-dark.webp" alt="Timeline view with color-coded time blocks" class="hidden dark:block"/>
+        </div>
+      </div>
+
+      <!-- Small: Calendar Sync -->
+      <div class="bento-card reveal">
+        <div class="bento-card-text">
+          <div class="bento-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Calendar Sync</h3>
+          <p>Import events from your device calendars. Always accurate, always current.</p>
+        </div>
+      </div>
+
+      <!-- Small: Smart Notifications -->
+      <div class="bento-card reveal">
+        <div class="bento-card-text">
+          <div class="bento-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+          </div>
+          <h3>Smart Notifications</h3>
+          <p>Get reminded when tasks start or ahead of time. Never miss a beat.</p>
+        </div>
+      </div>
+
+      <!-- Large: Customize & Recur -->
+      <div class="bento-card bento-card-lg reveal">
+        <div class="bento-card-text">
+          <h3>Customize &amp; Recur</h3>
+          <p>Pick colors, icons, and set recurrence. Build your routine once and let it repeat.</p>
+        </div>
+        <div class="bento-card-img">
+          <img src="/img/customize-and-recur-time-blocks-light.webp" alt="Time block editor with color and recurrence options" class="block dark:hidden"/>
+          <img src="/img/customize-and-recur-time-blocks-dark.webp" alt="Time block editor with color and recurrence options" class="hidden dark:block"/>
+        </div>
+      </div>
+
+      <!-- Small: Overlap Avoidance -->
+      <div class="bento-card reveal">
+        <div class="bento-card-text">
+          <div class="bento-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Overlap Avoidance</h3>
+          <p>Align detects conflicts and shifts blocks automatically. No more double-bookings.</p>
+        </div>
+      </div>
+
+      <!-- Small: All Your Devices -->
+      <div class="bento-card reveal">
+        <div class="bento-card-text">
+          <div class="bento-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>All Your Devices</h3>
+          <p>iPhone, iPad, Mac. Synced via iCloud, always in your pocket.</p>
+        </div>
+      </div>
+
+      <!-- Small: Drag & Resize -->
+      <div class="bento-card reveal">
+        <div class="bento-card-text">
+          <div class="bento-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+          </div>
+          <h3>Drag &amp; Resize</h3>
+          <p>Reprioritize by dragging. Resize blocks to fit your changing schedule.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-neutral rounded-lg">
-    <div class="hero md:p-16">
-      <div class="hero-content text-center">
-        <div>
-          <h2>Unlock your productivity potential.</h2>
-          <p class="py-6">Align is your personal time management tool helping you revolutionize your daily routine.</p>
+  <!-- ── Deep-Dive: Visual Timeline ── -->
+  <section class="reveal">
+    <div class="feature-showcase-inner">
+      <div class="feature-showcase-text">
+        <span class="feature-label">Visual Timeline</span>
+        <h2>See your whole day in one view</h2>
+        <p class="mt-3" style="color: var(--text-secondary);">Every task becomes a time block on a clean vertical timeline. Spot gaps, overlaps, and free time instantly. Drag to rearrange. Tap to edit. Your day, fully visible.</p>
+      </div>
+      <div class="feature-showcase-media">
+        <img src="/img/day-time-blocks-view-light.webp" alt="Timeline view with time blocks visualizing the full day" class="block dark:hidden"/>
+        <img src="/img/day-time-blocks-view-dark.webp" alt="Timeline view with time blocks visualizing the full day" class="hidden dark:block"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Deep-Dive: Customize & Recur ── -->
+  <section class="reveal">
+    <div class="feature-showcase-inner reverse">
+      <div class="feature-showcase-text">
+        <span class="feature-label">Customization</span>
+        <h2>Make every block yours</h2>
+        <p class="mt-3" style="color: var(--text-secondary);">Add colors, icons, and set tasks to recur daily, weekly, or on custom schedules. Build your routine once and let Align handle the rest.</p>
+      </div>
+      <div class="feature-showcase-media">
+        <img src="/img/customize-and-recur-time-blocks-light.webp" alt="Time block editor showing color, icon, and recurrence options" class="block dark:hidden"/>
+        <img src="/img/customize-and-recur-time-blocks-dark.webp" alt="Time block editor showing color, icon, and recurrence options" class="hidden dark:block"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Deep-Dive: Sync Across Devices (Centered) ── -->
+  <section class="feature-showcase-centered bg-neutral rounded-lg reveal">
+    <div class="text-center max-w-xl mx-auto">
+      <span class="feature-label">Multi-Device</span>
+      <h2>Your schedule, everywhere</h2>
+      <p class="mt-3" style="color: var(--text-secondary);">Synced via iCloud across iPhone, iPad, and Mac. Start planning on one device, pick up seamlessly on another.</p>
+    </div>
+    <div class="flex justify-center mt-8 md:mt-12 overflow-hidden">
+      <img src="/img/sync-across-all-devices-light.png" alt="Align running on iPhone, iPad, and Mac" class="block dark:hidden feature-wide-img"/>
+      <img src="/img/sync-across-all-devices-dark.png" alt="Align running on iPhone, iPad, and Mac" class="hidden dark:block feature-wide-img"/>
+    </div>
+  </section>
+
+  <!-- ── Explore Align ── -->
+  <section class="reveal">
+    <div class="text-center max-w-lg mx-auto mb-8 md:mb-10">
+      <h2>Learn more about time blocking</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/time-blocking-planner/" class="explore-card">
+        <h3>Time Blocking Planner</h3>
+        <p>Discover how a planner approach transforms your schedule.</p>
+      </a>
+      <a href="/time-blocking-app/" class="explore-card">
+        <h3>Time Blocking App</h3>
+        <p>Why a digital app beats paper for time blocking.</p>
+      </a>
+      <a href="/blog/time-blocking-apps-a-comprehensive-guide-to-maximizing-productivity/" class="explore-card">
+        <h3>Top Apps Compared</h3>
+        <p>A comprehensive guide to the best time blocking apps.</p>
+      </a>
+      <a href="/help/core-concepts/" class="explore-card">
+        <h3>Core Concepts</h3>
+        <p>Learn how time blocking works and why it is effective.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Final CTA: Download + Waitlist ── -->
+  <section id="waiting-list" class="reveal">
+    <div class="final-cta bg-neutral rounded-lg">
+      <div class="text-center max-w-xl mx-auto">
+        <h2>Ready to align your time?</h2>
+        <p class="mt-4 mb-6" style="color: var(--text-secondary);">
+          Start organizing your day with visual time blocks. Free to download.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          {{ partial "app-store-badge.html" (dict "campaign" "web_waiting_list") }}
+          <a target="_blank" href="https://betalist.com/startups/align-day?utm_campaign=badge-align-day&amp;utm_medium=badge&amp;utm_source=badge-featured">
+            <img alt="Align featured on BetaList" height="40" style="height: 40px" src="https://betalist.com/badges/featured?id=117212&amp;theme=color"/>
+          </a>
+        </div>
+      </div>
+      <div class="mt-10 max-w-md mx-auto">
+        <p class="text-center text-sm mb-4" style="color: var(--text-muted);">Or join the mailing list for updates:</p>
+        <div class="card">
+          <div class="ml-embedded" data-form="b1TLrP"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="hero md:p-16">
-      <div class="hero-content flex-col lg:flex-row space-x-4">
-        <div>
-          <img src="/img/day-time-blocks-view-light.webp" alt="timeline view with time blocks" class="block dark:hidden md:max-w-sm sm:max-w-full h-auto"/>
-          <img src="/img/day-time-blocks-view-dark.webp" alt="timeline view with time blocks" class="hidden dark:block md:max-w-sm sm:max-w-full h-auto"/>
-        </div>
-        <div>
-          <h2>Visualize Your Day with Time Blocks</h2>
-          <p class="py-6">Easily plan and organize your day with Align's visual timeline. Each task is represented as a time block, allowing you to see your entire day at a glance. This intuitive interface ensures a clear schedule overview, helping you stay on track and accomplish more.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="hero md:p-16">
-      <div class="hero-content text-center">
-        <div>
-          <h2>Sync with calendars</h2>
-          <p class="py-6">Align integrates with your calendar so that it can automatically sync your schedule across different devices. This means that no matter where you are or which device you're using, you'll always have an accurate representation of what needs to be done next.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-neutral rounded-lg">
-    <div class="hero md:p-16">
-      <div class="hero-content flex-col lg:flex-row-reverse space-x-4">
-        <div>
-          <img src="/img/customize-and-recur-time-blocks-light.webp" alt="time block edit view" class="block dark:hidden md:max-w-sm sm:max-w-full h-auto"/>
-          <img src="/img/customize-and-recur-time-blocks-dark.webp" alt="time block edit view" class="hidden dark:block md:max-w-sm sm:max-w-full h-auto"/>
-        </div>
-        <div>
-          <h2>Customize and Recur Time Blocks</h2>
-          <p class="py-6">With Align, you have complete control over your time blocks. Add tasks to the timeline and customize each with different colors and icons to make them easily distinguishable. You can even make tasks recurrent, saving you time by automatically creating future time blocks. Align adapts to your unique needs, making it effortless to stay organized and focused.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="hero md:p-16">
-      <div class="hero-content flex-col lg:flex-row space-x-4">
-        <div>
-          <img src="/img/avoid-overlapping-blocks-light.webp" alt="timeline view showing an indicator when time blocks overlap" class="block dark:hidden md:max-w-sm sm:max-w-full h-auto"/>
-          <img src="/img/avoid-overlapping-blocks-dark.webp" alt="timeline view showing an indicator when time blocks overlap" class="hidden dark:block md:max-w-sm sm:max-w-full h-auto"/>
-        </div>
-        <div>
-          <h2>Avoid Overlapping Blocks</h2>
-          <p class="py-6">Align's intelligent algorithm automatically checks for overlapping time blocks. Say goodbye to double bookings or conflicting appointments. With Align, you'll have a clear view of your day without any scheduling conflicts, allowing you to maximize your time and focus on what's important.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="hero md:p-16">
-      <div class="hero-content flex-col lg:flex-row space-x-4">
-        <div>
-          <img src="/img/sync-across-all-devices-light.png" alt="sync over iphone, ipad and mac" class="block dark:hidden md:max-w-sm sm:max-w-full h-auto"/>
-          <img src="/img/sync-across-all-devices-dark.png" alt="sync over iphone, ipad and mac" class="hidden dark:block md:max-w-sm sm:max-w-full h-auto"/>
-        </div>
-        <div>
-          <h2>Sync Across All Devices</h2>
-          <p class="py-6">Take advantage of Align's seamless synchronization across all your devices. Whether you're using your iPhone, iPad, or Mac, your tasks and schedule are always up to date. Thanks to the power of iCloud, you can easily access your time blocks wherever you go, ensuring that you stay organized and in control wherever you are.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-neutral rounded-lg">
-    <div class="hero md:p-16">
-      <div class="hero-content flex-col lg:flex-row-reverse space-x-4">
-        <div>
-          <img src="/img/get-notified-when-tasks-start-light.webp" alt="Time block edit view showing alert options: when a task starts or some time before" class="block dark:hidden md:max-w-sm sm:max-w-full h-auto"/>
-          <img src="/img/get-notified-when-tasks-start-light.webp" alt="Time block edit view showing alert options: when a task starts or some time before" class="hidden dark:block md:max-w-sm sm:max-w-full h-auto"/>
-        </div>
-        <div>
-          <h2>Get Notified When Tasks Start</h2>
-          <p class="py-6">Align helps you stay on top of your schedule with timely notifications. Receive a notification when a task is about to start, so you can transition seamlessly between activities. Say goodbye to missed deadlines or running late. Align keeps you accountable and ensures you stay on track throughout your day.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="prose md:prose-xl mx-auto">
-      <h2 class="text-3xl font-semibold">Explore Align</h2>
-      <p class="pt-2">Start here if you’re looking for a time blocking planner or app:</p>
-      <ul class="list-disc pl-6 pt-4">
-        <li><a href="/time-blocking-planner/">Time Blocking Planner</a></li>
-        <li><a href="/time-blocking-app/">Time Blocking App</a></li>
-        <li><a href="/blog/time-blocking-apps-a-comprehensive-guide-to-maximizing-productivity/">Top Time Blocking Apps (comparison)</a></li>
-        <li><a href="/help/core-concepts/">Core Concepts: how time blocking works</a></li>
-      </ul>
-    </div>
-  </section>
-
-  {{ partial "waitlist.html" . }}
   {{ partial "footer.html" . }}
 </div>
+
+<script>
+(function() {
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { obs.observe(el); });
+})();
+</script>
 {{ end }}
