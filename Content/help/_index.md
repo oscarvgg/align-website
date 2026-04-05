@@ -12,6 +12,7 @@ Learn the basics of Align and start organizing your time effectively.
 
 ## Features & How-Tos
 Master every aspect of Align's powerful features.
+- [Drag and Drop](/help/drag-and-drop)
 - [Resizing Time Blocks](/help/resizing-time-blocks)
 - [Locking Time Blocks](/help/locking-time-blocks)
 - [Overlap Avoidance](/help/overlap-avoidance)
