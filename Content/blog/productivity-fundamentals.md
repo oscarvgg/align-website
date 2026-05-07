@@ -1,7 +1,7 @@
 ---
 title: "The productivity fundamentals: winning strategies for balance and success in life"
 date: "2023-09-04T08:00:00"
-description: "description: Discover the power of productivity! Embark on a riveting journey through its strategic role in work, education, personal life and more."
+description: "What productivity actually means and why most advice fails. The core fundamentals of productivity, time management, and building habits that stick."
 tags:
   - "Time Management and Productivity Fundamentals"
   - "Productivity"

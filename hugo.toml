@@ -1,5 +1,5 @@
 baseURL = "https://align.day/"
-title = "Align: The Time Blocking App"
+title = "Align — Visual Time Blocking App for iPhone | Free Download"
 languageCode = "en"
 defaultContentLanguage = "en"
 contentDir = "Content"
@@ -10,7 +10,7 @@ disableHugoGeneratorInject = true
 taxonomies = { tag = "tags" }
 
 [params]
-description = "Elevate your time management with Align: a visual time blocking app. Plan, prioritize, and stay organized effortlessly. Conquer your day with ease."
+description = "Align is a free time blocking app for iPhone with a visual timeline, iCloud sync, and overlap detection. Plan your day in minutes. Download free on the App Store."
 
 [markup.goldmark.renderer]
 unsafe = true

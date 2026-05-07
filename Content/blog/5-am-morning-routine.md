@@ -1,7 +1,7 @@
 ---
 title: "The 5 am morning routine for ultimate success"
 date: "2023-09-26T07:08:00"
-description: "Dive into the 5 am lifestyle to boost productivity. Learn how to tackle challenges, build habits, and ace your morning routine with Align."
+description: "The 5am morning routine that actually sticks: build habits that stick, get more done, and stop wasting your mornings figuring out where to start."
 tags:
   - "Planning"
   - "Scheduling"

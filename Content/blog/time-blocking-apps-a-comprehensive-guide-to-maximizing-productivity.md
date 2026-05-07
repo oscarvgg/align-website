@@ -1,7 +1,7 @@
 ---
-title: "Time blocking apps: a comprehensive guide for maximizing productivity"
+title: "Best Time Blocking Apps for iPhone in 2026 — Free & Paid"
 date: "2023-08-18T08:00:00"
-description: "Discover top time blocking apps in this comprehensive guide. Compare features, pricing, and platforms for maximum productivity."
+description: "Compare the best time blocking apps for iPhone in 2026. Visual planners, free options, and ADHD-friendly tools ranked by features, pricing, and platform."
 tags:
   - "Apps"
 image: /img/blog/covers/time-blocking-mobile-apps-cover.jpg

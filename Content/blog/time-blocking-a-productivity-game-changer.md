@@ -1,7 +1,7 @@
 ---
-title: "Time blocking: a productivity game changer"
+title: "What Is Time Blocking? A Beginner's Guide with Examples"
 date: "2023-08-21T08:00:00"
-description: "Discover the power of time blocking to boost productivity and achieve your goals. Learn the common mistakes to avoid and effective techniques to maximize your time."
+description: "Time blocking helps your brain make fewer decisions and get more done. Learn what it is, how it works, common mistakes to avoid, and how to start today."
 tags:
   - "Time Blocking"
 image: /img/blog/covers/time-blocking-a-productivity-game-changer.jpg
