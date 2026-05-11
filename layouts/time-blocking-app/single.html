@@ -1,0 +1,276 @@
+{{ define "main" }}
+<div class="site-shell">
+
+  <!-- ── Hero ── -->
+  <section class="hero-section">
+    <div class="max-w-2xl mx-auto">
+      <p class="hero-kicker">Free time blocking app for iPhone</p>
+      <h1 class="hero-word">Time Blocking App</h1>
+      <p class="hero-subtitle">Align transforms your to-do list into a visual schedule you can actually follow. Plan, adjust, and stay on track — all from your iPhone.</p>
+      <div class="flex justify-center">
+        {{ partial "app-store-badge.html" (dict "campaign" "web_time_blocking_app") }}
+      </div>
+    </div>
+    <div class="hero-phone-wrapper mt-12 md:mt-16 flex justify-center">
+      <div class="hero-phone-glow">
+        <img src="/img/iphone-screenshot-light.webp" alt="Align app showing daily time blocks on iPhone" class="hero-phone-img block dark:hidden"/>
+        <img src="/img/iphone-screenshot-dark.webp" alt="Align app showing daily time blocks on iPhone" class="hero-phone-img hidden dark:block"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trust Bar ── -->
+  <section class="bg-neutral rounded-lg reveal">
+    <div class="trust-bar py-10 md:py-14 px-6 text-center">
+      <p class="text-lg md:text-xl font-medium" style="color: var(--text-secondary);">
+        Join thousands of people who plan their day with Align
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3 mt-5">
+        <span class="trust-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          4.9 on the App Store
+        </span>
+        <span class="trust-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          iPhone (iPad &amp; Mac soon)
+        </span>
+        <span class="trust-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9"/></svg>
+          iCloud Sync
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Article Content ── -->
+  <section class="prose md:prose-xl mx-auto">
+    <div class="text-center">
+      <div class="h-12 md:h-20"></div>
+      <h1 class="text-3xl md:text-4xl">Time Blocking App</h1>
+    </div>
+
+    <div class="h-12 md:h-20"></div>
+
+    <p>A <strong>time blocking app</strong> transforms your to-do list into a realistic, visual schedule you can actually follow. Instead of juggling tasks in your head, you see your whole day as color-coded blocks — and know exactly what to work on next.</p>
+
+    <p>Align is a free time blocking app built for iPhone that helps you plan, adjust, and stay on track without the chaos.</p>
+
+    <p><a href="https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_time_blocking_app&mt=8">Download Align on the App Store</a></p>
+
+    <h2>What is a time blocking app?</h2>
+
+    <p><strong>Time blocking</strong> is a productivity method where you assign a specific start and end time to every task. A time blocking app makes this practical by giving you:</p>
+
+    <ul>
+      <li>A <strong>visual timeline</strong> so you can see your full day at a glance</li>
+      <li><strong>Drag and resize</strong> to adjust when plans change</li>
+      <li><strong>Reminders</strong> so nothing slips through the cracks</li>
+      <li><strong>Calendar sync</strong> so meetings and tasks share the same schedule</li>
+    </ul>
+
+    <p>Unlike a basic to-do list, a time block app shows you <em>when</em> work happens — not just <em>what</em> needs to get done.</p>
+
+    <h2>Why Align is the best free time blocking app</h2>
+
+    <p>Align is designed specifically for time blocking, not retrofitted from a general task manager. Here's what makes it different:</p>
+
+    <ul>
+      <li><strong>Visual timeline</strong> — See every block of your day on a clean, scrollable timeline. Color-code by project, priority, or energy level.</li>
+      <li><strong>Drag, resize, and reorder</strong> — When a meeting runs long or a task takes less time than expected, adjust your blocks in seconds.</li>
+      <li><strong>Calendar integration</strong> — Import events from your device calendars so your commitments and tasks live in one place.</li>
+      <li><strong>Recurring blocks</strong> — Set up daily routines (morning review, lunch break, end-of-day shutdown) without recreating them every day.</li>
+      <li><strong>Overlap avoidance</strong> — Align automatically detects double-bookings and suggests fixes.</li>
+      <li><strong>Smart notifications</strong> — Get a heads-up before each block starts so you can transition smoothly.</li>
+      <li><strong>iCloud sync</strong> — Start on iPhone, continue on iPad. Mac support coming soon.</li>
+      <li><strong>4.9 stars on the App Store</strong> — Real users love how simple and focused Align is.</li>
+    </ul>
+
+    <p><a href="/blog/time-blocking-apps-a-comprehensive-guide-to-maximizing-productivity/">See how Align compares to other time blocking apps →</a></p>
+
+    <h2>Key features to look for in a time blocking app</h2>
+
+    <p>Not all time block apps are equal. When choosing one, prioritize these:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Why it matters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Visual timeline</strong></td>
+          <td>A list of tasks hides conflicts. A timeline shows them instantly.</td>
+        </tr>
+        <tr>
+          <td><strong>Drag and resize</strong></td>
+          <td>Plans change. Your app should adapt in seconds, not require re-entry.</td>
+        </tr>
+        <tr>
+          <td><strong>Calendar sync</strong></td>
+          <td>Your meetings already exist. Your tasks should live alongside them, not in a separate app.</td>
+        </tr>
+        <tr>
+          <td><strong>Recurring blocks</strong></td>
+          <td>Routines save time. If you rebuild your schedule every day, you'll stop using the app.</td>
+        </tr>
+        <tr>
+          <td><strong>Overlap detection</strong></td>
+          <td>Double-booking is discouraging. Automatic detection prevents it before it happens.</td>
+        </tr>
+        <tr>
+          <td><strong>Notifications</strong></td>
+          <td>A schedule you don't see is a schedule you won't follow.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Align checks all of these. <a href="https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_time_blocking_app_features&mt=8">Download it free →</a></p>
+
+    <h2>Align vs other popular time blocking apps</h2>
+
+    <p>There are several time blocking apps and task managers out there. Here's how Align stacks up:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>App</th>
+          <th>Best for</th>
+          <th>Price</th>
+          <th>Visual timeline</th>
+          <th>Calendar sync</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Align</strong></td>
+          <td>Focus and simplicity</td>
+          <td>Free</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Structured</td>
+          <td>iOS-only planning</td>
+          <td>Free / $9.99/mo</td>
+          <td>Partial</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Sorted 3</td>
+          <td>Power users</td>
+          <td>Free / $14.99/yr</td>
+          <td>Partial</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Todoist</td>
+          <td>Task management</td>
+          <td>Free / $3/mo</td>
+          <td>No</td>
+          <td>Via integration</td>
+        </tr>
+        <tr>
+          <td>Any.do</td>
+          <td>General tasks</td>
+          <td>Free / $2.99/mo</td>
+          <td>No</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Align's edge is that it was <em>built around time blocking</em> — not bolting it onto an existing task manager. The timeline is the core experience, not an afterthought.</p>
+
+    <h2>How to start time blocking in 4 steps</h2>
+
+    <p>Whether you use Align or another app, here's how to make time blocking stick:</p>
+
+    <ol>
+      <li><strong>Audit your fixed commitments</strong> — Block time for meetings, commute, meals, and anything non-negotiable first.</li>
+      <li><strong>Identify your priorities</strong> — Pick the 2-3 most important tasks for tomorrow. Block time for them before anything else.</li>
+      <li><strong>Add buffers</strong> — Leave 15-30 minutes between blocks for transitions, overflow, or the unexpected.</li>
+      <li><strong>Review mid-day</strong> — Look at your timeline around lunch. What's done? What needs to move? Adjust without guilt.</li>
+    </ol>
+
+    <p>For a deeper dive, read our guide to <a href="/time-blocking-planner/">the time blocking method</a>.</p>
+
+    <h2>Is a time blocking app right for you?</h2>
+
+    <p>A time block app works well if you:</p>
+
+    <ul>
+      <li>Have a variable or unpredictable schedule and need to protect focus time</li>
+      <li>Struggle with switching between tasks and want clearer boundaries</li>
+      <li>Learn visually and want to <em>see</em> your day, not just read a list</li>
+      <li>Want to build routines that stick without daily re-planning</li>
+    </ul>
+
+    <p>It's less useful if you mainly need team collaboration, project management, or cross-platform sync (Align currently focuses on Apple devices).</p>
+
+    <p><a href="https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_time_blocking_app_download&mt=8">Download Align — free on the App Store →</a></p>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>What is the best time blocking app?</h3>
+
+    <p>The best time blocking app depends on your platform and needs. For iPhone, Align is our pick — it's free, has a dedicated visual timeline, calendar sync, and overlap detection. <a href="/blog/time-blocking-apps-a-comprehensive-guide-to-maximizing-productivity/">See full comparisons →</a></p>
+
+    <h3>Is there a free time blocking app?</h3>
+
+    <p>Yes. Align is a free time blocking app with no subscription required. The core features (timeline, drag-and-resize, calendar sync, recurring blocks, notifications) are all free.</p>
+
+    <h3>Can I use a time blocking app on iPad?</h3>
+
+    <p>Align currently supports iPhone with iPad and Mac support coming soon. For iPad-focused options, consider Structured or Sorted 3.</p>
+
+    <h3>How is a time block app different from a calendar?</h3>
+
+    <p>A calendar shows <em>when</em> events happen. A time block app adds <em>what</em> you plan to work on during open time — turning unscheduled hours into intentional work blocks, not just empty slots.</p>
+
+    <h3>Does Align integrate with Google Calendar?</h3>
+
+    <p>Align syncs with your device calendars (Apple Calendar on iOS). For Google Calendar, you can add it to your iOS calendar accounts and it will sync automatically.</p>
+
+    <hr/>
+
+    <p>Ready to see your day differently?</p>
+
+    <p><a href="https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_time_blocking_app&mt=8">Download Align on the App Store</a></p>
+  </section>
+
+  <!-- ── Final CTA ── -->
+  <section class="mt-16 reveal">
+    <div class="final-cta bg-neutral rounded-lg">
+      <div class="text-center max-w-xl mx-auto">
+        <h2>Start time blocking today</h2>
+        <p class="mt-4 mb-6" style="color: var(--text-secondary);">
+          Free to download. No subscription required.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          {{ partial "app-store-badge.html" (dict "campaign" "web_time_blocking_app") }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+</div>
+
+<script>
+(function() {
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { obs.observe(el); });
+})();
+</script>
+{{ end }}
