@@ -4,8 +4,10 @@
 {{- $titleOverride := .Scratch.Get "title" -}}
 {{- if $titleOverride -}}
   {{- $title = printf "%s | %s" $titleOverride $siteName -}}
+{{- else if and .IsHome .Title -}}
+  {{- $title = .Title -}}
 {{- else if .IsHome -}}
-  {{- $title = printf "Home | %s" $siteName -}}
+  {{- $title = $siteName -}}
 {{- else if and (eq .Kind "taxonomy") (eq .Title "Tags") -}}
   {{- $title = printf "All Tags  | %s" $siteName -}}
 {{- else if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
@@ -54,7 +56,77 @@
 <meta name="twitter:image" content="{{ $socialImage }}"/>
 <meta property="og:image" content="{{ $socialImage }}"/>
 {{- end }}
+{{- if or .Params.noindex (eq .Kind "taxonomy") (eq .Kind "term") }}
+<meta name="robots" content="noindex, follow"/>
+{{- end }}
 {{ partial "schema-software.html" . }}
+{{- with .Params.faq }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $q := . }}{{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $q.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $q.answer | jsonify }}
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}
+{{- with .Params.howto }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": {{ .name | jsonify }},
+  {{- with .description }}"description": {{ . | jsonify }},{{ end }}
+  {{- with .totalTime }}"totalTime": {{ . | jsonify }},{{ end }}
+  "step": [
+    {{- range $i, $s := .steps }}{{ if $i }},{{ end }}
+    {
+      "@type": "HowToStep",
+      "name": {{ $s.name | jsonify }},
+      "text": {{ $s.text | jsonify }}
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}
+{{- if and (eq .Section "blog") (eq .Kind "page") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ $description | jsonify }},
+  {{- with $socialImage }}"image": {{ . | jsonify }},{{ end }}
+  "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": "Oscar Vicente Gonzalez Greco",
+    "url": "https://align.day/authors/oscar-vicente-gonzalez-greco/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Align",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://align.day/favicon.png"
+    }
+  },
+  "mainEntityOfPage": {{ $canonical | jsonify }}
+}
+</script>
+{{- end }}
 <script src="https://www.googletagmanager.com/gtag/js?id=G-T0WWL4KDTV"></script>
 <script>
 window.dataLayer = window.dataLayer || [];

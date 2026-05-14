@@ -14,7 +14,18 @@
     <div class="text-base md:text-xl max-w-prose mx-auto">
       <div class="mb-10">
         {{ if not (.Params.hidePublishedDate | default false) }}
+        {{ $updated := false }}
+        {{ if .Lastmod }}
+          {{ if gt (sub .Lastmod.Unix .Date.Unix) 86400 }}{{ $updated = true }}{{ end }}
+        {{ end }}
+        {{ if $updated }}
+        <div class="my-2 text-sm">
+          Updated on {{ .Lastmod.Format "Jan 02, 2006" }}
+          <span class="opacity-60">· Published on {{ .Date.Format "Jan 02, 2006" }}</span>
+        </div>
+        {{ else }}
         <div class="my-2 text-sm">Published on {{ .Date.Format "Jan 02, 2006" }}</div>
+        {{ end }}
         {{ end }}
 
         <ul class="flex flex-row gap-2 flex-wrap my-2 items-center justify-items-start list-none p-0 m-0 pl-0 mt-0">

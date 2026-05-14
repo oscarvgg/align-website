@@ -1,7 +1,9 @@
 ---
-title: "Free Time Blocking Templates - Printable PDFs, Google Sheets & Excel Downloads"
+title: "Free Time Blocking Templates — Printable PDF, Excel & Google Sheets"
+linkTitle: "Free Time Blocking Templates"
 date: "2023-08-14T08:07:00"
-description: "Download free printable time blocking templates in PDF, Google Sheets & Excel. Daily, weekly & monthly schedule templates to boost productivity. Start planning today!"
+lastmod: "2026-05-12"
+description: "Free time blocking templates — daily, weekly (5 or 7 day), monthly, Excel and Google Sheets. Printable PDFs and editable formats. No signup."
 tags:
   - "Printables"
   - "Time Blocking"
@@ -9,25 +11,36 @@ tags:
   - "Templates"
 image: /img/blog/covers/free-time-blocking-template-printable-cover.jpg
 author: oscarvgg
+faq:
+  - question: "Where can I get a free time blocking template?"
+    answer: "You can download free time blocking templates from Align in PDF (daily, 5-day weekly, 7-day weekly, monthly), as an editable Excel .xlsx file, and as a shareable Google Sheets template. All are free with no signup."
+  - question: "Which time blocking template should I choose?"
+    answer: "Choose the daily PDF for single-day deep work, the 5-day weekly PDF for workweek planning, the 7-day weekly PDF for full-life planning, the monthly PDF for projects and habits, Google Sheets for collaboration and mobile editing, or Excel for offline use."
+  - question: "Is the time blocking template available in Google Sheets?"
+    answer: "Yes. The Google Sheets time blocking template is free and editable. Click 'Make a copy' to get your own version in Google Drive, then share or duplicate it as needed."
+  - question: "Is there a free Excel time blocking template?"
+    answer: "Yes. The Excel .xlsx template includes daily, weekly, and monthly tabs in a single file and works offline in Excel, Numbers, and LibreOffice."
+  - question: "Are these templates good for ADHD?"
+    answer: "Many people with ADHD find time blocking helpful because clear hour boundaries reduce decision fatigue and task switching. The daily PDF is a popular starting point."
 ---
 
-Looking to organize your schedule more effectively? Our collection of free time blocking templates can help you plan your days with purpose. Available as printable PDFs, Google Sheets, or Excel files, these templates make time management simple and visual.
+Looking to organize your schedule more effectively? Our collection of free time blocking templates can help you plan your days with purpose. Choose your preferred format below — printable PDF, editable Excel, or shareable Google Sheets.
 
-## Download Your Free Time Blocking Templates
+## Download your free time blocking template
 
-Choose the format that works best for you:
+Pick the variant that fits how you plan. Each link goes to a dedicated page with preview, how-to, and download.
 
-### Printable PDF Templates
-- [Daily Time Blocking Template (PDF)](/templates/time-blocking-template-printable-daily-by-align-v1.pdf) - Plan your day hour-by-hour
-- [Weekly Time Blocking Template (5-Day)](/templates/time-blocking-template-printable-weekly-5-days-by-align-v1.pdf) - Perfect for workweek planning 
-- [Weekly Time Blocking Template (7-Day)](/templates/time-blocking-template-printable-weekly-7-days-by-align-v1.pdf) - Full week scheduling solution
-- [Monthly Time Blocking Calendar](/templates/time-blocking-template-printable-monthly-by-align-v1.pdf) - For long-term planning
+### Printable PDF templates
+- [**Daily Time Blocking Template (PDF)**](/templates/daily/) — Plan your day hour-by-hour. 24-hour layout.
+- [**Weekly Time Blocking Template — 5 Days (PDF)**](/templates/weekly-5-day/) — Monday-Friday workweek planner.
+- [**Weekly Time Blocking Template — 7 Days (PDF)**](/templates/weekly-7-day/) — Full Monday-Sunday including weekends.
+- [**Monthly Time Blocking Calendar (PDF)**](/templates/monthly/) — Long-term projects and habits.
 
-### Digital Spreadsheet Templates
-- [Google Sheets Time Blocking Template](https://docs.google.com/spreadsheets/d/1SU82fw8Viqa4RkNZkmHdqiXzknWDbUMEeCjEjLFJKBs/copy) - Edit online and access anywhere
-- [Excel Time Blocking Template](/templates/time-blocking-template-printable-daily-weekly-monthly-by-align-v1.xlsx) - Customizable spreadsheet format
+### Editable digital templates
+- [**Google Sheets Time Blocking Template**](/templates/google-sheets/) — Edit in your browser, sync to mobile, share with a team.
+- [**Excel Time Blocking Template (.xlsx)**](/templates/excel/) — Daily, weekly, and monthly tabs. Works offline.
 
-All templates are completely free and ready to use. Simply download, print, or make a copy to create your ideal time blocking schedule.
+All templates are completely free, with no signup required.
 
 ## What Is Time Blocking?
 
