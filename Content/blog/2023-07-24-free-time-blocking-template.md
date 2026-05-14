@@ -1,5 +1,5 @@
 ---
-title: "Free Time Blocking Templates — Printable PDF, Excel & Google Sheets"
+title: "Free Time Blocking Templates: PDF, Excel & Google Sheets"
 linkTitle: "Free Time Blocking Templates"
 date: "2023-08-14T08:07:00"
 lastmod: "2026-05-12"

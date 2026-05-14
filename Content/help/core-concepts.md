@@ -25,7 +25,7 @@ Each time block has:
 - **A start time and end time** defining when the activity happens
 - **Visual customization** with colors and icons to make your schedule easy to scan
 - **Optional recurrence** for tasks that repeat daily, weekly, or on a custom schedule
-- **[Subtasks](/help/subtasks)** to break larger activities into smaller, manageable steps
+- **[Subtasks](/help/subtasks/)** to break larger activities into smaller, manageable steps
 
 ### Types of Time Blocks
 
@@ -73,7 +73,7 @@ Align doesn't replace your existing calendars—it works with them to give you a
 
 **Editable calendars**: For calendars where you have edit permissions, you can create, modify, move, and delete time blocks directly in Align.
 
-**Read-only calendars**: Some calendars (like shared work calendars or subscribed calendars) don't allow modifications. Events from these calendars appear in Align but are automatically [locked](/help/locking-time-blocks) to prevent accidental changes.
+**Read-only calendars**: Some calendars (like shared work calendars or subscribed calendars) don't allow modifications. Events from these calendars appear in Align but are automatically [locked](/help/locking-time-blocks/) to prevent accidental changes.
 
 ## Duration and Flexibility
 
@@ -81,13 +81,13 @@ Time blocks in Align are flexible—they adapt as your day unfolds.
 
 ### Adjusting Your Schedule
 
-**[Resizing](/help/resizing-time-blocks)**: Drag the edges of a time block to make it longer or shorter when plans change.
+**[Resizing](/help/resizing-time-blocks/)**: Drag the edges of a time block to make it longer or shorter when plans change.
 
 **Drag and drop**: Move time blocks to different times by dragging them to a new position on the timeline.
 
-**[Locking](/help/locking-time-blocks)**: Protect important appointments from accidental changes by locking them in place.
+**[Locking](/help/locking-time-blocks/)**: Protect important appointments from accidental changes by locking them in place.
 
-**[Overlap avoidance](/help/overlap-avoidance)**: Let Align automatically reorganize your schedule when you make changes, or disable it when you need more manual control.
+**[Overlap avoidance](/help/overlap-avoidance/)**: Let Align automatically reorganize your schedule when you make changes, or disable it when you need more manual control.
 
 ### Planning vs. Reality
 
@@ -149,7 +149,7 @@ Choose colors that make sense to you—there's no right or wrong system. The goa
 
 ### Icons
 
-[Icons](/help/icon-suggestion) add another layer of visual information. A running icon for your morning jog, a coffee cup for your afternoon break, or a laptop for focused work time.
+[Icons](/help/icon-suggestion/) add another layer of visual information. A running icon for your morning jog, a coffee cup for your afternoon break, or a laptop for focused work time.
 
 **Icon suggestions**: Align can automatically suggest relevant icons based on your time block titles, making it faster to build a visually rich timeline.
 
@@ -167,7 +167,7 @@ The beauty of Align is that you can start simple and gradually incorporate more 
 
 ## Need More Help?
 
-Ready to put these concepts into practice? Check out the [Quick Start Guide](/help/quick-start) for step-by-step instructions.
+Ready to put these concepts into practice? Check out the [Quick Start Guide](/help/quick-start/) for step-by-step instructions.
 
-Have questions about specific features? Browse the [Features & How-Tos](/help) section or [contact us](/help/contact) directly.
+Have questions about specific features? Browse the [Features & How-Tos](/help/) section or [contact us](/help/contact/) directly.
 

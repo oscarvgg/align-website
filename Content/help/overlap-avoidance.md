@@ -16,13 +16,13 @@ It's like having puzzle pieces that automatically snap into place. When you move
 
 With overlap avoidance turned on, Align actively prevents scheduling conflicts:
 
-**Automatic shifting**: When you [resize a time block](/help/resizing-time-blocks) or drag it to a new position, any conflicting time blocks automatically shift to make room.
+**Automatic shifting**: When you [resize a time block](/help/resizing-time-blocks/) or drag it to a new position, any conflicting time blocks automatically shift to make room.
 
 **Cascading adjustments**: If shifting one block causes it to overlap with another, that block shifts too. This creates a smooth cascade effect that reorganizes your entire schedule as needed.
 
 **Duration preservation**: When blocks shift, they keep their original duration. A 30-minute task stays 30 minutes, just at a different time.
 
-**Smart grouping**: The only time blocks are allowed to overlap is when they were already overlapping before your change, or when a [locked time block](/help/locking-time-blocks) prevents further shifting.
+**Smart grouping**: The only time blocks are allowed to overlap is when they were already overlapping before your change, or when a [locked time block](/help/locking-time-blocks/) prevents further shifting.
 
 ### When It's Disabled
 
@@ -58,7 +58,7 @@ While overlap avoidance is helpful most of the time, there are situations where 
 
 ## How It Works with Resizing
 
-When you're [resizing time blocks](/help/resizing-time-blocks), overlap avoidance determines what happens to neighboring blocks:
+When you're [resizing time blocks](/help/resizing-time-blocks/), overlap avoidance determines what happens to neighboring blocks:
 
 **Extending a block**: If you make a time block longer and overlap avoidance is on, any conflicting blocks automatically shift to make room.
 
@@ -72,7 +72,7 @@ When you're [resizing time blocks](/help/resizing-time-blocks), overlap avoidanc
 
 ## How It Works with Locked Time Blocks
 
-[Locked time blocks](/help/locking-time-blocks) have special behavior with overlap avoidance:
+[Locked time blocks](/help/locking-time-blocks/) have special behavior with overlap avoidance:
 
 **Locked blocks never move**: Even with overlap avoidance enabled, locked blocks stay exactly where they are. They're your immovable anchors.
 
@@ -102,7 +102,7 @@ Some users like to temporarily disable overlap avoidance when making major sched
 
 **Turn it off for planning sessions**: When you're doing a major schedule overhaul or planning a complex week, temporarily disabling it gives you more freedom to experiment.
 
-**Combine with locking**: [Lock your critical appointments](/help/locking-time-blocks) before disabling overlap avoidance. This protects your most important time blocks even when automatic shifting is off.
+**Combine with locking**: [Lock your critical appointments](/help/locking-time-blocks/) before disabling overlap avoidance. This protects your most important time blocks even when automatic shifting is off.
 
 **Review before disabling**: Before turning off overlap avoidance, take a moment to ensure your important time blocks are locked. This prevents them from being accidentally moved.
 
@@ -127,7 +127,7 @@ Overlap avoidance primarily affects timed events. All-day events are displayed s
 Existing overlaps stay as they are. Overlap avoidance only affects new changes you make going forward. To resolve existing overlaps, you'll need to manually adjust them.
 
 **Can I have overlap avoidance on for some calendars but not others?**  
-No, overlap avoidance is a global setting that applies to all time blocks. However, you can [lock specific time blocks](/help/locking-time-blocks) to control which ones can and can't be shifted.
+No, overlap avoidance is a global setting that applies to all time blocks. However, you can [lock specific time blocks](/help/locking-time-blocks/) to control which ones can and can't be shifted.
 
 **Does overlap avoidance work with calendar events from other apps?**  
 Yes! As long as the calendar allows Align to make modifications, overlap avoidance works with any time block in your timeline.
@@ -137,5 +137,5 @@ No, overlap avoidance only affects how time blocks are positioned in your schedu
 
 ## Need More Help?
 
-If you have questions about overlap avoidance or any other Align features, feel free to [contact us](/help/contact). We're here to help you master your schedule.
+If you have questions about overlap avoidance or any other Align features, feel free to [contact us](/help/contact/). We're here to help you master your schedule.
 

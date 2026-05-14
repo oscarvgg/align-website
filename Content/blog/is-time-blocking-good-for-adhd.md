@@ -1,7 +1,7 @@
 ---
-title: "Is Time Blocking Good for ADHD? Here's What the Research Says"
+title: "Is Time Blocking Good for ADHD? The Research Explained"
 date: "2026-04-20T08:00:00"
-description: "Discover whether time blocking works for ADHD brains. Learn how visual schedules, external structure, and reduced decision fatigue make time blocking one of the most effective productivity strategies for people with ADHD."
+description: "Does time blocking work for ADHD? See how visual schedules, external structure, and less decision fatigue make it a top productivity strategy for ADHD."
 tags:
   - "ADHD"
   - "Time Blocking"

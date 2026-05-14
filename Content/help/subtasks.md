@@ -52,4 +52,4 @@ There is no hard limit, but shorter lists are easier to scan.
 
 ## Need help?
 
-See [Contact Support](/help/contact).
+See [Contact Support](/help/contact/).

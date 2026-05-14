@@ -61,7 +61,7 @@ Align lets you customize when you want to be notified about your time blocks. Yo
 - Choose different notification settings for each time block.
 
 ### Can I break a time block into smaller steps?
-Yes! Use the **[Subtasks](/help/subtasks)** feature to add checklist items within any time block. This is perfect for complex tasks or routines where you want to track individual steps. When you complete all subtasks, the parent time block is automatically marked as finished.
+Yes! Use the **[Subtasks](/help/subtasks/)** feature to add checklist items within any time block. This is perfect for complex tasks or routines where you want to track individual steps. When you complete all subtasks, the parent time block is automatically marked as finished.
 
 ### How do notification permissions work?
 Align starts with iOS's "provisional" notification permission, which lets you receive quiet notifications on your lock screen without sounds or interruptions for a short period. This allows you to test out Align's notifications in a non-intrusive way.
@@ -73,7 +73,7 @@ After the provisional permission expires, you will stop receiving notifications 
 ### What happens if time blocks overlap?
 Align visually highlights overlapping time blocks, making spotting and resolving scheduling conflicts easy. You can easily drag and drop blocks to reorganize your schedule when conflicts occur.
 
-With [overlap avoidance](/help/overlap-avoidance) enabled (the default setting), Align automatically prevents overlaps by shifting time blocks as you resize or move them. You can disable this feature if you want to intentionally create overlapping time blocks for concurrent tasks or flexible planning.
+With [overlap avoidance](/help/overlap-avoidance/) enabled (the default setting), Align automatically prevents overlaps by shifting time blocks as you resize or move them. You can disable this feature if you want to intentionally create overlapping time blocks for concurrent tasks or flexible planning.
 
 ### How do I refresh my timeline to see the latest calendar updates?
 You can refresh your timeline by pulling down on the timeline view. This syncs Align with your device's calendar system to ensure you're seeing the most up-to-date information from all your connected calendars.
@@ -104,11 +104,11 @@ We offer several support channels:
 
 ### How can I suggest new features?
 We love hearing from our users! You can:
-- Use the [feedback form](/help/contact).
+- Use the [feedback form](/help/contact/).
 - Email us directly at [contact@align.day](mailto:contact@align.day).
 - Join our beta testing program.
 - Follow us on social media for discussions.
 - Subscribe to our newsletter to receive occasional tips and feature updates.
 
 ### Where can I learn more about using Align effectively?
-Check out our [blog](/blog) for detailed guides, tips, and best practices for time blocking and productivity. You can also subscribe to our newsletter for regular updates and productivity insights.
+Check out our [blog](/blog/) for detailed guides, tips, and best practices for time blocking and productivity. You can also subscribe to our newsletter for regular updates and productivity insights.

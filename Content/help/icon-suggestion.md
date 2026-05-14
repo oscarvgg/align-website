@@ -58,4 +58,4 @@ Your time block titles stay private and are only used to generate icon suggestio
 
 The Icon Suggestion feature is automatically enabled when creating time blocks in Align. Begin typing your activity title to receive icon suggestions.
 
-For additional information about Align's features, see the [Quick Start Guide](/help/quick-start).
+For additional information about Align's features, see the [Quick Start Guide](/help/quick-start/).

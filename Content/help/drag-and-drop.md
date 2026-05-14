@@ -25,7 +25,7 @@ This is useful for quickly pushing unfinished work to tomorrow or pulling someth
 
 ## How It Works with Overlap Avoidance
 
-With [overlap avoidance](/help/overlap-avoidance) enabled, Align automatically makes room when needed:
+With [overlap avoidance](/help/overlap-avoidance/) enabled, Align automatically makes room when needed:
 
 - Dropping on the top half of a time block places your item **before** it
 - Dropping on the bottom half places your item **after** it
@@ -36,13 +36,13 @@ If overlap avoidance is off, drag and drop keeps the regular placement behavior 
 ## Tips
 
 - Use drag and drop to quickly reorder your day without opening the time block editor
-- Combine it with [resizing time blocks](/help/resizing-time-blocks) when you need to change both timing and duration
-- Lock important appointments first if you don't want them to move. [Learn more about locked time blocks](/help/locking-time-blocks)
+- Combine it with [resizing time blocks](/help/resizing-time-blocks/) when you need to change both timing and duration
+- Lock important appointments first if you don't want them to move. [Learn more about locked time blocks](/help/locking-time-blocks/)
 
 ## Common Questions
 
 **Can I drag locked time blocks?**  
-No. [Locked time blocks](/help/locking-time-blocks) stay fixed until you unlock them.
+No. [Locked time blocks](/help/locking-time-blocks/) stay fixed until you unlock them.
 
 **Can I drag a block to a different day without dropping it first?**  
 Yes. Keep dragging to the edge of the screen and Align will move between days while you hold the block.
@@ -52,4 +52,4 @@ Yes. The interaction still works, but Align won't use before/after drop placemen
 
 ## Need More Help?
 
-If you have questions about drag and drop or any other Align feature, feel free to [contact us](/help/contact).
+If you have questions about drag and drop or any other Align feature, feel free to [contact us](/help/contact/).

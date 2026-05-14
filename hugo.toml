@@ -10,7 +10,7 @@ disableHugoGeneratorInject = true
 taxonomies = { tag = "tags" }
 
 [params]
-description = "Align is a free time blocking app for iPhone with a visual timeline, iCloud sync, and overlap detection. Plan your day in minutes. Download free on the App Store."
+description = "Free iPhone time blocking app with a visual timeline, iCloud sync, calendar import, and overlap detection. Plan your day in minutes."
 
 [markup.goldmark.renderer]
 unsafe = true

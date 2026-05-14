@@ -1,5 +1,5 @@
 ---
-title: "41 productivity tips to supercharge your day and skyrocket efficiency"
+title: "41 Productivity Tips to Supercharge Your Day"
 date: "2023-09-24T08:00:00"
 description: "41 practical productivity tips to supercharge your day. Simple, actionable techniques to reduce friction, build momentum, and actually get things done."
 tags:

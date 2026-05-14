@@ -18,7 +18,7 @@ Think of them as the foundation of your schedule—everything else can flex arou
 
 **Protect critical appointments**: Some events simply can't be rescheduled. Locking them ensures they stay exactly where they need to be.
 
-**Make resizing easier**: When you're [resizing other time blocks](/help/resizing-time-blocks), locked blocks stay in place, making it easier to organize everything else around your fixed commitments. With [overlap avoidance](/help/overlap-avoidance) enabled, other blocks automatically shift around your locked appointments.
+**Make resizing easier**: When you're [resizing other time blocks](/help/resizing-time-blocks/), locked blocks stay in place, making it easier to organize everything else around your fixed commitments. With [overlap avoidance](/help/overlap-avoidance/) enabled, other blocks automatically shift around your locked appointments.
 
 ## Two Types of Locked Time Blocks
 
@@ -49,7 +49,7 @@ Locking a time block is simple:
 
 Once locked, the time block:
 - Can't be moved by dragging
-- Won't shift when you [resize other time blocks](/help/resizing-time-blocks)
+- Won't shift when you [resize other time blocks](/help/resizing-time-blocks/)
 - Can't be resized
 - Can't be deleted
 
@@ -67,11 +67,11 @@ If you need to make changes to a locked time block that you have permission to e
 
 ### During Resizing
 
-When you're [resizing time blocks](/help/resizing-time-blocks), locked blocks have special behavior:
+When you're [resizing time blocks](/help/resizing-time-blocks/), locked blocks have special behavior:
 
 **Locked blocks never move**: No matter how you resize other time blocks, locked blocks always stay exactly where they are. They act as immovable anchors in your timeline.
 
-**Other blocks stop at locked blocks**: When [overlap avoidance](/help/overlap-avoidance) is enabled and a time block would need to shift but encounters a locked block, it stops there rather than moving the locked block.
+**Other blocks stop at locked blocks**: When [overlap avoidance](/help/overlap-avoidance/) is enabled and a time block would need to shift but encounters a locked block, it stops there rather than moving the locked block.
 
 **Example**: You have a locked "Client Meeting" at 2:00 PM and "Prep Work" at 1:00 PM. If you extend an earlier task that would push Prep Work later, it will stop at 2:00 PM and create an overlap rather than moving your locked client meeting.
 
@@ -93,7 +93,7 @@ You can't delete a locked time block. This prevents accidental removal of import
 
 **Don't overuse it**: If everything is locked, you lose flexibility. Reserve locking for genuinely important appointments that need protection.
 
-**Combine with color coding**: Use [colors and icons](/help/quick-start#creating-your-first-time-block) along with locking to make your most important time blocks stand out visually.
+**Combine with color coding**: Use [colors and icons](/help/quick-start/#creating-your-first-time-block) along with locking to make your most important time blocks stand out visually.
 
 ## Common Questions
 
@@ -114,5 +114,5 @@ Yes, all-day events can be locked just like timed events. This is useful for pro
 
 ## Need More Help?
 
-If you have questions about locking time blocks or any other Align features, feel free to [contact us](/help/contact). We're here to help you take control of your schedule.
+If you have questions about locking time blocks or any other Align features, feel free to [contact us](/help/contact/). We're here to help you take control of your schedule.
 

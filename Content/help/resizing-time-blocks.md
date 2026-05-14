@@ -20,7 +20,7 @@ This gives you complete control over your schedule without having to open the ti
 
 ## Understanding Overlap Avoidance
 
-Align includes a smart feature called **[Overlap Avoidance](/help/overlap-avoidance)** that helps keep your schedule organized and conflict-free.
+Align includes a smart feature called **[Overlap Avoidance](/help/overlap-avoidance/)** that helps keep your schedule organized and conflict-free.
 
 ### When Overlap Avoidance is Enabled (Default)
 
@@ -49,11 +49,11 @@ This is useful when you want to:
 
 ### Changing the Overlap Avoidance Setting
 
-You can toggle overlap avoidance on or off from the main icons at the top right corner of the home screen. The setting applies immediately to all future resizing actions. [Learn more about overlap avoidance](/help/overlap-avoidance).
+You can toggle overlap avoidance on or off from the main icons at the top right corner of the home screen. The setting applies immediately to all future resizing actions. [Learn more about overlap avoidance](/help/overlap-avoidance/).
 
 ## Working with Locked Time Blocks
 
-[Locked time blocks](/help/locking-time-blocks) have special behavior when resizing:
+[Locked time blocks](/help/locking-time-blocks/) have special behavior when resizing:
 
 **Locked blocks never move**: When you resize other time blocks, locked blocks always stay in place. They act as anchors in your schedule.
 
@@ -61,7 +61,7 @@ You can toggle overlap avoidance on or off from the main icons at the top right 
 
 **Example**: You have a locked "Important Meeting" at 10:00-11:00 with "Prep Work" at 9:00-10:00. If you extend an earlier task so it would push Prep Work into the meeting time, Prep Work will stop at 10:00 and overlap with the earlier task, preserving the locked meeting's time.
 
-This feature is perfect for fixed appointments like meetings, classes, or events that can't be rescheduled. [Learn more about locking time blocks](/help/locking-time-blocks).
+This feature is perfect for fixed appointments like meetings, classes, or events that can't be rescheduled. [Learn more about locking time blocks](/help/locking-time-blocks/).
 
 ## Tips for Effective Resizing
 
@@ -71,7 +71,7 @@ This feature is perfect for fixed appointments like meetings, classes, or events
 
 **Use with drag and drop**: Combine resizing with Align's drag and drop feature for complete schedule flexibility. Resize to adjust duration, drag to change position.
 
-**Lock your non-negotiables**: [Mark fixed appointments as locked](/help/locking-time-blocks) to ensure they don't accidentally move when you're adjusting your schedule.
+**Lock your non-negotiables**: [Mark fixed appointments as locked](/help/locking-time-blocks/) to ensure they don't accidentally move when you're adjusting your schedule.
 
 ## Common Questions
 
@@ -86,5 +86,5 @@ This depends on whether those calendars allow editing. Events from read-only cal
 
 ## Need More Help?
 
-If you have questions about resizing time blocks or any other Align features, feel free to [contact us](/help/contact). We're here to help you master your schedule.
+If you have questions about resizing time blocks or any other Align features, feel free to [contact us](/help/contact/). We're here to help you master your schedule.
 

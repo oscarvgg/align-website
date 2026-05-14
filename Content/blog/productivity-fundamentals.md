@@ -1,5 +1,5 @@
 ---
-title: "The productivity fundamentals: winning strategies for balance and success in life"
+title: "Productivity Fundamentals: Strategies for Balance & Success"
 date: "2023-09-04T08:00:00"
 description: "What productivity actually means and why most advice fails. The core fundamentals of productivity, time management, and building habits that stick."
 tags:
