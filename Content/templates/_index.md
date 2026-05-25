@@ -53,6 +53,6 @@ The templates on this page were created by [Align](/time-blocking-app/), a free 
 
 ## Prefer an app over a template?
 
-Templates are a great way to start. If you find yourself rewriting them every day, an app is faster: drag and drop blocks, set recurring routines, get reminders, and let overlap detection handle conflicts automatically.
+Templates are a great way to start. If you find yourself rewriting them every day, a [time blocking app](/time-blocking-app/) is faster: drag and drop blocks, set recurring routines, get reminders, and let overlap detection handle conflicts automatically. Align doubles as a digital [time blocking planner](/time-blocking-planner/) for both daily and weekly planning.
 
 [Try Align — free on the App Store →](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_templates_hub&mt=8)

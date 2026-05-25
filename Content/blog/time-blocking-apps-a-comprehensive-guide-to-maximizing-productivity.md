@@ -10,7 +10,7 @@ author: oscarvgg
 
 In today's fast-paced world, effective time management has become critical to achieving success and maintaining a healthy work-life balance. One of the most popular techniques for efficient time management is time blocking. Time blocking involves allocating specific time slots for different tasks and activities, allowing individuals to focus and prioritize their work effectively. If you'd like to learn more about time blocking we have a full article about it [here](/blog/time-blocking-a-productivity-game-changer/).
 
-Many people have seen success with time blocking and find it to be a powerful tool to increase productivity. However, doing it manually or on paper can be tedious and difficult to maintain, but if you're into that, we have an article with best practices and a free template to download [here](/templates/). Luckily, there's a better way, there are many time blocking apps available that can make the process much easier and more effective.
+Many people have seen success with time blocking and find it to be a powerful tool to increase productivity. However, doing it manually or on paper can be tedious and difficult to maintain, but if you're into that, we have an article with best practices and a free template to download [here](/templates/). Luckily, there's a better way: a dedicated [time blocking app](/time-blocking-app/) — or a digital [time blocking planner](/time-blocking-planner/) — can make the process much easier and more effective.
 
 In this comprehensive guide, we will discuss how time blocking apps can help you become more productive, the key features to look for in time blocking apps, and some of the best time blocking apps available in the market. So, let's dive in!
 
