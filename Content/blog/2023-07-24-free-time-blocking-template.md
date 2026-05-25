@@ -3,6 +3,9 @@ title: "Free Time Blocking Templates — Printable PDF, Excel & Google Sheets"
 linkTitle: "Free Time Blocking Templates"
 date: "2023-08-14T08:07:00"
 lastmod: "2026-05-12"
+# Consolidates ranking signals into the /templates/ hub, which targets the same
+# "time blocking template" queries. Avoids cannibalizing the hub with this legacy post.
+canonical: "https://align.day/templates/"
 description: "Free time blocking templates — daily, weekly (5 or 7 day), monthly, Excel and Google Sheets. Printable PDFs and editable formats. No signup."
 tags:
   - "Printables"

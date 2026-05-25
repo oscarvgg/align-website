@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Time blocking template files are download assets, reached from their HTML pages
+# (e.g. /templates/weekly-5-day/). Keep those HTML pages in the index and stop the
+# raw PDF/XLSX files from ranking in their place.
+Disallow: /templates/time-blocking-template-printable-daily-by-align-v1.pdf
+Disallow: /templates/time-blocking-template-printable-weekly-5-days-by-align-v1.pdf
+Disallow: /templates/time-blocking-template-printable-weekly-7-days-by-align-v1.pdf
+Disallow: /templates/time-blocking-template-printable-monthly-by-align-v1.pdf
+Disallow: /templates/time-blocking-template-printable-daily-weekly-monthly-by-align-v1.xlsx
+
+Sitemap: https://align.day/sitemap.xml

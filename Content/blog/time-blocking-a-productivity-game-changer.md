@@ -64,7 +64,7 @@ To help you get started, here are a few examples of time blocking schedules or t
    - 3:00 PM - 5:00 PM: Review notes and prepare for upcoming exams
    - 5:00 PM - 6:00 PM: Free time and relaxation
 
-Remember, these templates are just starting points. Feel free to customize them to suit your specific needs and preferences. If you want to learn more about time blocking templates and how to do it with plain paper and pencil, don't miss our article [free printable time blocking templates and pdf](/blog/2023-07-24-free-time-blocking-template/)
+Remember, these templates are just starting points. Feel free to customize them to suit your specific needs and preferences. If you want to learn more about time blocking templates and how to do it with plain paper and pencil, don't miss our article [free printable time blocking templates and pdf](/templates/)
 
 ## Prioritizing Tasks within a Time Blocking System
 

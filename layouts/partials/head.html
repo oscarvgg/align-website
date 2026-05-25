@@ -21,6 +21,13 @@
 {{- if .IsHome -}}
   {{- $canonical = strings.TrimSuffix "/" $canonical -}}
 {{- end -}}
+{{- with .Params.canonical -}}
+  {{- if or (hasPrefix . "https://") (hasPrefix . "http://") -}}
+    {{- $canonical = . -}}
+  {{- else -}}
+    {{- $canonical = absURL . -}}
+  {{- end -}}
+{{- end -}}
 {{- $socialImage := "" -}}
 {{- with .Params.image -}}
   {{- if or (hasPrefix . "https://") (hasPrefix . "http://") -}}
