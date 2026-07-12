@@ -4,3 +4,6 @@
 Output/
 node_modules/
 .hugo_build.lock
+
+# Raw Gemini generations (webp exports live in Resources/img/home)
+scripts/generated-raw/

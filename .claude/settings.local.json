@@ -7,7 +7,15 @@
       "Bash(ls -la \"/Users/oscar/Downloads/Overview — Align - Ahrefs.html\" \"/Users/oscar/Downloads/Organic positions: align.day: - Ahrefs.html\")",
       "mcp__gscServer__list_properties",
       "mcp__gscServer__compare_search_periods",
-      "mcp__gscServer__get_search_analytics"
+      "mcp__gscServer__get_search_analytics",
+      "mcp__Claude_Preview__preview_start",
+      "Read(//Users/oscar/**)",
+      "Bash(zsh -ic 'echo \"interactive: ${GOOGLE_API_KEY:+yes}\"')",
+      "Bash(zsh -c 'source ~/.zshrc >/dev/null 2>&1; python3 scripts/generate_homepage_images.py')",
+      "Bash(python3 -c ' *)",
+      "Bash(zsh -c 'source ~/.zshrc >/dev/null 2>&1; python3 scripts/generate_homepage_images.py --force --only pain-rushing --only testimonial-walking')",
+      "Read(//tmp/**)",
+      "Bash(python3 -)"
     ]
   }
 }
