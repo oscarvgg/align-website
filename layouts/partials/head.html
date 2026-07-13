@@ -2,25 +2,21 @@
 {{- $description := .Description | default .Params.description | default .Site.Params.description -}}
 {{- $title := "" -}}
 {{- $titleOverride := .Scratch.Get "title" -}}
+{{- $seoTitle := .Params.seoTitle | default .Title -}}
 {{- if $titleOverride -}}
   {{- $title = printf "%s | %s" $titleOverride $siteName -}}
-{{- else if and .IsHome .Title -}}
-  {{- $title = .Title -}}
 {{- else if .IsHome -}}
-  {{- $title = $siteName -}}
+  {{- $title = printf "%s | %s" $seoTitle $siteName -}}
 {{- else if and (eq .Kind "taxonomy") (eq .Title "Tags") -}}
-  {{- $title = printf "All Tags  | %s" $siteName -}}
+  {{- $title = printf "All Tags | %s" $siteName -}}
 {{- else if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
-  {{- $title = printf "%s  | %s" .Title $siteName -}}
-{{- else if .Title -}}
   {{- $title = printf "%s | %s" .Title $siteName -}}
+{{- else if $seoTitle -}}
+  {{- $title = printf "%s | %s" $seoTitle $siteName -}}
 {{- else -}}
   {{- $title = $siteName -}}
 {{- end -}}
 {{- $canonical := .Permalink -}}
-{{- if .IsHome -}}
-  {{- $canonical = strings.TrimSuffix "/" $canonical -}}
-{{- end -}}
 {{- with .Params.canonical -}}
   {{- if or (hasPrefix . "https://") (hasPrefix . "http://") -}}
     {{- $canonical = . -}}
@@ -29,7 +25,8 @@
   {{- end -}}
 {{- end -}}
 {{- $socialImage := "" -}}
-{{- with .Params.image -}}
+{{- $socialImageParam := .Params.socialImage | default .Params.image -}}
+{{- with $socialImageParam -}}
   {{- if or (hasPrefix . "https://") (hasPrefix . "http://") -}}
     {{- $socialImage = . -}}
   {{- else -}}
@@ -52,7 +49,10 @@
 <meta name="twitter:description" content="{{ $description }}"/>
 <meta property="og:description" content="{{ $description }}"/>
 <meta name="twitter:card" content="{{ $twitterCard }}"/>
-<link rel="stylesheet" href="/styles.css" type="text/css"/>
+<meta property="og:type" content="{{ if and (eq .Section "blog") (eq .Kind "page") }}article{{ else }}website{{ end }}"/>
+{{- /* Content-hash query so browsers pick up new CSS after each deploy. */ -}}
+{{- $cssVersion := md5 (readFile "Resources/styles.css") | truncate 8 "" -}}
+<link rel="stylesheet" href="/styles.css?v={{ $cssVersion }}" type="text/css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,29 +62,23 @@
 {{- if $socialImage -}}
 <meta name="twitter:image" content="{{ $socialImage }}"/>
 <meta property="og:image" content="{{ $socialImage }}"/>
+<meta name="twitter:image:alt" content="{{ .Params.socialImageAlt | default .Title }}"/>
+<meta property="og:image:alt" content="{{ .Params.socialImageAlt | default .Title }}"/>
 {{- end }}
 {{- if or .Params.noindex (eq .Kind "taxonomy") (eq .Kind "term") }}
 <meta name="robots" content="noindex, follow"/>
 {{- end }}
+{{- if or .IsHome (in (slice "/time-blocking-app/" "/time-blocking-planner/") .RelPermalink) }}
 {{ partial "schema-software.html" . }}
+{{- end }}
 {{- with .Params.faq }}
+{{- $questions := slice -}}
+{{- range . }}
+{{- $questions = $questions | append (dict "@type" "Question" "name" .question "acceptedAnswer" (dict "@type" "Answer" "text" .answer)) -}}
+{{- end }}
+{{- $faqSchema := dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $questions -}}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {{- range $i, $q := . }}{{ if $i }},{{ end }}
-    {
-      "@type": "Question",
-      "name": {{ $q.question | jsonify }},
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": {{ $q.answer | jsonify }}
-      }
-    }
-    {{- end }}
-  ]
-}
+{{ $faqSchema | jsonify | safeJS }}
 </script>
 {{- end }}
 {{- with .Params.howto }}
@@ -92,15 +86,15 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": {{ .name | jsonify }},
-  {{- with .description }}"description": {{ . | jsonify }},{{ end }}
-  {{- with .totalTime }}"totalTime": {{ . | jsonify }},{{ end }}
+  "name": {{ .name | jsonify | safeJS }},
+  {{- with .description }}"description": {{ . | jsonify | safeJS }},{{ end }}
+  {{- with .totalTime }}"totalTime": {{ . | jsonify | safeJS }},{{ end }}
   "step": [
     {{- range $i, $s := .steps }}{{ if $i }},{{ end }}
     {
       "@type": "HowToStep",
-      "name": {{ $s.name | jsonify }},
-      "text": {{ $s.text | jsonify }}
+      "name": {{ $s.name | jsonify | safeJS }},
+      "text": {{ $s.text | jsonify | safeJS }}
     }
     {{- end }}
   ]
@@ -112,11 +106,11 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": {{ .Title | jsonify }},
-  "description": {{ $description | jsonify }},
-  {{- with $socialImage }}"image": {{ . | jsonify }},{{ end }}
-  "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify }},
+  "headline": {{ .Title | jsonify | safeJS }},
+  "description": {{ $description | jsonify | safeJS }},
+  {{- with $socialImage }}"image": {{ . | jsonify | safeJS }},{{ end }}
+  "datePublished": {{ .Date.Format "2006-01-02" | jsonify | safeJS }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify | safeJS }},
   "author": {
     "@type": "Person",
     "name": "Oscar Vicente Gonzalez Greco",
@@ -130,7 +124,7 @@
       "url": "https://align.day/favicon.png"
     }
   },
-  "mainEntityOfPage": {{ $canonical | jsonify }}
+  "mainEntityOfPage": {{ $canonical | jsonify | safeJS }}
 }
 </script>
 {{- end }}

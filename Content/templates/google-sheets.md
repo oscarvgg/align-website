@@ -1,7 +1,10 @@
 ---
 title: "Free Google Sheets Time Blocking Template (Editable, Shareable)"
+seoTitle: "Google Sheets Time Blocking Template"
 linkTitle: "Google Sheets Template"
+lastmod: "2026-07-12"
 description: "Free Google Sheets time blocking template. Edit in your browser, sync to mobile, share with a team. Daily and weekly views. No signup."
+socialImage: "/img/blog/covers/free-time-blocking-template-printable-cover@0.5x.jpg"
 faq:
   - question: "Is the Google Sheets time blocking template free?"
     answer: "Yes. It's completely free. You make your own editable copy by clicking the link — no signup or payment required."

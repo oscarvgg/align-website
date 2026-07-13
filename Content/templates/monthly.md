@@ -1,7 +1,10 @@
 ---
 title: "Free Monthly Time Blocking Calendar Template (PDF, Printable)"
+seoTitle: "Monthly Time Blocking Template (Free PDF)"
 linkTitle: "Monthly Template"
+lastmod: "2026-07-12"
 description: "Free printable monthly time blocking calendar template (PDF). 30-day grid for long-term projects, habits, and goals. Download instantly."
+socialImage: "/img/blog/covers/free-time-blocking-template-printable-cover@0.5x.jpg"
 faq:
   - question: "Is the monthly time blocking template free?"
     answer: "Yes. The monthly time blocking PDF is completely free, with no email signup."

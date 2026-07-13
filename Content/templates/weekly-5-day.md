@@ -1,7 +1,10 @@
 ---
 title: "Free Weekly Time Blocking Template — 5 Days (PDF, Printable)"
+seoTitle: "Weekly Time Blocking Template (5-Day PDF)"
 linkTitle: "Weekly Template (5 Days)"
+lastmod: "2026-07-12"
 description: "Free printable 5-day weekly time blocking template (PDF). Monday-Friday workweek planner — hour by hour. Download instantly, no signup."
+socialImage: "/img/blog/covers/free-time-blocking-template-printable-cover@0.5x.jpg"
 faq:
   - question: "Is the 5-day weekly time blocking template free?"
     answer: "Yes. The 5-day weekly time blocking PDF is completely free. No email or signup required."

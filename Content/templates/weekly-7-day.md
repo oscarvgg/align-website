@@ -1,7 +1,10 @@
 ---
 title: "Free Weekly Time Blocking Template — 7 Days (PDF, Printable)"
+seoTitle: "Weekly Time Blocking Template (7-Day PDF)"
 linkTitle: "Weekly Template (7 Days)"
+lastmod: "2026-07-12"
 description: "Free printable 7-day weekly time blocking template (PDF). Full Monday-Sunday planner including weekends. Hour by hour. Download instantly."
+socialImage: "/img/blog/covers/free-time-blocking-template-printable-cover@0.5x.jpg"
 faq:
   - question: "Is the 7-day weekly time blocking template free?"
     answer: "Yes. The 7-day weekly time blocking PDF is completely free. No signup required."
@@ -60,7 +63,7 @@ A 5-day workweek view hides what happens on weekends — when many of us actuall
 
 ## Prefer an app?
 
-[Align](/time-blocking-app/) makes recurring weekly routines effortless — set your week once, and it repeats automatically. iCloud syncs your plan across your iPhone (with iPad and Mac coming soon).
+[Align](/time-blocking-app/) makes recurring weekly routines easier to maintain: set a block to repeat, then adjust individual days when the week changes. The app is currently available for iPhone.
 
 [Get Align — free on the App Store →](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_template_weekly_7&mt=8)
 

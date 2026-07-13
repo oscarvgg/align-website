@@ -7,20 +7,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   {{- range $pages }}
   {{- $changefreq := "monthly" -}}
-  {{- $priority := "0.5" -}}
-  {{- if and (eq .Kind "section") (eq .Section "blog") -}}
-    {{- $changefreq = "daily" -}}
+  {{- $priority := "0.6" -}}
+  {{- if .IsHome -}}
     {{- $priority = "1.0" -}}
+  {{- else if in (slice "/time-blocking-app/" "/time-blocking-planner/") .RelPermalink -}}
+    {{- $priority = "0.9" -}}
+  {{- else if eq .Section "templates" -}}
+    {{- $priority = cond (eq .Kind "section") "0.8" "0.7" -}}
+  {{- else if eq .Section "blog" -}}
+    {{- $priority = cond (eq .Kind "section") "0.8" "0.6" -}}
+    {{- $changefreq = cond (eq .Kind "section") "weekly" "monthly" -}}
+  {{- else if eq .Section "help" -}}
+    {{- $priority = "0.5" -}}
   {{- end }}
   {{- $lastmod := .Lastmod -}}
-  {{- if lt $lastmod.Unix 1 -}}
-    {{- $lastmod = now -}}
-  {{- end }}
   <url>
     <loc>{{ .Permalink }}</loc>
     <changefreq>{{ $changefreq }}</changefreq>
     <priority>{{ $priority }}</priority>
+    {{- if gt $lastmod.Unix 1 }}
     <lastmod>{{ $lastmod.Format "2006-01-02" }}</lastmod>
+    {{- end }}
   </url>
   {{- end }}
 </urlset>

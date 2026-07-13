@@ -57,7 +57,7 @@ body {
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 17px;
-  line-height: 1.55;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
   font-feature-settings: "ss01", "kern";
   overflow-x: hidden;
@@ -389,11 +389,11 @@ section {
 }
 
 .section-pad {
-  padding: clamp(2.5rem, 5vw, 4.5rem) 0;
+  padding: clamp(4rem, 8.5vw, 7.5rem) 0;
 }
 
 .section-pad-sm {
-  padding: clamp(2rem, 4vw, 3.25rem) 0;
+  padding: clamp(3.5rem, 7vw, 6rem) 0;
 }
 
 .section-band {
@@ -406,15 +406,28 @@ section {
   margin: 0;
 }
 
+/* Bare section headings (features / reviews / FAQ) keep a readable measure. */
+#features h2,
+#reviews h2,
+#faq h2 {
+  max-width: 30ch;
+}
+
+/* Article pages: give the title clear air below the sticky nav. */
+.page-article {
+  display: block;
+  padding: clamp(3.25rem, 6vw, 5.5rem) 0 clamp(3rem, 6vw, 5rem);
+}
+
 /* ─── Section 1 — Hero ─── */
 
-.hero {
+.home-hero {
   position: relative;
   padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(3.5rem, 8vw, 6rem);
 }
 
 /* Full-bleed editorial photograph that reaches up behind the nav bar. */
-.hero::before {
+.home-hero::before {
   content: "";
   position: absolute;
   top: -88px;
@@ -430,7 +443,7 @@ section {
 }
 
 /* Soft fade so the photo dissolves into the page toward the copy on the left. */
-.hero::after {
+.home-hero::after {
   content: "";
   position: absolute;
   top: -88px;
@@ -495,7 +508,7 @@ section {
 .hero-phone {
   position: relative;
   z-index: 2;
-  width: min(340px, 82%);
+  width: min(300px, 76%);
   height: auto;
 }
 
@@ -539,7 +552,7 @@ section {
   background: var(--bg-card);
   border: 1px solid var(--rule);
   border-radius: 20px;
-  padding: 1.6rem 1.5rem 1.7rem;
+  padding: 1.85rem 1.75rem 1.9rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -595,7 +608,7 @@ section {
 
 @media (min-width: 900px) {
   .solution-grid {
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: clamp(2rem, 6vw, 5rem);
   }
 }
@@ -642,116 +655,13 @@ section {
 
 @media (min-width: 900px) {
   .solution-figure {
-    /* Sit at the foot of the calendar canvas, overlapping its left edge */
-    margin: 2.5rem -70px -2.5rem auto;
+    /* Sit at the foot of the phone plate, leaning into its column */
+    margin: 2.5rem -50px -1.5rem auto;
   }
 }
 
-/* Solution adaptive scheduling visual */
-
-.adaptive-canvas {
-  position: relative;
-  background: var(--bg-section);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius-photo);
-  padding: clamp(1.4rem, 3vw, 2.4rem);
-  box-shadow: var(--shadow-card);
-  overflow: hidden;
-}
-
-.adaptive-canvas .canvas-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 1.1rem;
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 1.25rem;
-}
-
-.adaptive-canvas .canvas-head .month {
-  font-family: var(--font-serif);
-  font-weight: 700;
-  font-size: 1.05rem;
-}
-
-.adaptive-canvas .canvas-head .icons {
-  display: inline-flex;
-  gap: 0.5rem;
-  color: var(--text-muted);
-}
-
-.adaptive-grid {
-  display: grid;
-  grid-template-columns: 56px repeat(5, minmax(0, 1fr));
-  gap: 6px;
-  position: relative;
-}
-
-.adaptive-grid .time-col {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding-top: 26px;
-  color: var(--text-muted);
-  font-size: 0.78rem;
-  font-variant-numeric: tabular-nums;
-}
-
-.adaptive-grid .day-col {
-  position: relative;
-  min-height: 320px;
-  border-left: 1px solid var(--rule-soft);
-  padding-top: 26px;
-}
-
-.adaptive-grid .day-label {
-  position: absolute;
-  top: 0;
-  left: 6px;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  font-weight: 600;
-}
-
-.adaptive-grid .day-label .num {
-  color: var(--text-primary);
-  margin-left: 4px;
-  font-weight: 700;
-}
-
-.blk {
-  position: absolute;
-  left: 6px;
-  right: 6px;
-  border-radius: 10px;
-  padding: 8px 10px;
-  background: #EFD8C4;
-  color: #6E3D1E;
-  font-size: 0.78rem;
-  font-weight: 500;
-  line-height: 1.25;
-  box-shadow: 0 4px 10px -6px rgba(110, 61, 30, 0.25);
-}
-
-.blk strong {
-  display: block;
-  font-weight: 600;
-  font-size: 0.82rem;
-  margin-bottom: 2px;
-  letter-spacing: -0.005em;
-}
-
-.blk.accent { background: #E89668; color: #fff; box-shadow: 0 8px 22px -8px rgba(217, 130, 69, 0.5); }
-.blk.soft   { background: #F1E2CF; color: #6E3D1E; }
-.blk.ghost  { background: transparent; border: 2px dashed rgba(184, 106, 54, 0.55); color: rgba(184, 106, 54, 0.85); }
-
-.move-arrow {
-  position: absolute;
-  pointer-events: none;
-  z-index: 2;
-}
+/* (The hand-built calendar mock that used to live here was replaced by a
+   real product screenshot — see .product-screen-proof below.) */
 
 /* ─── Section 4 — Philosophy ─── */
 
@@ -945,10 +855,10 @@ section {
 .testimonial {
   background: var(--bg-card);
   border-radius: 18px;
-  padding: 1.5rem 1.4rem 1.4rem;
+  padding: 1.85rem 1.7rem 1.65rem;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 0.9rem;
   border: 1px solid transparent;
   transition: border-color 320ms var(--ease), transform 320ms var(--ease);
 }
@@ -974,8 +884,8 @@ section {
   font-style: normal;
   font-weight: 600;
   color: var(--text-primary);
-  font-size: 1rem;
-  line-height: 1.45;
+  font-size: 1.02rem;
+  line-height: 1.5;
   letter-spacing: -0.005em;
 }
 
@@ -1012,9 +922,25 @@ section {
   background: linear-gradient(90deg, rgba(248, 245, 239, 0.96) 0%, rgba(248, 245, 239, 0.82) 45%, rgba(248, 245, 239, 0.0) 100%);
 }
 
-.final-cta .site-shell {
+/* Keep every child above the ::before wash, whatever wrapper the page uses. */
+.final-cta > * {
   position: relative;
   z-index: 1;
+}
+
+/* Card variant for article pages: the CTA sits inside the article column
+   as a rounded plate instead of a full-bleed band. */
+.final-cta-card {
+  border-radius: var(--radius-photo);
+  overflow: hidden;
+  padding: clamp(3rem, 5vw, 4.25rem) clamp(1.5rem, 4vw, 3rem);
+}
+
+.final-cta-card::before {
+  background: linear-gradient(90deg,
+    rgba(248, 245, 239, 0.97) 0%,
+    rgba(248, 245, 239, 0.92) 55%,
+    rgba(248, 245, 239, 0.62) 100%);
 }
 
 .final-cta .final-inner {
@@ -1120,13 +1046,73 @@ section {
    ============================================================ */
 
 .prose {
+  /* Re-point the typography plugin's palette at the warm editorial scheme.
+     (daisyUI's defaults leave counters/bullets white — invisible on cream.) */
+  --tw-prose-body: var(--text-primary);
+  --tw-prose-headings: var(--text-primary);
+  --tw-prose-lead: var(--text-secondary);
+  --tw-prose-links: var(--accent-ink);
+  --tw-prose-bold: var(--text-primary);
+  --tw-prose-counters: var(--accent-ink);
+  --tw-prose-bullets: var(--accent);
+  --tw-prose-hr: var(--rule);
+  --tw-prose-quotes: var(--text-secondary);
+  --tw-prose-quote-borders: var(--accent);
+  --tw-prose-captions: var(--text-muted);
+  --tw-prose-code: var(--text-primary);
+  --tw-prose-pre-code: var(--bg-primary);
+  --tw-prose-pre-bg: var(--text-primary);
+  --tw-prose-th-borders: var(--rule);
+  --tw-prose-td-borders: var(--rule-soft);
+
   color: var(--text-primary);
   max-width: 70ch;
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.72;
 }
 
 .prose :where(p, li, strong, em) { color: var(--text-primary); }
+
+/* Serif oldstyle numerals for ordered steps — quiet, editorial. */
+.prose ol > li::marker {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--accent-ink);
+}
+
+.prose ul > li::marker { color: var(--accent); }
+
+/* Editorial tables: strong top rule, small-caps header, hairline rows. */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid var(--text-primary);
+  border-bottom: 1px solid var(--rule);
+  margin: 2.25em 0;
+}
+
+.prose thead th {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: left;
+  padding: 0.9rem 1.1rem 0.7rem 0;
+}
+
+.prose tbody td {
+  padding: 0.9rem 1.1rem 0.9rem 0;
+  border-top: 1px solid var(--rule-soft);
+  vertical-align: top;
+}
+
+.prose tbody td:first-child,
+.prose thead th:first-child {
+  font-weight: 600;
+  color: var(--text-primary);
+}
 .prose :where(h1, h2, h3, h4, h5, h6) {
   color: var(--text-primary);
   font-family: var(--font-serif);
@@ -1157,6 +1143,250 @@ section {
   font-family: var(--font-serif);
   font-style: italic;
   padding-left: 1rem;
+}
+
+/* ─── Real product screenshots — devices & plates ───
+   Two deliberate treatments, used consistently:
+   · Device — hero moments only. Warm near-black bezel, the phone as object.
+   · Plate  — figures inside articles and cards. Hairline frame, smaller,
+     captioned in italic serif like a magazine plate. */
+
+.hero-phone,
+.hero-phone-img,
+.product-screen-proof img {
+  border: 9px solid #211C18;
+  border-radius: 44px;
+  box-shadow: var(--shadow-photo);
+  background: #fff;
+}
+
+.article-product-shot img,
+.article-shot-pair img {
+  border: 1px solid rgba(36, 34, 32, 0.16);
+  border-radius: 24px;
+  box-shadow: var(--shadow-card);
+  background: #fff;
+}
+
+/* Shared caption voice — ties every figure to the ✺ eyebrow vocabulary. */
+.product-screen-proof figcaption,
+.article-product-shot figcaption,
+.article-shot-pair figcaption {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 44ch;
+  margin: 0 auto;
+}
+
+.product-screen-proof figcaption::before,
+.article-product-shot figcaption::before,
+.article-shot-pair figcaption::before {
+  content: "✺ ";
+  font-style: normal;
+  color: var(--accent);
+  font-size: 0.8em;
+}
+
+.product-screen-proof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.product-screen-proof img {
+  display: block;
+  width: min(290px, 72%);
+  height: auto;
+}
+
+.screen-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+@media (min-width: 760px) {
+  .screen-feature-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.screen-feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: clamp(1.75rem, 3vw, 2.25rem) clamp(1.5rem, 2.5vw, 2rem) clamp(1.85rem, 3vw, 2.35rem);
+  background: var(--bg-section);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-card);
+}
+
+/* Uniform-height window onto the app: top of the screen, cropped as a plate. */
+.screen-feature-card .screen-crop {
+  width: min(230px, 76%);
+  aspect-ratio: 27 / 38;
+  overflow: hidden;
+  border: 1px solid rgba(36, 34, 32, 0.16);
+  border-radius: 22px;
+  box-shadow: var(--shadow-card);
+  background: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.screen-feature-card .screen-crop img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+.screen-feature-card h3 {
+  width: 100%;
+  margin: 0;
+  font-size: 1.18rem;
+}
+
+.screen-feature-card p {
+  width: 100%;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 760px) {
+  .faq-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.faq-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  padding: 1.3rem 1.45rem;
+}
+
+.faq-card summary::marker { color: var(--accent); }
+
+.faq-card summary {
+  cursor: pointer;
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.faq-card p {
+  margin-top: 0.85rem;
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.article-product-shot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  margin: clamp(2.5rem, 5vw, 3.25rem) auto;
+}
+
+/* Figures sit inside running text — keep them modest, like magazine plates. */
+.prose .article-product-shot img {
+  display: block;
+  width: min(260px, 88%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.prose .article-shot-pair img {
+  display: block;
+  width: min(235px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.article-shot-pair {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  margin: clamp(2.5rem, 5vw, 3.25rem) 0;
+}
+
+.article-shot-pair figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+@media (min-width: 680px) {
+  .article-shot-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ─── Product landing hero ─── */
+
+.hero-section {
+  padding: clamp(3.5rem, 8vw, 7rem) 0 clamp(2.5rem, 6vw, 5rem);
+  text-align: center;
+}
+
+.hero-kicker {
+  margin-bottom: 1rem;
+  color: var(--accent-ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-word {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+.hero-subtitle {
+  max-width: 660px;
+  margin: 1.35rem auto 1.8rem;
+  color: var(--text-secondary);
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.hero-phone-img {
+  display: block;
+  width: min(290px, 72vw);
+  height: auto;
+  margin: 0 auto;
+}
+
+.trust-bar { display: grid; justify-items: center; }
+
+.trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
 }
 
 /* Legacy daisyUI mappings — gentle override for cohesion */
@@ -1231,7 +1461,7 @@ input::placeholder, textarea::placeholder { color: var(--text-muted) !important;
   background: var(--bg-section);
   border: 1px solid var(--rule);
   border-radius: var(--radius-photo);
-  padding: clamp(1.8rem, 4vw, 3.25rem) !important;
+  padding: clamp(2.25rem, 4vw, 3.5rem) !important;
   display: grid;
   place-items: center;
 }
@@ -1239,6 +1469,15 @@ input::placeholder, textarea::placeholder { color: var(--text-muted) !important;
 #waiting-list .hero-content {
   align-items: flex-start;
   gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+#waiting-list h2 {
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+}
+
+#waiting-list p {
+  color: var(--text-secondary);
+  max-width: 52ch;
 }
 
 #waiting-list .ml-embedded {
@@ -1270,12 +1509,12 @@ input::placeholder, textarea::placeholder { color: var(--text-muted) !important;
 
 @media (max-width: 767px) {
   body { font-size: 16px; }
-  .hero { padding-top: 1.5rem; }
+  .home-hero { padding-top: 1.5rem; }
   .hero-stage { min-height: 360px; }
   /* Keep the photo behind the phone, but let the copy sit on clean ivory above it. */
-  .hero::before,
-  .hero::after { top: 0; }
-  .hero::after {
+  .home-hero::before,
+  .home-hero::after { top: 0; }
+  .home-hero::after {
     background:
       linear-gradient(180deg,
         var(--bg-primary) 0%,
@@ -1286,24 +1525,13 @@ input::placeholder, textarea::placeholder { color: var(--text-muted) !important;
         rgba(248, 245, 239, 0) 88%,
         var(--bg-primary) 100%);
   }
-  .hero-phone { width: min(260px, 70%); }
+  .hero-phone { width: min(250px, 68%); }
   .hero-figure { width: clamp(120px, 34vw, 150px); left: -2%; bottom: -2%; }
   .final-cta { padding: 3rem 0 11rem; background-position: 72% bottom; }
   .final-cta::before {
     background: linear-gradient(180deg, rgba(248, 245, 239, 0.97) 0%, rgba(248, 245, 239, 0.88) 45%, rgba(248, 245, 239, 0.25) 100%);
   }
-  .adaptive-canvas { padding: 1.1rem; }
-  .adaptive-canvas .scroll-shell {
-    overflow-x: auto;
-    margin: 0 -1.1rem;
-    padding: 0 1.1rem 0.5rem;
-    scrollbar-width: thin;
-  }
-  .adaptive-grid {
-    grid-template-columns: 40px repeat(5, 120px);
-    min-width: 700px;
-  }
-  .adaptive-grid .day-col { min-height: 320px; }
-  .blk { font-size: 0.75rem; padding: 7px 9px; }
-  .blk strong { font-size: 0.78rem; }
+  .final-cta-card { padding: 2.75rem 1.5rem 3rem; }
+  .product-screen-proof img { width: min(250px, 78%); }
+  .hero-phone-img { width: min(250px, 74vw); }
 }

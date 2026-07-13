@@ -1,7 +1,10 @@
 ---
 title: "Free Excel Time Blocking Template (Daily, Weekly, Monthly .xlsx)"
+seoTitle: "Excel Time Blocking Template (.xlsx)"
 linkTitle: "Excel Template"
+lastmod: "2026-07-12"
 description: "Free Excel time blocking template (.xlsx) with daily, weekly, and monthly tabs. Works offline in Excel, Numbers, or LibreOffice. Download instantly."
+socialImage: "/img/blog/covers/free-time-blocking-template-printable-cover@0.5x.jpg"
 faq:
   - question: "Is the Excel time blocking template free?"
     answer: "Yes. The Excel time blocking template (.xlsx) is completely free. No signup or email required."

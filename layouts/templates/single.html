@@ -1,14 +1,6 @@
 {{ define "main" }}
 <div class="site-shell">
   <article class="page-article">
-    <div>
-      <div class="prose md:prose-xl mx-auto">
-        <h1>{{ .Title }}</h1>
-      </div>
-    </div>
-
-    <div class="h-6 md:h-10"></div>
-
     <div class="prose md:prose-xl mx-auto">
       {{ partial "sanitize-content.html" .Content }}
     </div>
