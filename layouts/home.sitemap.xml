@@ -2,6 +2,9 @@
 {{- $pages = where $pages "RelPermalink" "ne" "/404/" -}}
 {{- $pages = where $pages "RelPermalink" "ne" "/404.html" -}}
 {{- $pages = where $pages "Params.noindex" "ne" true -}}
+{{- /* Pages that stay live and crawlable but should not be submitted as
+       indexing candidates - e.g. a legacy URL canonicalised onto a hub. */ -}}
+{{- $pages = where $pages "Params.excludeFromSitemap" "ne" true -}}
 {{- $pages = sort $pages "RelPermalink" -}}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">

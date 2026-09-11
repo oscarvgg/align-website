@@ -1,5 +1,6 @@
 ---
 title: Welcome to Align
+description: "Why Align exists: a visual time blocking app for iPhone built to make a day's plan realistic, and easy to change when the day changes."
 ---
 
 Welcome to Align
@@ -29,6 +30,6 @@ This is where we share practical productivity tips, time management strategies, 
 
 ## Stay in Touch
 
-Want to be the first to know when Align launches and receive exclusive productivity tips? [Subscribe to our newsletter](#) or follow us on [Twitter](#) and [LinkedIn](#).
+Align is on the App Store for iPhone. [Download it free](/time-blocking-app/), or [subscribe to the newsletter](#newsletter) for productivity writing from the team building it.
 
 We're excited to be part of your productivity journey!

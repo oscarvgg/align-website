@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="site-shell page-article">
   <section class="prose md:prose-xl mx-auto">
-    {{ partial "sanitize-content.html" .Content }}
+    {{ .Content }}
   </section>
   {{ partial "item-grid.html" (dict "items" (.RegularPages.ByDate.Reverse)) }}
 </div>

@@ -244,4 +244,4 @@ Remember, the journey to productivity isn't about a whirlwind transformation, bu
 
 It's crucial now to leap from understanding into action. Brew a cup of your favorite tea or coffee, review the principles, and strategize how you might weave them into your daily routine. Start small, celebrate progress, and keep refining. You're not only creating a more productive self but also a life that balances work, play, and relaxation.
 
-Why keep all this wisdom to yourself, though? Share this treasure trove of productivity tips and time management techniques with colleagues, friends, or anybody you feel could benefit from them. Also, don't forget to [join the waiting list](#waiting-list) for more insights into self-development, productivity, and balance.
+Why keep all this wisdom to yourself, though? Share this treasure trove of productivity tips and time management techniques with colleagues, friends, or anybody you feel could benefit from them. And if you want more on self-development, productivity and balance, [join the newsletter](#newsletter).

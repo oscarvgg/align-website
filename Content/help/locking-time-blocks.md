@@ -1,5 +1,6 @@
 ---
 title: Locking Time Blocks
+description: "Lock a time block in Align so it cannot be moved, resized or deleted - for meetings and classes that must stay exactly where they are."
 ---
 
 The lock feature in Align helps you protect important time blocks from accidental changes. Whether it's a crucial meeting, a class you can't miss, or any commitment that must stay exactly as scheduled, locking ensures these time blocks remain anchored in your schedule.
@@ -73,7 +74,7 @@ When you're [resizing time blocks](/help/resizing-time-blocks), locked blocks ha
 
 **Other blocks stop at locked blocks**: When [overlap avoidance](/help/overlap-avoidance) is enabled and a time block would need to shift but encounters a locked block, it stops there rather than moving the locked block.
 
-**Example**: You have a locked "Client Meeting" at 2:00 PM and "Prep Work" at 1:00 PM. If you extend an earlier task that would push Prep Work later, it will stop at 2:00 PM and create an overlap rather than moving your locked client meeting.
+**Example**: You have a locked "Client Meeting" at 2:00 PM and "Prep Work" at 1:00 PM. If you extend an earlier time block that would push Prep Work later, it will stop at 2:00 PM and create an overlap rather than moving your locked client meeting.
 
 ### During Drag and Drop
 

@@ -66,6 +66,31 @@ To help you get started, here are a few examples of time blocking schedules or t
 
 Remember, these templates are just starting points. Feel free to customize them to suit your specific needs and preferences. If you want to learn more about time blocking templates and how to do it with plain paper and pencil, don't miss our article [free printable time blocking templates and pdf](/templates/)
 
+### A worked example: planning Tuesday, then repairing it
+
+Templates show you the shape of a day. What they do not show is the part that actually decides whether time blocking sticks: what you do when the plan breaks. Here is a full worked example.
+
+**The plan, made Monday evening:**
+
+| Time | Block |
+| --- | --- |
+| 08:30–09:00 | Email triage |
+| 09:00–10:30 | Deep work: Q4 budget |
+| 10:30–11:00 | Buffer |
+| 11:00–12:00 | Supplier call + notes |
+| 12:00–13:00 | Lunch |
+| 13:00–14:30 | Deep work: budget, continued |
+| 14:30–16:00 | Admin, invoices, follow-ups |
+| 16:00–16:30 | Plan tomorrow |
+
+Two things to notice. Email is a 30-minute block at a fixed time rather than a background activity all day. And there is a real buffer at 10:30 that is not doing anything — that is not wasted time, it is the shock absorber.
+
+**What actually happens:** the supplier call overruns by 25 minutes and produces two urgent follow-ups.
+
+**The repair.** You have roughly 25 minutes of damage and 30 minutes of buffer left in the day at 14:30. So: lunch shortens to 35 minutes, the afternoon deep-work block starts at 13:35 and keeps its full 90 minutes, and the two urgent follow-ups go into the front of the admin block, pushing the least urgent invoice work to tomorrow. Keep "plan tomorrow" where it is — the block you are most tempted to drop is the one that sets up the next day.
+
+That is the whole skill. Not building a perfect schedule, but making the repair cheap enough that you do it instead of abandoning the plan. On paper, that repair means rewriting the afternoon. In a [time blocking app](/time-blocking-app/) it is dragging two blocks and shortening a third.
+
 ## Prioritizing Tasks within a Time Blocking System
 
 To prioritize tasks effectively within your time blocking system, consider the following techniques:
@@ -79,7 +104,7 @@ To prioritize tasks effectively within your time blocking system, consider the f
 
 To assist you in implementing time blocking, consider these popular tools and apps:
 
-1. **[Align](/)**: Align is a simple and elegant time blocking app that provides you with an overview of your day. The app makes it easy to break down tasks into specific blocks of time and organize them by priority. Align is still in development, but you can join the waiting list [here](#waiting-list).
+1. **[Align](/time-blocking-app/)**: A visual time blocking app for iPhone that puts your whole day on one timeline. Break tasks into blocks, colour and label them, set reminders, and drag or resize a block when the day moves. Free on the App Store, with Align Plus adding Insights, subtasks, locking and automatic overlap resolution.
 2. **[Structured](https://structured.app)**: A user-friendly time blocking app that integrates with calendars, helping users efficiently create and manage tasks. With reminders and progress tracking, Structured keeps users focused on their time blocks, praised for its simplicity and effectiveness.
 3. **[Sorted 3](https://www.sortedapp.com)**: A powerful time blocking app with robust task management capabilities. Users can easily create, categorize, and set reminders for tasks. Sorted 3's customizable interface and flexibility make it ideal for personalized time blocking approaches.
 4. **[TimeBloc](https://timebloc.app)**: A feature-rich time blocking app offering advanced calendar integration and task management. Users can sync with existing calendars, prioritize tasks within specific time blocks, and benefit from its functionality and productivity enhancement, as praised by positive user testimonials.

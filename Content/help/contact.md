@@ -1,6 +1,7 @@
 ---
 title: Contact
 customContent: contactForm
+description: "Report a bug or send feedback about the Align iPhone app using the contact form, and we will get back to you."
 ---
 We Value Your Feedback!
 

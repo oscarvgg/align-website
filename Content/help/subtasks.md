@@ -1,5 +1,6 @@
 ---
 title: Subtasks
+description: "Add checklist-style subtasks inside an Align time block, each with a title and completion state, to track the steps within one task."
 ---
 
 Subtasks let you track checklist-style steps inside a time block.

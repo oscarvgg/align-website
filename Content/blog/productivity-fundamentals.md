@@ -239,8 +239,8 @@ So, gear up and focus your resolve—it's time to unlock your productivity!
 
 Our conversation on productivity isn't complete without a special mention of [Align](/), a time management app that brings these principles and more into one sleek, user-friendly platform. Remember when we talked about time blocking, regular breaks, task creation, and prioritization? Align offers these powerful tools specially designed to ensure no moment is wasted and no task is overlooked.
 
-Align helps you manage your tasks and elegantly adapts to your life rhythm, providing the practical magic you need to turn even the most chaotic schedules into a streamlined symphony of productivity. Designed with sleek features like Sync Across Devices, Offline Access, and Minimal Distractions focus mode, it's a productivity champion in every sense!
+Align helps you manage your tasks and adapts as the day moves, turning a chaotic schedule into something you can actually look at. Your time blocks live on your device and sync through your own private iCloud account, so the app works offline and your plan is not sitting on someone else's server.
 
-We understand you're eager to experience this transformation in time management, so we're extending an invitation to [join the waiting list for Align](#waiting-list). Be among the first to be notified at launch and step into this exciting new chapter of enhanced productivity.
+Align is free on the App Store for iPhone - [download it](/time-blocking-app/) and block out tomorrow before you close your laptop tonight.
 
 Be the maestro of your time. Clear the starting blocks—it's time to unlock your productivity with Align!

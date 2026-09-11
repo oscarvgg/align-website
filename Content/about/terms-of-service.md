@@ -1,5 +1,6 @@
 ---
 title: Terms of Service of Align
+description: "The terms governing your use of the Align iPhone app, covering acceptable use, subscriptions, intellectual property and limitations of liability."
 ---
 
 By downloading, installing, or using Align, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the app.

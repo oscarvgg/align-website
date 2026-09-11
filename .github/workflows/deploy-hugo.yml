@@ -38,7 +38,7 @@ jobs:
         run: npm ci
 
       - name: Build Tailwind CSS
-        run: npx tailwindcss -i Sources/Theme/theme.css -o Resources/styles.css
+        run: npx tailwindcss -i Sources/Theme/theme.css -o Resources/styles.css --minify
 
       - name: Build Hugo site
         run: hugo --cleanDestinationDir --minify

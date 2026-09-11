@@ -19,7 +19,9 @@ unsafe = true
 disable = true
 
 [markup.goldmark.parser]
-autoHeadingID = false
+# Headings need IDs so in-page anchors resolve. With this off, every
+# fragment link on the site pointed at a target that did not exist.
+autoHeadingID = true
 
 [outputFormats.RSS]
 baseName = "feed"

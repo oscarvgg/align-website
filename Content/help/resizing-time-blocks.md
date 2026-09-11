@@ -1,5 +1,6 @@
 ---
 title: Resizing Time Blocks
+description: "Resize a time block in Align by dragging either edge, adjusting its duration when a meeting runs long or finishes earlier than planned."
 ---
 
 One of the most powerful features in Align is the ability to quickly adjust your time blocks by resizing them. Whether your meeting ran long, your workout took less time than expected, or you need to make room for an unexpected task, resizing gives you the flexibility to adapt your schedule on the fly.
@@ -13,20 +14,20 @@ Resizing a time block is simple and intuitive:
 3. **Release** when you've reached your desired time
 
 You can resize from either end of the time block:
-- **Drag the top handle** to adjust when the task starts (keeping the end time fixed)
-- **Drag the bottom handle** to adjust when the task ends (keeping the start time fixed)
+- **Drag the top handle** to adjust when the block starts (keeping the end time fixed)
+- **Drag the bottom handle** to adjust when the block ends (keeping the start time fixed)
 
 This gives you complete control over your schedule without having to open the time block editor.
 
 ## Understanding Overlap Avoidance
 
-Align includes a smart feature called **[Overlap Avoidance](/help/overlap-avoidance)** that helps keep your schedule organized and conflict-free.
+Align includes a smart feature called **[Overlap Avoidance](/help/overlap-avoidance)** that helps keep your schedule organized and overlap-free.
 
 ### When Overlap Avoidance is Enabled (Default)
 
-With overlap avoidance turned on, Align automatically shifts your time blocks to prevent scheduling conflicts. Here's what happens:
+With overlap avoidance turned on, Align automatically shifts your time blocks to prevent overlaps. Here's what happens:
 
-**Extending a time block into another task**: When you make a time block longer and it would overlap with neighboring blocks, Align automatically shifts those blocks out of the way, maintaining their duration.
+**Extending a time block into another block**: When you make a time block longer and it would overlap with neighboring blocks, Align automatically shifts those blocks out of the way, maintaining their duration.
 
 **Example**: You have "Morning Workout" from 8:00-9:00 and "Team Meeting" from 9:00-10:00. If you extend your workout to 9:30, Align automatically shifts your team meeting to 9:30-10:30.
 
@@ -39,11 +40,11 @@ With overlap avoidance turned on, Align automatically shifts your time blocks to
 Sometimes you need more flexibility. When you disable overlap avoidance in Settings, you have complete freedom to create overlapping time blocks:
 
 - Time blocks **won't shift** when you resize them
-- You can intentionally **overlap tasks** to show concurrent activities
-- Overlapping blocks are **visually grouped** so you can still see conflicts
+- You can intentionally **overlap blocks** to show concurrent activities
+- Overlapping blocks are **visually grouped** so you can still see overlaps
 
 This is useful when you want to:
-- Show multiple tasks happening at the same time
+- Show multiple blocks happening at the same time
 - Plan flexible schedules where exact timing isn't critical
 - Experiment with different schedule arrangements
 
@@ -59,7 +60,7 @@ You can toggle overlap avoidance on or off from the main icons at the top right 
 
 **Other blocks may collide with locked blocks**: If overlap avoidance is enabled and a block would need to shift but encounters a locked block, it stops there and creates an overlap rather than moving the locked block.
 
-**Example**: You have a locked "Important Meeting" at 10:00-11:00 with "Prep Work" at 9:00-10:00. If you extend an earlier task so it would push Prep Work into the meeting time, Prep Work will stop at 10:00 and overlap with the earlier task, preserving the locked meeting's time.
+**Example**: You have a locked "Important Meeting" at 10:00-11:00 with "Prep Work" at 9:00-10:00. If you extend an earlier time block so it would push Prep Work into the meeting time, Prep Work will stop at 10:00 and overlap with the earlier block, preserving the locked meeting's time.
 
 This feature is perfect for fixed appointments like meetings, classes, or events that can't be rescheduled. [Learn more about locking time blocks](/help/locking-time-blocks).
 

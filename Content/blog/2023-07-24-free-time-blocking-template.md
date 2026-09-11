@@ -6,6 +6,9 @@ lastmod: "2026-05-12"
 # Consolidates ranking signals into the /templates/ hub, which targets the same
 # "time blocking template" queries. Avoids cannibalizing the hub with this legacy post.
 canonical: "https://align.day/templates/"
+# Google still self-selects this URL as canonical despite the tag above.
+# Withdraw it from the sitemap so the hub is the only submitted candidate.
+excludeFromSitemap: true
 description: "Free time blocking templates — daily, weekly (5 or 7 day), monthly, Excel and Google Sheets. Printable PDFs and editable formats. No signup."
 tags:
   - "Printables"
@@ -112,10 +115,10 @@ While these free templates are a great starting point, the Align app offers a mo
 
 - **Visual timeline** with all your time blocks in one intuitive interface
 - **Customizable blocks** with colors, icons, and recurring schedules
-- **Drag-and-drop simplicity** to quickly rearrange your day (coming soon)
+- **Drag-and-drop simplicity** to quickly rearrange your day
 - **Calendar sync** across all your devices
 - **Smart notifications** when it's time to switch tasks
-- **Conflict detection** to identify overlapping commitments
+- **Overlap detection** to identify overlapping commitments
 
 ![iphone-screenshot-light](/img/iphone-screenshot-light.webp)
 

@@ -1,5 +1,6 @@
 ---
 title: Blog
+description: "Practical writing on time blocking, planning a day you can actually keep, and adjusting a schedule when it slips. From the team building Align."
 ---
 
 # Blog

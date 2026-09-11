@@ -1,5 +1,6 @@
 ---
 title: Align's quick start guide
+description: "Get started with Align: add your first time block, navigate the timeline, set reminders, handle overlaps and import your device calendars."
 ---
 
 Welcome to Align, your new companion in mastering time management through the power of time blocking. This guide will help you get started with Align's essential features, ensuring you make the most of your day.
@@ -10,7 +11,7 @@ When you open Align, you'll be greeted by a **visual timeline**. This is where y
 
 ### Key Features:
 
-- **Visual Timeline**: See all your tasks at a glance.
+- **Visual Timeline**: See all your time blocks at a glance.
 - **Calendar browser**: View your week or expand to see the whole month. Swipe right or left to navigate through previous or next dates.
 - **Color Coding**: Customize your time blocks with colors and icons for quick identification.
 - **[Subtasks](/help/subtasks)**: Break down large tasks into smaller steps within a time block.
@@ -22,15 +23,15 @@ To create your first time block, tap the **plus sign** in the top-right corner. 
 
 ### Tips:
 
-- **Recurrent Tasks**: Set tasks to repeat daily, weekly, monthly or yearly.
+- **Recurring blocks**: Set time blocks to repeat daily, weekly, monthly or yearly.
 
 ## Stay on Track
 
-Align ensures you never miss a task with its notification feature. Set alerts for each task to keep you on schedule. Customize your notification settings in the app to suit your preferences.
+Align ensures you never miss a block with its notification feature. Set alerts for each block to keep you on schedule. Customize your notification settings in the app to suit your preferences.
 
-## Manage Overlapping Tasks
+## Manage Overlapping Time Blocks
 
-Align helps you identify overlapping tasks, allowing you to adjust your schedule for maximum efficiency. With [overlap avoidance](/help/overlap-avoidance) enabled, your time blocks automatically shift to prevent conflicts as you organize your day.
+Align helps you identify overlapping time blocks, allowing you to adjust your schedule for maximum efficiency. With [overlap avoidance](/help/overlap-avoidance) enabled, your time blocks automatically shift to prevent overlaps as you organize your day.
 
 ## Import Your Calendars
 

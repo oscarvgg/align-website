@@ -2,8 +2,15 @@ User-agent: *
 Allow: /
 
 # Time blocking template files are download assets, reached from their HTML pages
-# (e.g. /templates/weekly-5-day/). Keep those HTML pages in the index and stop the
-# raw PDF/XLSX files from ranking in their place.
+# (e.g. /templates/weekly-5-day/).
+#
+# NOTE: Disallow prevents crawling, not indexing. Search Console confirms the
+# daily, weekly-5-day and weekly-7-day PDFs are "indexed, though blocked by
+# robots.txt" - Google can list a URL it has never fetched. Actually keeping
+# them out of the index would need an X-Robots-Tag: noindex header, which in
+# turn needs crawlers to be allowed to fetch the file and a host that can set
+# response headers. The current static host cannot, and these files draw 0
+# clicks in the latest 28 days, so this stays as-is deliberately.
 Disallow: /templates/time-blocking-template-printable-daily-by-align-v1.pdf
 Disallow: /templates/time-blocking-template-printable-weekly-5-days-by-align-v1.pdf
 Disallow: /templates/time-blocking-template-printable-weekly-7-days-by-align-v1.pdf

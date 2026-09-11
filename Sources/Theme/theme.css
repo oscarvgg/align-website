@@ -231,11 +231,6 @@ main, .site-shell {
   padding: 0;
 }
 
-@media (min-width: 900px) {
-  .nav-links { display: flex; }
-  .nav-cta { display: inline-flex; }
-}
-
 .nav-links a {
   color: var(--text-primary);
   font-size: 0.95rem;
@@ -267,6 +262,20 @@ main, .site-shell {
   box-shadow: 0 14px 30px -10px rgba(184, 106, 54, 0.55);
 }
 
+/* Must come after the .nav-links / .nav-cta base rules above: same specificity,
+   so source order decides. Previously this sat before them and never applied,
+   which hid the header download button at every width. */
+@media (min-width: 900px) {
+  .nav-links { display: flex; }
+  .nav-cta { display: inline-flex; }
+}
+
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* Mobile menu toggle */
 .nav-toggle {
   display: inline-flex;
@@ -280,6 +289,10 @@ main, .site-shell {
   color: var(--text-primary);
   cursor: pointer;
 }
+
+.nav-toggle .nav-toggle-close { display: none; }
+.nav-toggle.is-open .nav-toggle-open { display: none; }
+.nav-toggle.is-open .nav-toggle-close { display: block; }
 
 @media (min-width: 900px) {
   .nav-toggle { display: none; }
@@ -311,6 +324,35 @@ main, .site-shell {
   font-weight: 500;
   text-decoration: none;
   border-bottom: 1px solid var(--rule-soft);
+}
+
+/* The only download route on mobile — .nav-cta is hidden below 900px. */
+.nav-drawer a.nav-drawer-cta {
+  margin-top: 1rem;
+  padding: 0.9rem 1.25rem;
+  background: var(--accent);
+  color: #fff;
+  border-bottom: 0;
+  border-radius: var(--radius-btn);
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 10px 24px -10px rgba(217, 130, 69, 0.55);
+}
+
+.nav-drawer a.nav-drawer-cta:hover { background: var(--accent-ink); }
+
+/* Markdown tables scroll in their own container - see
+   layouts/_default/_markup/render-table.html */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  margin: 1.5rem 0;
+}
+
+.table-scroll > table {
+  margin: 0;
+  min-width: 34rem;
 }
 
 /* ─── Buttons ─── */

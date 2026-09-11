@@ -212,11 +212,11 @@
       <article class="screen-feature-card reveal">
         <div class="screen-crop">
           <img src="/img/app/overlap-detected.png"
-            alt="Align daily timeline grouping three overlapping time blocks so the conflict is easy to see"
+            alt="Align daily timeline grouping three overlapping time blocks so the overlap is easy to see"
             width="736" height="1600" loading="lazy" decoding="async"/>
         </div>
-        <h3>See conflicts before they take over</h3>
-        <p>Overlapping blocks are grouped on the timeline. Align Plus can also move collisions out of the way while you resize or drag.</p>
+        <h3>See overlaps before they take over</h3>
+        <p>Overlapping blocks are grouped on the timeline. Align Plus can also move the surrounding blocks out of the way while you resize or drag.</p>
       </article>
     </div>
   </div>
@@ -313,21 +313,6 @@
     els.forEach(function (el) { obs.observe(el); });
   })();
 
-  // Mobile nav drawer
-  (function () {
-    var toggle = document.querySelector('[data-nav-toggle]');
-    var drawer = document.querySelector('[data-nav-drawer]');
-    if (!toggle || !drawer) return;
-    toggle.addEventListener('click', function () {
-      var open = drawer.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    drawer.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        drawer.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  })();
+  // Mobile nav drawer now lives in layouts/partials/navbar.html so every layout gets it.
 </script>
 {{ end }}

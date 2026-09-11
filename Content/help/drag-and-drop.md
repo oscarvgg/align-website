@@ -1,8 +1,9 @@
 ---
 title: Drag and Drop
+description: "Move a time block in Align by tapping, holding and dragging it to a new time, with a live preview of where it lands before you release."
 ---
 
-Drag and drop lets you reorganize your timeline in seconds. Use it when plans shift, when you want to move a task later in the day, or when you need to carry something into tomorrow without opening the editor.
+Drag and drop lets you reorganize your timeline in seconds. Use it when plans shift, when you want to move a time block later in the day, or when you need to carry something into tomorrow without opening the editor.
 
 ## How to Drag a Time Block
 

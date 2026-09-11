@@ -1,12 +1,13 @@
 ---
 title: Overlap Avoidance
+description: "How Align's overlap avoidance shifts surrounding time blocks out of the way when you drag or resize one, so two blocks never occupy the same slot."
 ---
 
-Overlap avoidance is Align's smart feature that automatically organizes your schedule to prevent time blocks from conflicting with each other. Think of it as your personal scheduling assistant that keeps everything neatly arranged and conflict-free.
+Overlap avoidance is Align's smart feature that automatically organizes your schedule to stop time blocks from overlapping each other. Think of it as your personal scheduling assistant that keeps everything neatly arranged and overlap-free.
 
 ## What Is Overlap Avoidance?
 
-Overlap avoidance automatically shifts time blocks when they would otherwise occupy the same time slot. When you're moving tasks around or adjusting their duration, Align intelligently reorganizes your schedule to ensure nothing overlaps—unless you want it to.
+Overlap avoidance automatically shifts time blocks when they would otherwise occupy the same time slot. When you're moving time blocks around or resizing them, Align intelligently reorganizes your schedule to ensure nothing overlaps—unless you want it to.
 
 It's like having puzzle pieces that automatically snap into place. When you move one piece, the others adjust to make room.
 
@@ -14,13 +15,13 @@ It's like having puzzle pieces that automatically snap into place. When you move
 
 ### When It's Enabled (Default)
 
-With overlap avoidance turned on, Align actively prevents scheduling conflicts:
+With overlap avoidance turned on, Align actively prevents overlaps:
 
-**Automatic shifting**: When you [resize a time block](/help/resizing-time-blocks) or drag it to a new position, any conflicting time blocks automatically shift to make room.
+**Automatic shifting**: When you [resize a time block](/help/resizing-time-blocks) or drag it to a new position, any overlapping time blocks automatically shift to make room.
 
 **Cascading adjustments**: If shifting one block causes it to overlap with another, that block shifts too. This creates a smooth cascade effect that reorganizes your entire schedule as needed.
 
-**Duration preservation**: When blocks shift, they keep their original duration. A 30-minute task stays 30 minutes, just at a different time.
+**Duration preservation**: When blocks shift, they keep their original duration. A 30-minute block stays 30 minutes, just at a different time.
 
 **Smart grouping**: The only time blocks are allowed to overlap is when they were already overlapping before your change, or when a [locked time block](/help/locking-time-blocks) prevents further shifting.
 
@@ -28,31 +29,31 @@ With overlap avoidance turned on, Align actively prevents scheduling conflicts:
 
 When you turn off overlap avoidance, you have complete freedom to arrange your schedule:
 
-**Manual control**: Time blocks stay exactly where you put them, even if they overlap with other tasks.
+**Manual control**: Time blocks stay exactly where you put them, even if they overlap with other blocks.
 
-**Visual grouping**: Overlapping blocks are grouped together visually so you can still see where conflicts exist.
+**Visual grouping**: Overlapping blocks are grouped together visually so you can still see where overlaps exist.
 
-**Flexible planning**: Perfect for showing concurrent tasks, tentative schedules, or when you want to experiment with different arrangements.
+**Flexible planning**: Perfect for showing concurrent blocks, tentative schedules, or when you want to experiment with different arrangements.
 
 ## Why Use Overlap Avoidance?
 
 **Save time**: No more manually adjusting every affected time block when you make a change. Align handles the reorganization for you.
 
-**Prevent conflicts**: Automatically catch scheduling mistakes before they happen. You can't accidentally double-book yourself.
+**Prevent overlaps**: Automatically catch scheduling mistakes before they happen. You can't accidentally double-book yourself.
 
-**Maintain clean schedules**: Your timeline stays organized and easy to read, with each task having its own dedicated time slot.
+**Maintain clean schedules**: Your timeline stays organized and easy to read, with each block having its own dedicated time slot.
 
-**Reduce mental load**: Focus on what matters—deciding what to do and when—instead of the mechanics of keeping your schedule conflict-free.
+**Reduce mental load**: Focus on what matters—deciding what to do and when—instead of the mechanics of keeping your schedule overlap-free.
 
 ## When to Disable Overlap Avoidance
 
 While overlap avoidance is helpful most of the time, there are situations where you might want to turn it off:
 
-**Concurrent tasks**: When you're genuinely doing multiple things at once—like listening to a podcast while exercising, or being on call during your regular work.
+**Concurrent blocks**: When you're genuinely doing multiple things at once—like listening to a podcast while exercising, or being on call during your regular work.
 
 **Tentative planning**: When you're exploring different schedule options and want to see what various arrangements might look like.
 
-**Flexible priorities**: When you have tasks that could happen at similar times and you want to see them together to decide later.
+**Flexible priorities**: When you have blocks that could happen at similar times and you want to see them together to decide later.
 
 **Complex schedules**: When you're planning around many constraints and need to manually position everything before finalizing.
 
@@ -60,7 +61,7 @@ While overlap avoidance is helpful most of the time, there are situations where 
 
 When you're [resizing time blocks](/help/resizing-time-blocks), overlap avoidance determines what happens to neighboring blocks:
 
-**Extending a block**: If you make a time block longer and overlap avoidance is on, any conflicting blocks automatically shift to make room.
+**Extending a block**: If you make a time block longer and overlap avoidance is on, any overlapping blocks automatically shift to make room.
 
 **Example**: You have "Morning Workout" from 8:00-9:00 and "Team Standup" from 9:00-9:30. If you extend your workout to 9:15, your standup automatically shifts to 9:15-9:45.
 
@@ -78,7 +79,7 @@ When you're [resizing time blocks](/help/resizing-time-blocks), overlap avoidanc
 
 **Shifts stop at locked blocks**: When a time block needs to shift but encounters a locked block, it stops there and creates an overlap rather than moving the locked block.
 
-**Example**: You have a locked "Client Call" at 2:00 PM and "Research" at 1:00 PM. If you extend an earlier task that would push Research later, it stops at 2:00 PM (creating an overlap) instead of moving your locked client call.
+**Example**: You have a locked "Client Call" at 2:00 PM and "Research" at 1:00 PM. If you extend an earlier time block that would push Research later, it stops at 2:00 PM (creating an overlap) instead of moving your locked client call.
 
 This ensures your most important commitments—meetings, classes, appointments—never get accidentally rescheduled when you're organizing the rest of your day.
 
@@ -106,15 +107,15 @@ Some users like to temporarily disable overlap avoidance when making major sched
 
 **Review before disabling**: Before turning off overlap avoidance, take a moment to ensure your important time blocks are locked. This prevents them from being accidentally moved.
 
-**Use visual grouping**: When overlap avoidance is off, use Align's color coding and grouping to quickly identify which tasks overlap and whether that's intentional.
+**Use visual grouping**: When overlap avoidance is off, use Align's color coding and grouping to quickly identify which blocks overlap and whether that's intentional.
 
 ## Understanding Visual Groups
 
 Whether overlap avoidance is on or off, Align visually groups overlapping time blocks together:
 
-**Stacked display**: Overlapping blocks appear stacked or side-by-side in your timeline, making it obvious where conflicts exist.
+**Stacked display**: Overlapping blocks appear stacked or side-by-side in your timeline, making it obvious where overlaps exist.
 
-**Quick identification**: This visual grouping helps you spot scheduling conflicts at a glance, even when they're intentional.
+**Quick identification**: This visual grouping helps you spot overlaps at a glance, even when they're intentional.
 
 **Easy resolution**: Tap any grouped blocks to see their details and decide how to resolve the overlap.
 

@@ -1,5 +1,6 @@
 ---
 title: Icon Suggestion Feature
+description: "How Align's icon suggestion works: it reads the title you type for a time block and recommends a matching icon automatically."
 ---
 
 Align's Icon Suggestion feature automatically recommends relevant icons for your time blocks based on the activity title you enter.

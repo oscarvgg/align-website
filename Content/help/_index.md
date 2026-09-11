@@ -1,5 +1,6 @@
 ---
 title: Help center
+description: "Align's help centre: quick start, core concepts, and guides to time blocks, overlap avoidance, locking, resizing, subtasks and calendar import."
 --- 
 
 Welcome to Align's Help Center! Here you'll find everything you need to make the most of your time management journey.

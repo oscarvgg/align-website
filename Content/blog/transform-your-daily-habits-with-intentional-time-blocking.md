@@ -74,4 +74,4 @@ Your future self will thank you for taking the time to be thoughtful about how y
 
 ---
 
-*Want to make habit tracking and time blocking easier? Join our newsletter for weekly productivity tips and be the first to know when our time blocking app launches.*
+*Want to make time blocking easier? [Align](/time-blocking-app/) is free on the App Store for iPhone, and recurring blocks keep a routine on the timeline without rebuilding it each day. Or [join the newsletter](#newsletter) for weekly productivity tips.*

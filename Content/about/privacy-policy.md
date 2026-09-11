@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy of Align
+description: "How Align handles your data: time blocks stay on your device and sync through your own private iCloud account, not through our servers."
 ---
 
 Align is committed to respecting your privacy. Here's an overview of how we handle data:

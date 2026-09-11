@@ -37,7 +37,7 @@ The research on ADHD and time management is surprisingly consistent on one point
 
 Studies on ADHD and temporal processing show that people with ADHD benefit significantly from environmental cues and structured time representations. When time is abstract ("finish this sometime today"), it becomes impossible to manage. When time is visualized and concrete, executive function demands drop.
 
-A 2020 study in the *Journal of Attention Disorders* found that individuals with ADHD who used visual timeline-based planning showed measurable improvements in on-task behavior and task completion rates compared to those using standard to-do lists.
+What is well established is the underlying difficulty rather than any single app's effect on it. Barkley's model of ADHD ([1997](https://doi.org/10.1037/0033-2909.121.1.65)) places impaired self-regulation of time near the centre of the condition, and difficulty judging and using time is one of the more consistent findings in the literature. We are not aware of a controlled trial showing that any particular time blocking app improves ADHD outcomes, and you should be sceptical of anyone who claims otherwise about theirs, including us.
 
 The mechanism is straightforward: time blocking replaces abstract task reminders with a concrete visual schedule. Instead of "work on the project" floating in your head indefinitely, you have "9:00–11:00: Deep work on project." The block has a beginning, an end, and a visible container. That structure does some of the executive function work your brain can't do on its own.
 
@@ -91,6 +91,27 @@ If you're going to use time blocking with ADHD, the specifics matter more than t
 
 **Recurring blocks for non-negotiables.** Habits and routines are easier to maintain than one-off decisions. If you block "morning routine" at 7:30 every weekday, it stops being a daily willpower test.
 
+### A worked example: the day that slips
+
+Here is a Tuesday, planned the night before, with 90-minute blocks and buffer:
+
+| Time | Block |
+| --- | --- |
+| 08:00–08:30 | Morning routine (recurring) |
+| 08:30–10:00 | Deep work: client proposal |
+| 10:00–10:30 | Buffer |
+| 10:30–12:00 | Deep work: proposal, continued |
+| 12:00–13:00 | Lunch |
+| 13:00–14:30 | Admin and email |
+| 14:30–15:00 | Buffer |
+| 15:00–16:30 | Team sync + follow-ups |
+
+Now the realistic part. The proposal takes until 11:15, not 12:00. A rigid plan is now wrong for the rest of the day, and this is exactly the moment most people abandon the system altogether.
+
+What you actually do is one decision, not six: the 10:30 block ends late, so drag the admin block to start at 11:30, and let the 30-minute buffer at 14:30 absorb the rest. Lunch moves. Team sync does not, because it involves other people — that is the one to lock so it cannot be dragged by accident.
+
+The point is not that the plan survived. It did not. The point is that repairing it took one drag and a lock, instead of rewriting the day or giving up on it. If you have failed at time blocking before, this is usually where it failed — not at the planning, at the repair.
+
 ## Time Blocking Apps for ADHD — What to Look For
 
 If you're going to use a time blocking app with ADHD, specific features matter:
@@ -102,7 +123,7 @@ If you're going to use a time blocking app with ADHD, specific features matter:
 - **Push notifications** — external reminders compensate for working memory gaps
 - **iCloud sync** — access across devices without another account to manage
 
-Align is built for this: a visual iOS timeline with overlap detection, recurring blocks, and the ability to drag-and-drop your schedule when something shifts. It's also specifically designed to reduce the cognitive load that makes ADHD productivity tools feel like another job.
+[Align](/time-blocking-app/) is built for this: a visual iPhone timeline with overlap detection, recurring blocks, and drag-and-drop when something shifts. Calendar sync and recurring blocks are in the free tier; block locking and automatic overlap resolution are part of Align Plus. If you would rather test the idea on paper first, the [free time blocking templates](/templates/) cost nothing and prove the concept before you install anything.
 
 [Download Align from the App Store](https://apps.apple.com/app/align-time-blocking-planner/id6740183716)
 
@@ -122,7 +143,7 @@ Move it. If a task runs over, adjust the next block or move the unfinished porti
 
 ### Is medication compatible with time blocking?
 
-Yes. Medication handles the neurological side; time blocking handles the structural side. They're complementary, not redundant. Many people find that medication makes time blocking easier to sustain, not unnecessary.
+They address different things, and people commonly use both. Time blocking is a structural tool: it puts the plan outside your head. It is not a substitute for clinical treatment, and nothing here is medical advice - decisions about medication belong with you and your clinician.
 
 ### How do I start if I've failed at time blocking before?
 

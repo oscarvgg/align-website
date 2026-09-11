@@ -1,13 +1,12 @@
 ---
 title: FAQs
+description: "Answers to common questions about Align: supported platforms, calendar sync, notifications, Align Plus and how time blocks behave."
 ---
-
-# Frequently Asked Questions
 
 ## General Questions
 
 ### On what platforms is Align available?
-Align is available for iOS on the App Store and is coming soon to the rest of Apple platforms - iPadOS, watchOS, and macOS. This means you'll be able to manage your time blocks seamlessly across all your Apple devices.
+Align is an iPhone app, available on the App Store and requiring iOS 17 or later. It runs on iPad in iPhone compatibility mode. Other Apple platforms are not supported today.
 
 Align launched first on iOS and will roll out to other Apple platforms (iPadOS, watchOS, and macOS) based on user demand. This staged approach allows us to focus on delivering the best possible experience on each platform while responding to our users' needs.
 
@@ -22,7 +21,7 @@ Time blocking is one of the most effective time management strategies successful
 ### Why does Align need full calendar access?
 Full calendar access is essential as your calendar serves as the source of truth for all your time blocks. This access is required for Align's core functionality, allowing you to:
 - View all your existing calendar events as time blocks.
-- Prevent double-booking by seeing potential conflicts.
+- Prevent double-booking by seeing potential overlaps.
 - Create and manage time blocks directly in your calendar.
 - Keep everything synchronized and up-to-date.
 
@@ -71,7 +70,7 @@ You can easily grant permission through the time block editor when ready for ful
 After the provisional permission expires, you will stop receiving notifications from Align. To continue receiving notifications from the app, you must explicitly grant authorization.
 
 ### What happens if time blocks overlap?
-Align visually highlights overlapping time blocks, making spotting and resolving scheduling conflicts easy. You can easily drag and drop blocks to reorganize your schedule when conflicts occur.
+Align visually highlights overlapping time blocks, making overlaps easy to spot and resolve. You can drag and drop blocks to reorganize your schedule when an overlap appears.
 
 With [overlap avoidance](/help/overlap-avoidance) enabled (the default setting), Align automatically prevents overlaps by shifting time blocks as you resize or move them. You can disable this feature if you want to intentionally create overlapping time blocks for concurrent tasks or flexible planning.
 

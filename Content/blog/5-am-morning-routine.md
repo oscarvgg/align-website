@@ -92,6 +92,6 @@ The journey to create a healthy 5 am habit will not always be smooth, but it's f
 
 Visualize the vibrant sun marking the start of a day filled with success and achievements. Picture yourself tackling every task with vigor and completing your to-do list with plenty of days to spare!
 
-To boost your 5 am routine, you should sign up for the [Align waiting list](#waiting-list). Align is gearing up to be your perfect partner, aligning your day-to-day tasks with your visions and goals. And guess what? You'll have a head start with Align because you're already seizing the power of those untapped early hours.
+To give your 5 am routine a shape, try blocking it out in [Align](/time-blocking-app/). Put the first hour on a timeline the night before, and you wake up to a decision you have already made rather than one you have to make at 5 am. It is free on the App Store for iPhone.
 
 So, rally your willpower and salute the rising sun with enthusiasm. The 5 am club beckons, and you're equipped to ace it! Remember, it's not changing your sleep pattern but your life. So embrace the transformation and persist with the wake up at 5 am, for it's a journey towards a more accomplished, organized you.

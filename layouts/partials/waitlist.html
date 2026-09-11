@@ -1,15 +1,17 @@
-<section id="waiting-list" class="mt-16">
+{{/* Was id="waiting-list" with pre-launch copy. Align shipped; this is now the
+     newsletter + download block, and the id matches the #newsletter links in
+     content. */}}
+<section id="newsletter" class="mt-16">
   <div class="hero md:p-16">
     <div class="hero-content flex-col lg:flex-row space-x-4">
       <div>
         <h2>Download Align for free</h2>
-        <p class="py-6">Align is a powerful tool for staying focused and getting things done. Customize, prioritize, and visualize your tasks at a glance; sync your schedule across all devices, and get timely notifications.
-Get ready to align your time and conquer your day.</p>
+        <p class="py-6">Align turns an overloaded task list into a realistic timeline you can actually see. Colour and label your blocks, get a reminder when one starts, and when the day moves, drag or resize instead of starting over. Free on the App Store for iPhone.</p>
         <div class="flex gap-4 justify-start">
           <a target="_blank" href="https://betalist.com/startups/align-day?utm_campaign=badge-align-day&amp;utm_medium=badge&amp;utm_source=badge-featured">
             <img alt="Align - Time blocking app that helps you plan, organize, and track your daily tasks | BetaList" height="40" style="height: 40px" src="https://betalist.com/badges/featured?id=117212&amp;theme=color">
           </a>
-          {{ partial "app-store-badge.html" (dict "campaign" "web_waiting_list") }}
+          {{ partial "app-store-badge.html" (dict "campaign" "web_other") }}
         </div>
       </div>
       <div class="card flex-shrink-0">

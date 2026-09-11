@@ -1,5 +1,6 @@
 ---
 title: Core Concepts
+description: "The ideas behind Align: what time blocking is, how a visual timeline works, and why deciding in advance makes a plan more likely to happen."
 ---
 
 Understanding a few core concepts will help you get the most out of Align. Whether you're new to time blocking or just new to Align, this guide explains the fundamental ideas that make the app work.
@@ -12,7 +13,7 @@ Instead of keeping an open-ended to-do list and working on whatever feels urgent
 
 **Why it works**: Time blocking transforms your intentions into concrete plans. When you allocate specific time to a task, you're much more likely to actually do it. You also get a realistic picture of what you can accomplish in a day, helping you avoid overcommitting.
 
-**How Align helps**: Align visualizes your time blocks on a timeline, making it easy to see your entire day at a glance, identify conflicts, and adjust your schedule as your day unfolds.
+**How Align helps**: Align visualizes your time blocks on a timeline, making it easy to see your entire day at a glance, identify overlaps, and adjust your schedule as your day unfolds.
 
 ## Time Blocks: The Building Blocks of Your Day
 
@@ -24,14 +25,14 @@ Each time block has:
 - **A title** describing what you'll do (like "Morning Workout" or "Client Presentation")
 - **A start time and end time** defining when the activity happens
 - **Visual customization** with colors and icons to make your schedule easy to scan
-- **Optional recurrence** for tasks that repeat daily, weekly, or on a custom schedule
+- **Optional recurrence** for blocks that repeat daily, weekly, or on a custom schedule
 - **[Subtasks](/help/subtasks)** to break larger activities into smaller, manageable steps
 
 ### Types of Time Blocks
 
-**Tasks you create**: These are activities you add directly in Align—your workouts, focus time, errands, meals, or any commitment you want to schedule.
+**Blocks you create**: These are activities you add directly in Align—your workouts, focus time, errands, meals, or any commitment you want to schedule.
 
-**Calendar events**: Align can sync with your device's calendars, showing your meetings, appointments, and events alongside your planned tasks. This gives you one complete view of your day.
+**Calendar events**: Align can sync with your device's calendars, showing your meetings, appointments, and events alongside the blocks you planned. This gives you one complete view of your day.
 
 **Recurring blocks**: Whether it's a daily meditation, weekly team meeting, or monthly review, you can set time blocks to repeat automatically, building consistent routines into your schedule.
 
@@ -53,7 +54,7 @@ The timeline transforms abstract plans into something concrete and visual. Inste
 
 This visual representation helps you:
 - **See your whole day** at once without flipping between lists and calendars
-- **Identify conflicts** when two things are scheduled for the same time
+- **Identify overlaps** when two things are scheduled for the same time
 - **Find gaps** where you have unscheduled time for breaks or unexpected tasks
 - **Stay realistic** about what you can actually accomplish in a day
 
@@ -65,7 +66,7 @@ Align doesn't replace your existing calendars—it works with them to give you a
 
 **Sync your calendars**: Connect Align to the calendars on your device (iCloud, Google Calendar, Outlook, etc.)
 
-**Unified view**: All your calendar events appear as time blocks on your timeline, right alongside the tasks you create in Align.
+**Unified view**: All your calendar events appear as time blocks on your timeline, right alongside the blocks you create in Align.
 
 **Two-way sync**: Changes you make in Align can sync back to your calendars (for calendars that allow editing), and updates in your calendar apps appear in Align.
 
@@ -117,7 +118,7 @@ By making these blocks recur automatically, you don't have to recreate them ever
 
 **Daily**: Activities that happen every day or every weekday (like morning workout or daily standup)
 
-**Weekly**: Tasks that repeat on specific days each week (like yoga on Tuesday and Thursday)
+**Weekly**: Blocks that repeat on specific days each week (like yoga on Tuesday and Thursday)
 
 **Custom**: More complex patterns for activities that repeat less frequently
 
@@ -125,9 +126,9 @@ By making these blocks recur automatically, you don't have to recreate them ever
 
 Align helps you stick to your schedule with timely notifications.
 
-**Task reminders**: Get notified when it's time to start a time block, so you can transition smoothly from one activity to the next.
+**Block reminders**: Get notified when it's time to start a time block, so you can transition smoothly from one activity to the next.
 
-**Customizable timing**: Set notifications to appear right when a task starts, or a few minutes before to give yourself transition time.
+**Customizable timing**: Set notifications to appear right when a block starts, or a few minutes before to give yourself transition time.
 
 **Smart defaults**: Align learns from your notification preferences to suggest appropriate settings for new time blocks.
 

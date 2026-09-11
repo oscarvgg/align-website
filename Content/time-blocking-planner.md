@@ -5,12 +5,12 @@ linkTitle: "Time Blocking Planner"
 lastmod: "2026-07-12"
 description: "Use a time blocking planner to turn weekly priorities into a realistic daily schedule. Learn the method, compare planner formats, and adjust when plans change."
 socialImage: "/img/app/resize-after.png"
-socialImageAlt: "Align extending one time block and moving the following tasks later"
+socialImageAlt: "Align extending one time block and moving the following time blocks later"
 faq:
   - question: "What is a time blocking planner?"
     answer: "A time blocking planner assigns tasks to specific start and end times instead of leaving them on an open list. It can be a paper grid, spreadsheet, calendar, or app. The purpose is to show what fits into the time you actually have."
   - question: "How do I plan a day with time blocking?"
-    answer: "Start with fixed commitments, schedule one to three important tasks, add breaks and transition time, then review the timeline for conflicts. When the day changes, move the affected blocks instead of abandoning the whole plan."
+    answer: "Start with fixed commitments, schedule one to three important tasks, add breaks and transition time, then review the timeline for overlaps. When the day changes, move the affected blocks instead of abandoning the whole plan."
   - question: "What is the difference between a daily planner and a time blocking planner?"
     answer: "A daily planner can hold notes, tasks, or appointments without giving every item a time. A time blocking planner makes the clock part of the plan by assigning each priority a start time, end time, and duration."
   - question: "Should I use a paper planner or a time blocking app?"
@@ -39,7 +39,7 @@ A **time blocking planner** turns priorities into a schedule by giving each task
 
 ## What is a time blocking planner?
 
-A time blocking planner can be a printable sheet, spreadsheet, calendar, or app. Unlike an open to-do list, it connects every priority to the clock. That makes hidden conflicts obvious: a three-hour project cannot fit inside a one-hour gap, even if it looks manageable on a list.
+A time blocking planner can be a printable sheet, spreadsheet, calendar, or app. Unlike an open to-do list, it connects every priority to the clock. That makes hidden overlaps obvious: a three-hour project cannot fit inside a one-hour gap, even if it looks manageable on a list.
 
 The best format is the one you will review and adjust. Paper works well for a stable day. A visual app is useful when meetings move, tasks run long, or your energy changes.
 
@@ -63,7 +63,7 @@ Rigid schedules fail because real tasks take longer than expected. A useful plan
   </figure>
   <figure>
     <img src="/img/app/resize-after.png" alt="Align daily planner extending the workout to one hour and shifting the following blocks later" width="736" height="1600" loading="lazy" decoding="async">
-    <figcaption>After: the longer block moves the next tasks later.</figcaption>
+    <figcaption>After: the longer block moves the next blocks later.</figcaption>
   </figure>
 </div>
 
@@ -95,7 +95,7 @@ Choose a [free time blocking template](/templates/) if you want to learn the met
 
 ### What is a time blocking planner?
 
-It is a planner that assigns tasks to specific start and end times, making available time and schedule conflicts visible.
+It is a planner that assigns tasks to specific start and end times, making available time and overlaps visible.
 
 ### Is time blocking only for work?
 
