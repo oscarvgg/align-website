@@ -1,9 +1,9 @@
 ---
-title: "Free Time Blocking Templates (PDF, Excel, Google Sheets)"
-seoTitle: "Free Time Blocking Templates"
+title: "Free Time Blocking Template: Daily, Weekly & Monthly (PDF, Excel, Google Sheets)"
+seoTitle: "Time Blocking Template: Free PDF, Excel & Sheets"
 linkTitle: "Time Blocking Templates"
-lastmod: "2026-07-12"
-description: "Download free time blocking templates for daily, weekly, and monthly planning. Choose printable PDF, editable Excel, or Google Sheets. No signup required."
+lastmod: "2026-10-07"
+description: "Free time blocking template for daily, weekly, and monthly plans, including a 24-hour hourly layout. Printable PDF, Excel, or Google Sheets. No signup."
 socialImage: "/img/blog/covers/free-time-blocking-template-printable-cover@0.5x.jpg"
 socialImageAlt: "Free printable time blocking template from Align"
 faq:
@@ -15,28 +15,30 @@ faq:
     answer: "Yes. The Google Sheets template is editable in your browser after you click File → Make a copy. The Excel template can be edited in Microsoft Excel, Numbers, or LibreOffice. The PDF templates are printable; for editing on a tablet you can open them in apps like GoodNotes or Notability."
 ---
 
-A **time blocking template** turns a to-do list into a schedule you can inspect before the day begins. Pick printable PDF, editable Excel, or Google Sheets, then give priorities a real place on the clock and leave room for plans to change.
+A **time blocking template** is a schedule grid with a row for each time slot. You give every task its own block on the clock, so a to-do list becomes a plan you can check before the day begins. Below are free time blocking templates (sometimes called block schedule templates or time blocking worksheets) for a single day, a 5-day or 7-day week, and a month. Each one comes as a printable PDF, an editable Excel file, or a Google Sheet, with no signup.
+
+**Jump to:** [Daily (24-hour)](#daily) · [Weekly, 5 days](#weekly-5-day) · [Weekly, 7 days](#weekly-7-day) · [Monthly](#monthly) · [Google Sheets](#google-sheets) · [Excel](#excel)
 
 ## Choose your time blocking template
 
 <div class="template-grid">
 
-### [Daily Time Blocking Template (PDF)](/templates/daily/)
-Hour-by-hour plan for a single day. Perfect for deep-work days and 24-hour planning.
+### [Daily Time Blocking Template (PDF)](/templates/daily/) {#daily}
+Hour-by-hour plan for a single day on a full 24-hour layout. Use it as a 24-hour time blocking template for deep-work days, shifts, and routines.
 
-### [Weekly Time Blocking Template — 5 Days (PDF)](/templates/weekly-5-day/)
+### [Weekly Time Blocking Template — 5 Days (PDF)](/templates/weekly-5-day/) {#weekly-5-day}
 Monday-to-Friday view. The most popular template for workweek planning.
 
-### [Weekly Time Blocking Template — 7 Days (PDF)](/templates/weekly-7-day/)
+### [Weekly Time Blocking Template — 7 Days (PDF)](/templates/weekly-7-day/) {#weekly-7-day}
 Full week including weekends. Best for balancing work, family, and personal time.
 
-### [Monthly Time Blocking Calendar (PDF)](/templates/monthly/)
+### [Monthly Time Blocking Calendar (PDF)](/templates/monthly/) {#monthly}
 30-day calendar grid for long-term projects, habits, and goals.
 
-### [Google Sheets Time Blocking Template](/templates/google-sheets/)
+### [Google Sheets Time Blocking Template](/templates/google-sheets/) {#google-sheets}
 Edit in your browser. Auto-saves, syncs to mobile, easy to share with a team.
 
-### [Excel Time Blocking Template](/templates/excel/)
+### [Excel Time Blocking Template](/templates/excel/) {#excel}
 Daily, weekly, and monthly sheets in a single .xlsx file. Works offline.
 
 </div>
