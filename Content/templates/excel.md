@@ -65,7 +65,7 @@ Daily, weekly, and monthly tabs in one editable file. Free, offline, no signup.
 
 Spreadsheets are flexible but slow to adjust on the fly. [Align](/time-blocking-app/) is a free visual time blocking app for iPhone with drag-and-drop, recurring routines, and reminders.
 
-[Get Align — free on the App Store →](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_template_excel&mt=8)
+[Get Align — free on the App Store →]({{< app-store campaign="web_templates" >}})
 
 ## More time blocking templates
 

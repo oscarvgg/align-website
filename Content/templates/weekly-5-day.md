@@ -64,7 +64,7 @@ A printable Monday-to-Friday planner for your workweek. Free download, no signup
 
 If you reprint this every Sunday, [Align](/time-blocking-app/) handles your recurring week automatically — set your routines once, and they appear every week without retyping.
 
-[Get Align — free on the App Store →](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_template_weekly_5&mt=8)
+[Get Align — free on the App Store →]({{< app-store campaign="web_templates" >}})
 
 ## More time blocking templates
 

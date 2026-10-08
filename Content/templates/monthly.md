@@ -67,7 +67,7 @@ Use it alongside a [daily](/templates/daily/) or [weekly](/templates/weekly-5-da
 
 [Align](/time-blocking-app/) handles recurring monthly routines and lets you see daily, weekly, and monthly views in one place.
 
-[Get Align — free on the App Store →](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_template_monthly&mt=8)
+[Get Align — free on the App Store →]({{< app-store campaign="web_templates" >}})
 
 ## More time blocking templates
 

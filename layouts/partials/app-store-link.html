@@ -1,6 +1,10 @@
+{{- /* Campaign groups (kept broad for Apple's reporting thresholds): web_home, web_app, web_templates, web_compare, web_other. Max 30 chars. */ -}}
 {{- $base := "https://apps.apple.com/app/align-time-blocking-planner/id6740183716" -}}
 {{- $campaign := .campaign | default "web_home" -}}
 {{- $provider := getenv "APP_STORE_PROVIDER_TOKEN" -}}
+{{- if and (eq (getenv "CI") "true") (not $provider) -}}
+  {{- errorf "APP_STORE_PROVIDER_TOKEN is not set: App Store links would lose Apple attribution (pt). Add it as a repo secret." -}}
+{{- end -}}
 {{- $url := printf "%s?ct=%s&mt=8" $base ($campaign | urlquery) -}}
 {{- if $provider -}}
   {{- $url = printf "%s&pt=%s" $url ($provider | urlquery) -}}

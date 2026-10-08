@@ -125,7 +125,7 @@ If you're going to use a time blocking app with ADHD, specific features matter:
 
 [Align](/time-blocking-app/) is built for this: a visual iPhone timeline with overlap detection, recurring blocks, and drag-and-drop when something shifts. Calendar sync and recurring blocks are in the free tier; block locking and automatic overlap resolution are part of Align Plus. If you would rather test the idea on paper first, the [free time blocking templates](/templates/) cost nothing and prove the concept before you install anything.
 
-[Download Align from the App Store](https://apps.apple.com/app/align-time-blocking-planner/id6740183716)
+[Download Align from the App Store]({{< app-store campaign="web_other" >}})
 
 ## Common Questions About ADHD and Time Blocking
 
@@ -165,4 +165,4 @@ If you've tried time blocking and failed, the question isn't whether it works fo
 
 ---
 
-*Download [Align](https://apps.apple.com/app/align-time-blocking-planner/id6740183716) for iOS — visual time blocking with overlap detection and recurring blocks.*
+*Download [Align]({{< app-store campaign="web_other" >}}) for iOS — visual time blocking with overlap detection and recurring blocks.*

@@ -122,7 +122,7 @@ While these free templates are a great starting point, the Align app offers a mo
 
 ![iphone-screenshot-light](/img/iphone-screenshot-light.webp)
 
-Now available on the App Store! [Download Align](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_blog_template_post&mt=8) and start planning today.
+Now available on the App Store! [Download Align]({{< app-store campaign="web_other" >}}) and start planning today.
 
 ## Start Time Blocking Today
 

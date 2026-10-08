@@ -41,6 +41,8 @@ jobs:
         run: npx tailwindcss -i Sources/Theme/theme.css -o Resources/styles.css --minify
 
       - name: Build Hugo site
+        env:
+          APP_STORE_PROVIDER_TOKEN: ${{ secrets.APP_STORE_PROVIDER_TOKEN }}
         run: hugo --cleanDestinationDir --minify
 
       - name: Deploy to prod branch

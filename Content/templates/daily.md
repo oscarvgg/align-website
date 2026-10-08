@@ -66,7 +66,7 @@ Plan your entire day hour by hour with a clean, printable PDF. Free download, no
 
 If you find yourself reprinting this template every day, you might enjoy [Align](/time-blocking-app/), a free visual time blocking app for iPhone. Same idea — hour-by-hour timeline — but with drag-and-drop, recurring routines, reminders, and overlap detection.
 
-[Get Align — free on the App Store →](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_template_daily&mt=8)
+[Get Align — free on the App Store →]({{< app-store campaign="web_templates" >}})
 
 ## More time blocking templates
 

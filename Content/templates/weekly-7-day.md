@@ -65,7 +65,7 @@ A 5-day workweek view hides what happens on weekends — when many of us actuall
 
 [Align](/time-blocking-app/) makes recurring weekly routines easier to maintain: set a block to repeat, then adjust individual days when the week changes. The app is currently available for iPhone.
 
-[Get Align — free on the App Store →](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_template_weekly_7&mt=8)
+[Get Align — free on the App Store →]({{< app-store campaign="web_templates" >}})
 
 ## More time blocking templates
 

@@ -61,4 +61,4 @@ The templates on this page were created by [Align](/time-blocking-app/), a free 
 
 Templates are a useful way to learn the method. If rewriting the page becomes the frustrating part, a [time blocking app](/time-blocking-app/) is faster: drag and resize blocks, repeat routines, set reminders, and keep calendar events on the same timeline. Align also works as a digital [time blocking planner](/time-blocking-planner/) for daily and weekly planning.
 
-[Try Align — free on the App Store →](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_templates_hub&mt=8)
+[Try Align — free on the App Store →]({{< app-store campaign="web_templates" >}})

@@ -35,7 +35,7 @@ howto:
 
 A **time blocking planner** turns priorities into a schedule by giving each task a start time, end time, and realistic place in the day. The goal is not a perfect minute-by-minute routine. It is a plan that shows what fits, protects focus time, and can change without sending you back to a blank page.
 
-[Try Align, the free visual planner for iPhone →](https://apps.apple.com/us/app/timeblocks-planner-align/id6740183716?ct=web_time_blocking_planner&mt=8)
+[Try Align, the free visual planner for iPhone →]({{< app-store campaign="web_app" >}})
 
 ## What is a time blocking planner?
 
@@ -113,4 +113,4 @@ Use paper for a stable plan and an app when the schedule changes often. Many peo
 
 Ready to plan a day you can adjust?
 
-[Download Align on the App Store →](https://apps.apple.com/us/app/timeblocks-planner-align/id6740183716?ct=web_time_blocking_planner_bottom&mt=8)
+[Download Align on the App Store →]({{< app-store campaign="web_app" >}})

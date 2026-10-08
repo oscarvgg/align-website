@@ -35,7 +35,7 @@ howto:
 
 Align is a **free time blocking app for iPhone** built around one idea: your schedule should still be useful after the first interruption. It turns tasks and calendar events into a visual timeline, then lets you drag, resize, and reorganize the plan as the day changes.
 
-[Download Align free on the App Store →](https://apps.apple.com/us/app/timeblocks-planner-align/id6740183716?ct=web_time_blocking_app&mt=8)
+[Download Align free on the App Store →]({{< app-store campaign="web_app" >}})
 
 ## See your day as a schedule, not another list
 
@@ -117,4 +117,4 @@ Align is currently listed on the App Store as an iPhone app.
 
 Ready to make time visible?
 
-[Download Align on the App Store](https://apps.apple.com/us/app/timeblocks-planner-align/id6740183716?ct=web_time_blocking_app_bottom&mt=8)
+[Download Align on the App Store]({{< app-store campaign="web_app" >}})

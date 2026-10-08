@@ -67,7 +67,7 @@ Edit in your browser. Sync to your phone. Share with a team. Free, no signup.
 
 Sheets is flexible but slow to update on the fly. [Align](/time-blocking-app/) lets you drag, resize, and adjust blocks instantly on your iPhone — and reminds you when each block starts.
 
-[Get Align — free on the App Store →](https://apps.apple.com/app/align-time-blocking-planner/id6740183716?ct=web_template_sheets&mt=8)
+[Get Align — free on the App Store →]({{< app-store campaign="web_templates" >}})
 
 ## More time blocking templates
 
