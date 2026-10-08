@@ -1,0 +1,52 @@
+{{- /* GA4 events from SEO 6 (marketing-os issue #3): app_store_click and template_download. One delegated listener so every App Store link (partial, shortcode, hand-written) and template file is covered. Parameters carry no query strings or personal data. */ -}}
+<script>
+(function () {
+  var lastKey = '', lastAt = 0;
+
+  function send(name, params) {
+    // Guard against double-fire for one physical action (e.g. click bubbling through nested anchors).
+    var key = name + JSON.stringify(params), now = Date.now();
+    if (key === lastKey && now - lastAt < 1000) return;
+    lastKey = key; lastAt = now;
+    if (typeof window.gtag !== 'function') return;
+    params.transport_type = 'beacon';
+    window.gtag('event', name, params);
+  }
+
+  function placement(a) {
+    if (a.dataset.placement) return a.dataset.placement;
+    if (a.closest('.nav-drawer')) return 'nav_drawer';
+    if (a.closest('nav, header')) return 'nav_header';
+    if (a.closest('footer')) return 'footer';
+    if (a.closest('#download')) return 'download_section';
+    if (a.closest('#newsletter')) return 'newsletter_block';
+    if (a.matches('.btn-store')) return 'hero';
+    return 'content';
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var url;
+    try { url = new URL(a.href, location.href); } catch (err) { return; }
+
+    if (url.hostname === 'apps.apple.com') {
+      var ct = url.searchParams.get('ct') || '';
+      send('app_store_click', {
+        page_path: location.pathname,
+        page_group: ct.replace(/^web_/, '') || 'unknown',
+        placement: placement(a),
+        campaign_token: ct,
+        product_page: url.searchParams.get('ppid') ? 'cpp' : 'default'
+      });
+    } else if (url.origin === location.origin && /^\/templates\/.+\.(pdf|xlsx|xls|csv)$/i.test(url.pathname)) {
+      var file = url.pathname.split('/').pop();
+      send('template_download', {
+        template_id: file.replace(/^time-blocking-template-printable-/, '').replace(/-by-align-v\d+\.\w+$/, ''),
+        file_format: file.split('.').pop().toLowerCase(),
+        page_path: location.pathname
+      });
+    }
+  }, true);
+})();
+</script>
