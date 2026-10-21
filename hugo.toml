@@ -10,6 +10,9 @@ disableHugoGeneratorInject = true
 taxonomies = { tag = "tags" }
 
 [params]
+# align-backend `newsletter` function URL (no trailing slash). The signup form stays
+# hidden while this is empty.
+newsletterEndpoint = ""
 description = "Align is a visual daily planner for iPhone that turns tasks and calendar events into a realistic time-blocked schedule you can adjust as life changes."
 
 [markup.goldmark.renderer]

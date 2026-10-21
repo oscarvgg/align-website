@@ -1,0 +1,54 @@
+{{- /* Newsletter signup posting to align-backend's `newsletter` function, which replaced
+       MailerLite (marketing-os issue #32). The form only renders once
+       params.newsletterEndpoint is set, so the site never shows a form with nowhere to post. */ -}}
+{{- with site.Params.newsletterEndpoint }}
+<form class="card-body w-full max-w-sm" data-newsletter-form action="{{ . }}/subscribe" method="post" novalidate>
+  <h3 class="card-title">Get the Align newsletter</h3>
+  <p class="text-sm opacity-80">Time-blocking tips and what's new in Align. No spam, unsubscribe any time.</p>
+  <label class="form-control w-full">
+    <span class="sr-only">Email address</span>
+    <input class="input input-bordered w-full" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+  </label>
+  {{- /* Honeypot: hidden from people, filled in by bots. */}}
+  <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden">
+    <label>Company <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+  </div>
+  <input type="hidden" name="source" value="website">
+  <button class="btn btn-primary" type="submit">Subscribe</button>
+  <p class="text-sm" role="status" aria-live="polite" data-newsletter-status></p>
+</form>
+<script>
+(function () {
+  var form = document.currentScript.previousElementSibling;
+  var status = form.querySelector('[data-newsletter-status]');
+  var button = form.querySelector('button[type=submit]');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = form.email.value.trim();
+    if (!form.email.checkValidity() || !email) {
+      status.textContent = 'Enter a valid email address.';
+      return;
+    }
+    button.disabled = true;
+    status.textContent = 'Subscribing…';
+    // Form-encoded rather than JSON so the browser skips the CORS preflight.
+    fetch(form.action, { method: 'POST', body: new URLSearchParams(new FormData(form)) })
+      .then(function (response) {
+        if (response.status === 400) throw new Error('invalid');
+        if (!response.ok) throw new Error('failed');
+        form.reset();
+        status.textContent = 'Almost done: check your inbox and confirm your subscription.';
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'newsletter_signup', { page_path: location.pathname, transport_type: 'beacon' });
+        }
+      })
+      .catch(function (error) {
+        status.textContent = error.message === 'invalid'
+          ? 'That email address doesn\'t look right.'
+          : 'Something went wrong. Please try again in a moment.';
+      })
+      .finally(function () { button.disabled = false; });
+  });
+})();
+</script>
+{{- end }}
